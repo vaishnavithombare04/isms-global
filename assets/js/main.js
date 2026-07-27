@@ -67,7 +67,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
           <ul class="nav__list" role="list">
 
             <li class="nav__item">
-              <a href="/study-destinations" class="nav__link ${isDestinationPage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
+              <a href="study-destinations.html" class="nav__link ${isDestinationPage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
                 Study Destinations
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 6l3.5 3.5L11.5 6"/></svg>
               </a>
