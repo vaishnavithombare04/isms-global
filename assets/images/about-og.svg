@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">About ISMS Global Edu social card</title>
+  <desc id="desc">A branded graphic for the About page.</desc>
+  <rect width="1200" height="630" fill="#0B1F4E"/>
+  <rect x="56" y="56" width="1088" height="518" rx="36" fill="#FFFFFF"/>
+  <rect x="96" y="110" width="280" height="140" rx="24" fill="#C41230"/>
+  <path d="M132 220h208" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+  <path d="M152 176h168" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" opacity="0.82"/>
+  <rect x="436" y="110" width="280" height="140" rx="24" fill="#E8EDF8"/>
+  <rect x="476" y="144" width="200" height="18" rx="9" fill="#0B1F4E"/>
+  <rect x="476" y="176" width="166" height="16" rx="8" fill="#0B1F4E" opacity="0.75"/>
+  <rect x="96" y="292" width="620" height="214" rx="28" fill="#F6F7FC"/>
+  <rect x="132" y="332" width="320" height="26" rx="13" fill="#C41230"/>
+  <rect x="132" y="376" width="452" height="18" rx="9" fill="#0B1F4E" opacity="0.7"/>
+  <rect x="132" y="404" width="380" height="18" rx="9" fill="#0B1F4E" opacity="0.56"/>
+  <circle cx="928" cy="392" r="90" fill="#C41230"/>
+  <path d="M918 314c26 0 48 18 56 44h-112c8-26 30-44 56-44z" fill="#FFFFFF" opacity="0.95"/>
+  <path d="M904 360c36 0 66 28 66 64h-132c0-36 30-64 66-64z" fill="#FFFFFF" opacity="0.92"/>
+</svg>

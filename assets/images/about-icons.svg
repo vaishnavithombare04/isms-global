@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" role="img" aria-labelledby="title desc">
+  <title id="title">About icons</title>
+  <desc id="desc">A compact icon set for the About page.</desc>
+  <rect width="800" height="320" rx="28" fill="#FFFFFF"/>
+  <rect x="64" y="56" width="148" height="148" rx="24" fill="#0B1F4E"/>
+  <path d="M118 156v-38h24v38h-24zm-18-52h60v20h-60z" fill="#FFFFFF"/>
+  <rect x="252" y="56" width="148" height="148" rx="24" fill="#E8EDF8"/>
+  <path d="M326 118c0-22 18-40 40-40s40 18 40 40-18 40-40 40-40-18-40-40zm24 0c0 8.8 7.2 16 16 16s16-7.2 16-16-7.2-16-16-16-16 7.2-16 16z" fill="#C41230"/>
+  <rect x="440" y="56" width="148" height="148" rx="24" fill="#F5E6EA"/>
+  <path d="M504 106c-18 0-32 14-32 32v20h64v-20c0-18-14-32-32-32z" fill="#0B1F4E"/>
+  <rect x="628" y="56" width="148" height="148" rx="24" fill="#0B1F4E"/>
+  <path d="M688 116h-16v-20h-24v20h-16l28 34 28-34z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">About ISMS Global Edu hero illustration</title>
+  <desc id="desc">A modern study-abroad illustration featuring a campus, a student, and a counsellor.</desc>
+  <rect width="1200" height="800" rx="36" fill="#F6F7FC"/>
+  <rect x="56" y="68" width="1088" height="664" rx="28" fill="#FFFFFF"/>
+  <rect x="92" y="108" width="408" height="244" rx="24" fill="#0B1F4E"/>
+  <rect x="120" y="138" width="248" height="28" rx="14" fill="#C41230"/>
+  <rect x="120" y="188" width="182" height="18" rx="9" fill="#E8EDF8" opacity="0.95"/>
+  <rect x="120" y="220" width="226" height="18" rx="9" fill="#E8EDF8" opacity="0.9"/>
+  <rect x="120" y="252" width="164" height="18" rx="9" fill="#E8EDF8" opacity="0.8"/>
+  <rect x="560" y="136" width="320" height="180" rx="24" fill="#E8EDF8"/>
+  <circle cx="656" cy="214" r="74" fill="#C41230" opacity="0.92"/>
+  <path d="M610 292c24-40 68-64 116-64 48 0 92 24 116 64v92H610z" fill="#0B1F4E"/>
+  <rect x="600" y="418" width="434" height="234" rx="26" fill="#0B1F4E"/>
+  <rect x="632" y="448" width="170" height="16" rx="8" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="632" y="484" width="232" height="14" rx="7" fill="#FFFFFF" opacity="0.75"/>
+  <rect x="632" y="514" width="192" height="14" rx="7" fill="#FFFFFF" opacity="0.72"/>
+  <rect x="632" y="544" width="250" height="14" rx="7" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="396" cy="476" r="86" fill="#C41230" opacity="0.95"/>
+  <rect x="338" y="536" width="128" height="92" rx="20" fill="#0B1F4E"/>
+  <rect x="350" y="548" width="104" height="14" rx="7" fill="#FFFFFF" opacity="0.85"/>
+  <rect x="350" y="574" width="82" height="12" rx="6" fill="#FFFFFF" opacity="0.65"/>
+  <path d="M362 536c18-30 44-48 80-48 34 0 60 18 78 48" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+</svg>

@@ -2117,6 +2117,371 @@ ul, ol {
   padding: var(--space-2) var(--space-4);
 }
 
+/* ── About Page ── */
+.about-breadcrumb {
+  padding-block: var(--space-6);
+  background: var(--color-neutral-50);
+  border-bottom: 1px solid var(--color-neutral-200);
+}
+
+.about-breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  color: var(--color-neutral-500);
+  font-size: var(--text-sm);
+}
+
+.about-breadcrumb__link {
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.about-breadcrumb__separator {
+  color: var(--color-neutral-500);
+}
+
+.about-hero {
+  padding-block: var(--space-20);
+  background: linear-gradient(135deg, rgba(11,31,78,.03), rgba(196,18,48,.04));
+}
+
+.about-hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.about-hero h1 {
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  line-height: 1.1;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: var(--space-4);
+}
+
+.about-hero__lead {
+  font-size: var(--text-xl);
+  color: var(--color-navy);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+
+.about-hero__content p {
+  margin-bottom: var(--space-4);
+  color: var(--color-neutral-700);
+}
+
+.about-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.about-hero__notice {
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  background: rgba(196,18,48,.08);
+  border: 1px solid rgba(196,18,48,.18);
+  border-radius: var(--radius);
+  color: var(--color-neutral-700);
+}
+
+.about-hero__image-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.about-hero__image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.about-value-card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-neutral-200);
+}
+
+.about-value-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  background: var(--color-red-light);
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-4);
+}
+
+.about-value-card h3,
+.about-panel h3,
+.about-growth__card h3,
+.about-testimonial-card h3 {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: var(--space-3);
+}
+
+.about-value-card p,
+.about-panel p,
+.about-growth__card p,
+.about-growth__list li,
+.about-commitment-grid p,
+.about-testimonial-card p {
+  color: var(--color-neutral-700);
+  line-height: 1.7;
+}
+
+.about-panels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.about-panel {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-7);
+  border: 1px solid var(--color-neutral-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-growth-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+.about-growth__intro {
+  margin-bottom: var(--space-4);
+}
+
+.about-growth__card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+}
+
+.about-growth__list {
+  display: grid;
+  gap: var(--space-3);
+  padding-left: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.about-growth__list li {
+  list-style: disc;
+}
+
+.about-founder-card {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-8);
+  background: var(--color-neutral-50);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  border: 1px solid var(--color-neutral-200);
+}
+
+.about-founder-card__lead {
+  font-weight: 700;
+  color: var(--color-red);
+  margin-bottom: var(--space-4);
+}
+
+.about-founder-card__aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.about-founder-card__aside img {
+  border-radius: var(--radius-xl);
+}
+
+.about-founder-card__note {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--color-white);
+  border: 1px dashed var(--color-neutral-300);
+  color: var(--color-neutral-700);
+}
+
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.about-service-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-navy);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-service-card--highlight {
+  background: linear-gradient(135deg, rgba(196,18,48,.08), rgba(196,18,48,.16));
+  border-color: rgba(196,18,48,.3);
+  color: var(--color-red-dark);
+}
+
+.about-service-card--highlight span {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-neutral-700);
+}
+
+.about-destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.about-destination-card {
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-mid));
+  color: var(--color-white);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-2);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.about-destination-card:hover,
+.about-destination-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  outline: none;
+}
+
+.about-destination-card span {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: rgba(255,255,255,.8);
+}
+
+.about-destination-card strong {
+  font-size: var(--text-base);
+}
+
+.about-commitment-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.about-quote {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.about-testimonial-card {
+  background: linear-gradient(135deg, rgba(11,31,78,.04), rgba(196,18,48,.04));
+  border: 1px dashed var(--color-neutral-300);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  text-align: center;
+}
+
+.about-testimonial-card__badge {
+  display: inline-flex;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-white);
+  color: var(--color-red);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .about-hero__grid,
+  .about-growth-grid,
+  .about-founder-card,
+  .about-commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-panels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-destinations-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    padding-block: var(--space-12);
+  }
+
+  .about-values-grid,
+  .about-services-grid,
+  .about-destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-founder-card,
+  .about-growth__card,
+  .about-panel,
+  .about-value-card,
+  .about-service-card {
+    padding: var(--space-5);
+  }
+}
+
 /* ── Reduced Motion ── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
