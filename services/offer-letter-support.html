@@ -4,176 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Offer Letter and Admission Support | ISMS Global Edu</title>
-  <meta name="description" content="Learn about our Offer Letter and Admission Support services at ISMS Global Edu. Get professional assistance for course selection, visa prep, and study abroad counselling." />
+  <meta name="description" content="Guide students through conditional/unconditional offers, acceptance, pending conditions, proof of funds, visa, accommodation, orientation, and preparation. Get" />
+  <link rel="canonical" href="https://www.ismsglobaledu.com/services/offer-letter-support.html" />
+  
+  <!-- SEO Open Graph & Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Offer Letter and Admission Support | ISMS Global Edu" />
+  <meta property="og:description" content="Guide students through conditional/unconditional offers, acceptance, pending conditions, proof of funds, visa, accommodation, orientation, and preparation. Get" />
+  <meta property="og:url" content="https://www.ismsglobaledu.com/services/offer-letter-support.html" />
+  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-services.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Robots Default (noindex for staging/dev) -->
+  <!-- <meta name="robots" content="index,follow"> -->
+  <meta name="robots" content="noindex,follow" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   
-  <!-- Core CSS -->
+  <!-- Core Styles -->
   <link rel="stylesheet" href="../assets/css/global.css" />
-  
-  <style>
-    /* Premium Service Details Style overrides */
-    .service-hero {
-      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-red) 100%);
-      color: var(--color-white);
-      padding: var(--space-20) 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .service-hero::after {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 50%;
-      bottom: -100px;
-      right: -50px;
-    }
-    .service-hero__inner {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-    }
-    .service-hero__tag {
-      font-size: var(--text-sm);
-      font-weight: 700;
-      color: var(--color-white);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 6px 16px;
-      border-radius: var(--radius-full);
-      display: inline-block;
-      margin-bottom: var(--space-4);
-    }
-    .service-hero__title {
-      font-size: var(--text-4xl);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: var(--space-4);
-    }
-    .service-hero__copy {
-      font-size: var(--text-lg);
-      max-width: 700px;
-      opacity: 0.9;
-      margin-bottom: var(--space-6);
-    }
-    
-    .service-body {
-      padding: var(--space-16) 0;
-      background: var(--color-neutral-50);
-    }
-    .service-grid {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: var(--space-12);
-    }
-    @media (max-width: 992px) {
-      .service-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-8);
-      }
-    }
-    
-    .service-main {
-      background: var(--color-white);
-      padding: var(--space-10);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--color-neutral-100);
-    }
-    
-    .content-heading {
-      font-size: var(--text-2xl);
-      color: var(--color-navy);
-      margin-top: var(--space-8);
-      margin-bottom: var(--space-4);
-      font-weight: 700;
-      border-bottom: 2px solid var(--color-neutral-100);
-      padding-bottom: 8px;
-    }
-    .content-heading:first-of-type {
-      margin-top: 0;
-    }
-    
-    .content-p {
-      font-size: var(--text-base);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-4);
-      line-height: 1.7;
-    }
-    
-    .content-list {
-      list-style: none;
-      margin-bottom: var(--space-6);
-    }
-    .content-list li {
-      position: relative;
-      padding-left: var(--space-6);
-      margin-bottom: var(--space-2);
-      font-size: var(--text-base);
-      color: var(--color-neutral-700);
-    }
-    .content-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--color-red);
-      font-weight: 700;
-    }
-    
-    /* Sidebar widget */
-    .sidebar-widget {
-      background: var(--color-white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--color-neutral-100);
-      padding: var(--space-8);
-      box-shadow: var(--shadow-md);
-      position: sticky;
-      top: 100px;
-      height: fit-content;
-    }
-    .widget-title {
-      font-size: var(--text-xl);
-      font-weight: 700;
-      color: var(--color-navy);
-      margin-bottom: var(--space-4);
-    }
-    .widget-copy {
-      font-size: var(--text-sm);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-6);
-    }
-    .widget-features {
-      list-style: none;
-      margin-bottom: var(--space-6);
-    }
-    .widget-features li {
-      display: flex;
-      align-items: center;
-      gap: var(--space-2);
-      font-size: var(--text-xs);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-3);
-    }
-    .widget-features svg {
-      color: var(--color-red);
-      flex-shrink: 0;
-    }
-    
-    .btn-full {
-      width: 100%;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
 
@@ -211,16 +64,16 @@
         <nav class="header__nav" aria-label="Main navigation">
           <ul class="nav__list" role="list">
             <li class="nav__item">
-              <a href="../study-destinations" class="nav__link">Study Destinations</a>
+              <a href="../study-destinations" class="nav__link">Study Abroad</a>
             </li>
             <li class="nav__item">
-              <a href="../services" class="nav__link">Student Services</a>
+              <a href="./index.html" class="nav__link">Services</a>
             </li>
             <li class="nav__item">
-              <a href="../about" class="nav__link">About Us</a>
+              <a href="../about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="../contact" class="nav__link">Contact Us</a>
+              <a href="../contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -236,173 +89,155 @@
 
   <main id="main-content">
     
-    <!-- Hero Section -->
+    <!-- Breadcrumbs -->
+    <nav class="services-breadcrumbs" aria-label="Breadcrumb">
+      <a href="../">Home</a> &gt; <a href="./index.html">Services</a> &gt; <span>Offer Letter and Admission Support</span>
+    </nav>
+
+    <!-- Service Hero -->
     <section class="service-hero">
       <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Student Services</span>
+        <span class="service-hero__tag">ISMS Services</span>
         <h1 class="service-hero__title">Offer Letter and Admission Support</h1>
         <p class="service-hero__copy">
           Get verified, direct assistance for all your overseas academic application needs.
         </p>
-      </div>
-    </section>
-
-    <!-- Service Body Section -->
-    <section class="service-body">
-      <div class="service-grid">
-        
-        <!-- Main Content Column -->
-        <div class="service-main">
-          <p class="content-p">Source Content (client PDF)</p>
-<p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
-<p class="content-p">Source excerpt 1</p>
-<p class="content-p">Accepting the offer Letter</p>
-<p class="content-p">Getting an acceptance letter from the university is definitely something that any student</p>
-<p class="content-p">looks forward to. However, there are certain things that must be done by the student to</p>
-<p class="content-p">ensure admission.</p>
-<p class="content-p">Next Step After Receiving an Offer</p>
-<p class="content-p">Completing Pending Requirements</p>
-<ul class="content-list">
-<li>Final academic records</li>
-<li>English language test result</li>
-<li>Other documents required</li>
-<li>Evidence of finances</li>
-</ul>
-<p class="content-p">We assist students to complete and submit the requirement hassle-free.</p>
-<p class="content-p">Pre-Departure Preparation</p>
-<p class="content-p">After visa has been approved, we assist student with:</p>
-<ul class="content-list">
-<li>Accommodation arrangements</li>
-</ul>
-<ul class="content-list">
-<li>Travel preparations</li>
-<li>Forex assistance</li>
-<li>Medical insurance</li>
-<li>Pre-departure orientation</li>
-</ul>
-<p class="content-p">ISMS Global Education makes sure that students are fully guided even after the University</p>
-<p class="content-p">offer letter is received and guides them to their international education destination with full</p>
-<p class="content-p">support.</p>
-<p class="content-p">Source excerpt 2</p>
-<p class="content-p">After Receiving an Offer</p>
-<p class="content-p">Congratulations, accepting an offer letter from a university overseas is an amazing</p>
-<p class="content-p">experience—yet it does not mean that you are done with all your work. In fact, there are</p>
-<p class="content-p">many things that you still must do before you can officially join a foreign institution. Let us</p>
-<p class="content-p">tell you more about them at ISMS Global Education.</p>
-<p class="content-p">We will assist you in obtaining student visas, transferring money, acquiring health cover,</p>
-<p class="content-p">and securing accommodation before your relocation. You should relax and choose your next</p>
-<p class="content-p">step while we provide you with support throughout the entire process.</p>
-<p class="content-p">Understand Your Offer Letter</p>
-<p class="content-p">Carefully read your offer letter to find out the type of offer letter you received (Conditional or</p>
-<p class="content-p">unconditional)</p>
-<p class="content-p">Accept the Offer</p>
-<p class="content-p">To confirm your admission, you need to officially accept the offer letter</p>
-<p class="content-p">Fulfill Remaining Conditions</p>
-<p class="content-p">In case of any conditional offers, you must fulfill remaining conditions such as:</p>
-<ul class="content-list">
-<li>Provide final academic performance results</li>
-<li>Updated IELTS/PTE score card</li>
-</ul>
-<p class="content-p">Submit pending documents</p>
-<p class="content-p">Arrange Documents for Proof of Funds</p>
-<p class="content-p">For your visa application, you must provide proof of funds such as:</p>
-<p class="content-p">Bank statement Letter of educational loan approval</p>
-<p class="content-p">Apply for Student Visa</p>
-<p class="content-p">Once you have all required documents, proceed with your visa application process</p>
-<p class="content-p">Book Accommodation</p>
-<p class="content-p">Secure your stay before travelling</p>
-<p class="content-p">Attend Pre-departure Session</p>
-<p class="content-p">Pre-departure preparation is vital for international students.</p>
-<p class="content-p">You will be made aware of:</p>
-<ul class="content-list">
-<li>Living in a foreign land Rules & Regulations</li>
-<li>Differences in culture</li>
-</ul>
-<p class="content-p">Essential documents to bring along</p>
-<ul class="content-list">
-<li>Prepare Yourself for a New Beginning Prior to leaving, ensure that you have:</li>
-<li>Passport and visa</li>
-<li>Letter of acceptance and university documents</li>
-<li>Accommodation information</li>
-<li>Emergency contacts</li>
-<li>Preparing to Departure Let’s set up for the big move</li>
-</ul>
-<p class="content-p">Let’s set up for the big move</p>
-<p class="content-p">Your departure date is finally here, and now you are at the point of embarking on a voyage</p>
-<p class="content-p">into a whole new world of boundless possibilities. The process of leaving your haven may</p>
-<p class="content-p">feel exciting yet terrifying because this is the first time that you have left behind your haven.</p>
-<p class="content-p">The aim here is to guide you in successfully making this transition to your new home. From</p>
-<p class="content-p">preparing your move through to assisting, we will assist you with every aspect of your move.</p>
-<p class="content-p">Arrive & Thrive</p>
-<p class="content-p">Learn & make the most of your study abroad experience</p>
-<p class="content-p">Our team will support you throughout the entire process, which includes assistance with</p>
-<p class="content-p">your lodging and finance and immigration needs and any additional support you require. Our</p>
-<p class="content-p">focus is on your health because we chose the best mental health experts to ensure your</p>
-<p class="content-p">psychological safety. Now go out there and write your own success story!</p>
-<p class="content-p">Source excerpt 3</p>
-<p class="content-p">Page No: 6 After Receiving an Offer Letter</p>
-<p class="content-p">Keyword: study in UK for international students, abroad study, study overseas,</p>
-<p class="content-p">international students, overseas education, abroad education</p>
-<p class="content-p">After Receiving an Offer Letter</p>
-<p class="content-p">Here are the steps to follow, from acceptance of the offer to the preparation for the</p>
-<p class="content-p">future, to make your dream of studying abroad a reality.</p>
-<p class="content-p">There is no more thrilling experience for any student than getting a letter of acceptance from</p>
-<p class="content-p">an international university. It is the start of something new that comes with opportunities,</p>
-<p class="content-p">exposure, learning, growth, and many more aspects. However, it is not the end but just the</p>
-<p class="content-p">start of the process. Several things must be done by students before heading abroad for</p>
-<p class="content-p">studies.</p>
-<p class="content-p">Most international students find themselves puzzled about what to do when they receive</p>
-<p class="content-p">their acceptance letter. The processes involved range from accepting the offer, financing,</p>
-<p class="content-p">visa applications, travel preparations, and other aspects that require serious consideration.</p>
-<p class="content-p">This guide will walk you through all the crucial details students need to consider once they</p>
-<p class="content-p">have received the letter of acceptance from an international university.</p>
-<p class="content-p">Next Step After Receiving an Offer Lette</p>
-<p class="content-p">Respond Quickly</p>
-<p class="content-p">Accept or reject offer letters within the deadlines.</p>
-<p class="content-p">Be Well Organized</p>
-<p class="content-p">Keep all essential papers organized.</p>
-<p class="content-p">Manage Money Properly</p>
-<p class="content-p">Familiarize yourself with education and living costs.</p>
-<p class="content-p">Prepare in Advance for Visa Process</p>
-<p class="content-p">Visas may be processed over some period.</p>
-<p class="content-p">Study About the Country</p>
-<p class="content-p">Awareness about the country will make adaptation easier.</p>
-<p class="content-p">Attend Orientation Programs</p>
-<p class="content-p">Orientation programs are extremely useful.</p>
-<p class="content-p">Stay Positive and Confident</p>
-<p class="content-p">Proper planning makes the transition easier.</p>
-
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="../Student/index.html#counselling" class="btn btn-white btn-lg">📅 Book Free Counselling</a>
+          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-white btn-lg">Chat on WhatsApp</a>
         </div>
-
-        <!-- Sidebar Widget -->
-        <aside class="service-sidebar">
-          <div class="sidebar-widget">
-            <h3 class="widget-title">Book Free Session</h3>
-            <p class="widget-copy">
-              Need personalized guidance? Speak 1-on-1 with Anjali Sharma, our senior admissions counselor.
-            </p>
-            <ul class="widget-features">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                100% Free Consultation
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Profile Evaluation & Target Match
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Visa & Funding Guidance Included
-              </li>
-            </ul>
-            <a href="../Student/index.html#counselling" class="btn btn-primary btn-full">
-              📅 Book Live Counselling
-            </a>
-          </div>
-        </aside>
-
       </div>
     </section>
+
+    <!-- Dynamic Body Sections -->
+    <section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Offer Letter and Admission Support</h2>
+      <p class="section-subtitle">Source Content (client PDF)</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 1</h2>
+      <p class="section-subtitle">Accepting the offer Letter</p>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3 class="card-title">Final academic records</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">English language test result</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Other documents required</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Evidence of finances</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Accommodation arrangements</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Travel preparations</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 2</h2>
+      <p class="section-subtitle">After Receiving an Offer</p>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3 class="card-title">Provide final academic performance results</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Updated IELTS/PTE score card</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Support Feature 3</h3>
+        <p class="card-desc">Living in a foreign land Rules & Regulations.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Differences in culture</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Support Feature 5</h3>
+        <p class="card-desc">Prepare Yourself for a New Beginning Prior to leaving, ensure.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Passport and visa</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Page No: 6 After Receiving an Offer Letter</h2>
+      <p class="section-subtitle">Keyword: study in UK for international students, abroad study, study overseas,</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p class="content-p">international students, overseas education, abroad education</p>
+      <p class="content-p">After Receiving an Offer Letter</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- FAQ Section -->
+    <!-- no FAQ source content -->
+
+
+    <!-- Related Services -->
+    <section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Related Services</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3 class="card-title">Personalized Counselling</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="personalized-counselling.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Course Selection Guidance</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="course-selection-guidance.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">University Selection Guidance</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="university-selection.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Final Call to Action -->
     <section class="final-cta" aria-labelledby="final-cta-heading">
@@ -417,9 +252,6 @@
           <div class="final-cta__actions">
             <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
               📅 Book Free Counselling
-            </a>
-            <a href="../contact" class="btn btn-outline-white btn-lg" aria-label="Contact ISMS Global Edu">
-              Contact Us
             </a>
           </div>
         </div>
@@ -471,11 +303,11 @@
           <ul class="footer__links">
             <li><a href="personalized-counselling.html">Counselling</a></li>
             <li><a href="course-selection-guidance.html">Course Selection</a></li>
-            <li><a href="university-selection-guidance.html">University Shortlisting</a></li>
-            <li><a href="application-and-documentation-support.html">Applications</a></li>
-            <li><a href="scholarship-and-education-loan.html">Scholarships & Loans</a></li>
-            <li><a href="student-visa-preparation.html">Visa Preparation</a></li>
-            <li><a href="accommodation-assistance.html">Accommodation</a></li>
+            <li><a href="university-selection.html">University Shortlisting</a></li>
+            <li><a href="application-support.html">Applications</a></li>
+            <li><a href="scholarship-education-loan.html">Scholarships & Loans</a></li>
+            <li><a href="student-visa.html">Visa Preparation</a></li>
+            <li><a href="student-accommodation.html">Accommodation</a></li>
             <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
           </ul>
         </nav>
@@ -510,5 +342,6 @@
     </div>
   </footer>
 
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

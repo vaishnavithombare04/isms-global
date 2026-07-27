@@ -4,176 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Course Selection Guidance | ISMS Global Edu</title>
-  <meta name="description" content="Learn about our Course Selection Guidance services at ISMS Global Edu. Get professional assistance for course selection, visa prep, and study abroad counselling." />
+  <meta name="description" content="Help students understand career fit, industry demand, specialization, university matching, duration, budget, and emerging fields. Get trusted guidance from ISMS" />
+  <link rel="canonical" href="https://www.ismsglobaledu.com/services/course-selection-guidance.html" />
+  
+  <!-- SEO Open Graph & Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Course Selection Guidance | ISMS Global Edu" />
+  <meta property="og:description" content="Help students understand career fit, industry demand, specialization, university matching, duration, budget, and emerging fields. Get trusted guidance from ISMS" />
+  <meta property="og:url" content="https://www.ismsglobaledu.com/services/course-selection-guidance.html" />
+  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-services.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Robots Default (noindex for staging/dev) -->
+  <!-- <meta name="robots" content="index,follow"> -->
+  <meta name="robots" content="noindex,follow" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   
-  <!-- Core CSS -->
+  <!-- Core Styles -->
   <link rel="stylesheet" href="../assets/css/global.css" />
-  
-  <style>
-    /* Premium Service Details Style overrides */
-    .service-hero {
-      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-red) 100%);
-      color: var(--color-white);
-      padding: var(--space-20) 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .service-hero::after {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 50%;
-      bottom: -100px;
-      right: -50px;
-    }
-    .service-hero__inner {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-    }
-    .service-hero__tag {
-      font-size: var(--text-sm);
-      font-weight: 700;
-      color: var(--color-white);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 6px 16px;
-      border-radius: var(--radius-full);
-      display: inline-block;
-      margin-bottom: var(--space-4);
-    }
-    .service-hero__title {
-      font-size: var(--text-4xl);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: var(--space-4);
-    }
-    .service-hero__copy {
-      font-size: var(--text-lg);
-      max-width: 700px;
-      opacity: 0.9;
-      margin-bottom: var(--space-6);
-    }
-    
-    .service-body {
-      padding: var(--space-16) 0;
-      background: var(--color-neutral-50);
-    }
-    .service-grid {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: var(--space-12);
-    }
-    @media (max-width: 992px) {
-      .service-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-8);
-      }
-    }
-    
-    .service-main {
-      background: var(--color-white);
-      padding: var(--space-10);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--color-neutral-100);
-    }
-    
-    .content-heading {
-      font-size: var(--text-2xl);
-      color: var(--color-navy);
-      margin-top: var(--space-8);
-      margin-bottom: var(--space-4);
-      font-weight: 700;
-      border-bottom: 2px solid var(--color-neutral-100);
-      padding-bottom: 8px;
-    }
-    .content-heading:first-of-type {
-      margin-top: 0;
-    }
-    
-    .content-p {
-      font-size: var(--text-base);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-4);
-      line-height: 1.7;
-    }
-    
-    .content-list {
-      list-style: none;
-      margin-bottom: var(--space-6);
-    }
-    .content-list li {
-      position: relative;
-      padding-left: var(--space-6);
-      margin-bottom: var(--space-2);
-      font-size: var(--text-base);
-      color: var(--color-neutral-700);
-    }
-    .content-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--color-red);
-      font-weight: 700;
-    }
-    
-    /* Sidebar widget */
-    .sidebar-widget {
-      background: var(--color-white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--color-neutral-100);
-      padding: var(--space-8);
-      box-shadow: var(--shadow-md);
-      position: sticky;
-      top: 100px;
-      height: fit-content;
-    }
-    .widget-title {
-      font-size: var(--text-xl);
-      font-weight: 700;
-      color: var(--color-navy);
-      margin-bottom: var(--space-4);
-    }
-    .widget-copy {
-      font-size: var(--text-sm);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-6);
-    }
-    .widget-features {
-      list-style: none;
-      margin-bottom: var(--space-6);
-    }
-    .widget-features li {
-      display: flex;
-      align-items: center;
-      gap: var(--space-2);
-      font-size: var(--text-xs);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-3);
-    }
-    .widget-features svg {
-      color: var(--color-red);
-      flex-shrink: 0;
-    }
-    
-    .btn-full {
-      width: 100%;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
 
@@ -211,16 +64,16 @@
         <nav class="header__nav" aria-label="Main navigation">
           <ul class="nav__list" role="list">
             <li class="nav__item">
-              <a href="../study-destinations" class="nav__link">Study Destinations</a>
+              <a href="../study-destinations" class="nav__link">Study Abroad</a>
             </li>
             <li class="nav__item">
-              <a href="../services" class="nav__link">Student Services</a>
+              <a href="./index.html" class="nav__link">Services</a>
             </li>
             <li class="nav__item">
-              <a href="../about" class="nav__link">About Us</a>
+              <a href="../about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="../contact" class="nav__link">Contact Us</a>
+              <a href="../contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -236,108 +89,107 @@
 
   <main id="main-content">
     
-    <!-- Hero Section -->
+    <!-- Breadcrumbs -->
+    <nav class="services-breadcrumbs" aria-label="Breadcrumb">
+      <a href="../">Home</a> &gt; <a href="./index.html">Services</a> &gt; <span>Course Selection Guidance</span>
+    </nav>
+
+    <!-- Service Hero -->
     <section class="service-hero">
       <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Student Services</span>
+        <span class="service-hero__tag">ISMS Services</span>
         <h1 class="service-hero__title">Course Selection Guidance</h1>
         <p class="service-hero__copy">
           Get verified, direct assistance for all your overseas academic application needs.
         </p>
-      </div>
-    </section>
-
-    <!-- Service Body Section -->
-    <section class="service-body">
-      <div class="service-grid">
-        
-        <!-- Main Content Column -->
-        <div class="service-main">
-          <p class="content-p">Source Content (client PDF)</p>
-<p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
-<p class="content-p">Source excerpt 1</p>
-<p class="content-p">Guidance for Course Selection</p>
-<p class="content-p">Selecting the appropriate course is the most crucial step while planning to pursue your</p>
-<p class="content-p">studies overseas because it is essential for the career prospects you can look forward to in</p>
-<p class="content-p">the future. We at ISMS Global Education will assist you in selecting the most appropriate</p>
-<p class="content-p">course according to your background, interests, and industry demand.</p>
-<p class="content-p">Our Course Selection Guidance Includes:</p>
-<p class="content-p">Understanding Your Career Goals</p>
-<p class="content-p">We start by finding out what you like, what you are good at in school, what you are good at,</p>
-<p class="content-p">and what you want to do in your career for a time. Whether you want to work in business,</p>
-<p class="content-p">healthcare, engineering, technology, hospitality, finance, marketing, or something else, our</p>
-<p class="content-p">experts help you figure out the way to get the education you need for your career.</p>
-<p class="content-p">We look at what you want to do in your career and help you decide. Our experts help you</p>
-<p class="content-p">understand what you need to do to get a job in your field.</p>
-<p class="content-p">Identifying Industry-Demand Courses</p>
-<p class="content-p">Our team helps you pick classes that will help you get a job in the future. We look at what</p>
-<p class="content-p">companies are looking for now and what they will be looking for in the future. We help you</p>
-<p class="content-p">find programs that will give you the skills you need to get a job and have a successful career.</p>
-<p class="content-p">We help you find classes that are popular now and will be popular in the future. Our team</p>
-<p class="content-p">helps you understand what you need to learn to get a job.</p>
-<p class="content-p">Choosing the Right Specialization</p>
-<p class="content-p">A lot of students do not know what to specialize in when they are in school. We help you</p>
-<p class="content-p">understand what you can do with specializations, what kind of job you can get, how much</p>
-<p class="content-p">money you can make, and what your future will look like.</p>
-<p class="content-p">We help you understand what you need to do to get the career you want. Our experts help</p>
-<p class="content-p">you decide to get the education you need for your career.</p>
-<p class="content-p">Matching Courses with Universities</p>
-<p class="content-p">Schools are good at teaching different things. We help you make a list of schools that're good</p>
-<p class="content-p">at teaching what you want to learn.</p>
-<p class="content-p">We help you find schools that are highly rated and will give you the education you need for</p>
-<p class="content-p">your career.</p>
-<p class="content-p">Course Duration and Budget Planning</p>
-<p class="content-p">Our counsellors tell you how long it will take to finish your classes, how much it will cost,</p>
-<p class="content-p">and how you can pay for it. We help you understand what you need to do to get the education</p>
-<p class="content-p">you need and stay within your budget.</p>
-<p class="content-p">We help you plan to pay for your education and get the career you want. Our experts help</p>
-<p class="content-p">you understand what you need to do to be successful.</p>
-<p class="content-p">Exploring Emerging Career Fields</p>
-<p class="content-p">Students are also guided toward modern and high-demand career fields such as:</p>
-<ul class="content-list">
-<li>Artificial Intelligence</li>
-<li>Data Science</li>
-<li>Cybersecurity</li>
-<li>Business Analytics</li>
-<li>Digital Marketing</li>
-<li>Healthcare Management</li>
-<li>Renewable Energy</li>
-<li>Supply Chain & Logistics</li>
-<li>Hospitality & Tourism</li>
-<li>Sports Management</li>
-</ul>
-
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="../Student/index.html#counselling" class="btn btn-white btn-lg">📅 Book Free Counselling</a>
+          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-white btn-lg">Chat on WhatsApp</a>
         </div>
-
-        <!-- Sidebar Widget -->
-        <aside class="service-sidebar">
-          <div class="sidebar-widget">
-            <h3 class="widget-title">Book Free Session</h3>
-            <p class="widget-copy">
-              Need personalized guidance? Speak 1-on-1 with Anjali Sharma, our senior admissions counselor.
-            </p>
-            <ul class="widget-features">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                100% Free Consultation
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Profile Evaluation & Target Match
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Visa & Funding Guidance Included
-              </li>
-            </ul>
-            <a href="../Student/index.html#counselling" class="btn btn-primary btn-full">
-              📅 Book Live Counselling
-            </a>
-          </div>
-        </aside>
-
       </div>
     </section>
+
+    <!-- Dynamic Body Sections -->
+    <section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Course Selection Guidance</h2>
+      <p class="section-subtitle">Source Content (client PDF)</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 1</h2>
+      <p class="section-subtitle">Guidance for Course Selection</p>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3 class="card-title">Artificial Intelligence</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Data Science</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Cybersecurity</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Business Analytics</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Digital Marketing</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Healthcare Management</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- FAQ Section -->
+    <!-- no FAQ source content -->
+
+
+    <!-- Related Services -->
+    <section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Related Services</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3 class="card-title">Personalized Counselling</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="personalized-counselling.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">University Selection Guidance</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="university-selection.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Application & Documentation Support</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="application-support.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Final Call to Action -->
     <section class="final-cta" aria-labelledby="final-cta-heading">
@@ -352,9 +204,6 @@
           <div class="final-cta__actions">
             <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
               📅 Book Free Counselling
-            </a>
-            <a href="../contact" class="btn btn-outline-white btn-lg" aria-label="Contact ISMS Global Edu">
-              Contact Us
             </a>
           </div>
         </div>
@@ -406,11 +255,11 @@
           <ul class="footer__links">
             <li><a href="personalized-counselling.html">Counselling</a></li>
             <li><a href="course-selection-guidance.html">Course Selection</a></li>
-            <li><a href="university-selection-guidance.html">University Shortlisting</a></li>
-            <li><a href="application-and-documentation-support.html">Applications</a></li>
-            <li><a href="scholarship-and-education-loan.html">Scholarships & Loans</a></li>
-            <li><a href="student-visa-preparation.html">Visa Preparation</a></li>
-            <li><a href="accommodation-assistance.html">Accommodation</a></li>
+            <li><a href="university-selection.html">University Shortlisting</a></li>
+            <li><a href="application-support.html">Applications</a></li>
+            <li><a href="scholarship-education-loan.html">Scholarships & Loans</a></li>
+            <li><a href="student-visa.html">Visa Preparation</a></li>
+            <li><a href="student-accommodation.html">Accommodation</a></li>
             <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
           </ul>
         </nav>
@@ -445,5 +294,6 @@
     </div>
   </footer>
 
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

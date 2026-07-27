@@ -4,176 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>International Student Health and Wellbeing Support | ISMS Global Edu</title>
-  <meta name="description" content="Learn about our International Student Health and Wellbeing Support services at ISMS Global Edu. Get professional assistance for course selection, visa prep, and study abroad counselling." />
+  <meta name="description" content="Explain insurance preparation, healthcare registration, safety, emotional preparation, homesickness, independence, and counselling support. Get trusted guidance" />
+  <link rel="canonical" href="https://www.ismsglobaledu.com/services/health-insurance-wellbeing.html" />
+  
+  <!-- SEO Open Graph & Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="International Student Health and Wellbeing Support | ISMS Global Edu" />
+  <meta property="og:description" content="Explain insurance preparation, healthcare registration, safety, emotional preparation, homesickness, independence, and counselling support. Get trusted guidance" />
+  <meta property="og:url" content="https://www.ismsglobaledu.com/services/health-insurance-wellbeing.html" />
+  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-services.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Robots Default (noindex for staging/dev) -->
+  <!-- <meta name="robots" content="index,follow"> -->
+  <meta name="robots" content="noindex,follow" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   
-  <!-- Core CSS -->
+  <!-- Core Styles -->
   <link rel="stylesheet" href="../assets/css/global.css" />
-  
-  <style>
-    /* Premium Service Details Style overrides */
-    .service-hero {
-      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-red) 100%);
-      color: var(--color-white);
-      padding: var(--space-20) 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .service-hero::after {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 50%;
-      bottom: -100px;
-      right: -50px;
-    }
-    .service-hero__inner {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-    }
-    .service-hero__tag {
-      font-size: var(--text-sm);
-      font-weight: 700;
-      color: var(--color-white);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 6px 16px;
-      border-radius: var(--radius-full);
-      display: inline-block;
-      margin-bottom: var(--space-4);
-    }
-    .service-hero__title {
-      font-size: var(--text-4xl);
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: var(--space-4);
-    }
-    .service-hero__copy {
-      font-size: var(--text-lg);
-      max-width: 700px;
-      opacity: 0.9;
-      margin-bottom: var(--space-6);
-    }
-    
-    .service-body {
-      padding: var(--space-16) 0;
-      background: var(--color-neutral-50);
-    }
-    .service-grid {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: var(--space-12);
-    }
-    @media (max-width: 992px) {
-      .service-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-8);
-      }
-    }
-    
-    .service-main {
-      background: var(--color-white);
-      padding: var(--space-10);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--color-neutral-100);
-    }
-    
-    .content-heading {
-      font-size: var(--text-2xl);
-      color: var(--color-navy);
-      margin-top: var(--space-8);
-      margin-bottom: var(--space-4);
-      font-weight: 700;
-      border-bottom: 2px solid var(--color-neutral-100);
-      padding-bottom: 8px;
-    }
-    .content-heading:first-of-type {
-      margin-top: 0;
-    }
-    
-    .content-p {
-      font-size: var(--text-base);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-4);
-      line-height: 1.7;
-    }
-    
-    .content-list {
-      list-style: none;
-      margin-bottom: var(--space-6);
-    }
-    .content-list li {
-      position: relative;
-      padding-left: var(--space-6);
-      margin-bottom: var(--space-2);
-      font-size: var(--text-base);
-      color: var(--color-neutral-700);
-    }
-    .content-list li::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--color-red);
-      font-weight: 700;
-    }
-    
-    /* Sidebar widget */
-    .sidebar-widget {
-      background: var(--color-white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--color-neutral-100);
-      padding: var(--space-8);
-      box-shadow: var(--shadow-md);
-      position: sticky;
-      top: 100px;
-      height: fit-content;
-    }
-    .widget-title {
-      font-size: var(--text-xl);
-      font-weight: 700;
-      color: var(--color-navy);
-      margin-bottom: var(--space-4);
-    }
-    .widget-copy {
-      font-size: var(--text-sm);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-6);
-    }
-    .widget-features {
-      list-style: none;
-      margin-bottom: var(--space-6);
-    }
-    .widget-features li {
-      display: flex;
-      align-items: center;
-      gap: var(--space-2);
-      font-size: var(--text-xs);
-      color: var(--color-neutral-700);
-      margin-bottom: var(--space-3);
-    }
-    .widget-features svg {
-      color: var(--color-red);
-      flex-shrink: 0;
-    }
-    
-    .btn-full {
-      width: 100%;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
 
@@ -211,16 +64,16 @@
         <nav class="header__nav" aria-label="Main navigation">
           <ul class="nav__list" role="list">
             <li class="nav__item">
-              <a href="../study-destinations" class="nav__link">Study Destinations</a>
+              <a href="../study-destinations" class="nav__link">Study Abroad</a>
             </li>
             <li class="nav__item">
-              <a href="../services" class="nav__link">Student Services</a>
+              <a href="./index.html" class="nav__link">Services</a>
             </li>
             <li class="nav__item">
-              <a href="../about" class="nav__link">About Us</a>
+              <a href="../about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="../contact" class="nav__link">Contact Us</a>
+              <a href="../contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
@@ -236,100 +89,169 @@
 
   <main id="main-content">
     
-    <!-- Hero Section -->
+    <!-- Breadcrumbs -->
+    <nav class="services-breadcrumbs" aria-label="Breadcrumb">
+      <a href="../">Home</a> &gt; <a href="./index.html">Services</a> &gt; <span>International Student Health and Wellbeing Support</span>
+    </nav>
+
+    <!-- Service Hero -->
     <section class="service-hero">
       <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Student Services</span>
+        <span class="service-hero__tag">ISMS Services</span>
         <h1 class="service-hero__title">International Student Health and Wellbeing Support</h1>
         <p class="service-hero__copy">
           Get verified, direct assistance for all your overseas academic application needs.
         </p>
-      </div>
-    </section>
-
-    <!-- Service Body Section -->
-    <section class="service-body">
-      <div class="service-grid">
-        
-        <!-- Main Content Column -->
-        <div class="service-main">
-          <p class="content-p">Source Content (client PDF)</p>
-<p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
-<p class="content-p">Source excerpt 1</p>
-<p class="content-p">Health Insurance – Assist in finding the right kind of student health insurance policies which</p>
-<p class="content-p">would be needed at the university.</p>
-<p class="content-p">Source excerpt 2</p>
-<p class="content-p">Health and Insurance Information</p>
-<p class="content-p">Students will be provided with advice about:</p>
-<ul class="content-list">
-<li>Requirements for health insurance</li>
-<li>Medical support services</li>
-<li>Emergency contacts</li>
-<li>Healthcare system in the host country</li>
-</ul>
-<p class="content-p">Source excerpt 3</p>
-<ul class="content-list">
-<li>Emotional and Psychological Preparation</li>
-</ul>
-<p class="content-p">It can be emotionally difficult to leave the family behind and move abroad.</p>
-<p class="content-p">Pre-departure preparation will help the student psychologically get ready for:</p>
-<ul class="content-list">
-<li>Homesickness</li>
-<li>Being independent</li>
-<li>Managing time</li>
-<li>Socializing</li>
-<li>Self-confidence</li>
-</ul>
-<p class="content-p">Contacting existing students before leaving is one way that students can get prepared.</p>
-<p class="content-p">Final Thoughts:</p>
-<p class="content-p">International educational preparation requires pre-departure support as its most essential</p>
-<p class="content-p">component. International student experience requires proper planning because it helps</p>
-<p class="content-p">students transition into their new academic and cultural surroundings. The complete</p>
-<p class="content-p">process from travel arrangements to accommodation and financial planning and emotional</p>
-<p class="content-p">preparation enables students to have successful experience during their study abroad</p>
-<p class="content-p">program.</p>
-<p class="content-p">Students should start their study abroad preparation process by creating an organized</p>
-<p class="content-p">system which they will follow throughout their entire study abroad period while reaching out</p>
-<p class="content-p">to experts when they require assistance.</p>
-<p class="content-p">Through ISMS Global Education expert support, students can start their international</p>
-<p class="content-p">education path which will lead them to achieve success in their global professional future.</p>
-<p class="content-p">Source excerpt 4</p>
-<p class="content-p">Registration with Healthcare Providers</p>
-<p class="content-p">Students should familiarize themselves with the healthcare and insurance procedures of</p>
-<p class="content-p">the new country.</p>
-<p class="content-p">Arrange Transportation Passes</p>
-
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="../Student/index.html#counselling" class="btn btn-white btn-lg">📅 Book Free Counselling</a>
+          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-white btn-lg">Chat on WhatsApp</a>
         </div>
-
-        <!-- Sidebar Widget -->
-        <aside class="service-sidebar">
-          <div class="sidebar-widget">
-            <h3 class="widget-title">Book Free Session</h3>
-            <p class="widget-copy">
-              Need personalized guidance? Speak 1-on-1 with Anjali Sharma, our senior admissions counselor.
-            </p>
-            <ul class="widget-features">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                100% Free Consultation
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Profile Evaluation & Target Match
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                Visa & Funding Guidance Included
-              </li>
-            </ul>
-            <a href="../Student/index.html#counselling" class="btn btn-primary btn-full">
-              📅 Book Live Counselling
-            </a>
-          </div>
-        </aside>
-
       </div>
     </section>
+
+    <!-- Dynamic Body Sections -->
+    <section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">International Student Health and Wellbeing Support</h2>
+      <p class="section-subtitle">Source Content (client PDF)</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 1</h2>
+      <p class="section-subtitle">Health Insurance – Assist in finding the right kind of student health insurance policies which</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p class="content-p">would be needed at the university.</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 2</h2>
+      <p class="section-subtitle">Health and Insurance Information</p>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Requirements for health insurance</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Medical support services</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Emergency contacts</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Support Feature 4</h3>
+        <p class="card-desc">Healthcare system in the host country.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 3</h2>
+      <p class="section-subtitle">It can be emotionally difficult to leave the family behind and move abroad.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Emotional and Psychological Preparation</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Homesickness</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Being independent</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Managing time</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Socializing</h3>
+        <p class="card-desc">Admissions matching and targets evaluation.</p>
+      </div>
+      <div class="feature-card">
+        <span class="verification-badge">Client Input Required</span>
+        <h3 class="card-title">Self</h3>
+        <p class="card-desc">confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Source excerpt 4</h2>
+      <p class="section-subtitle">Registration with Healthcare Providers</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <p class="content-p">Students should familiarize themselves with the healthcare and insurance procedures of</p>
+      <p class="content-p">the new country.</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- FAQ Section -->
+    <!-- no FAQ source content -->
+
+
+    <!-- Related Services -->
+    <section class="service-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Related Services</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="feature-card">
+        <h3 class="card-title">Personalized Counselling</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="personalized-counselling.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">Course Selection Guidance</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="course-selection-guidance.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+      <div class="feature-card">
+        <h3 class="card-title">University Selection Guidance</h3>
+        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
+        <a href="university-selection.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Final Call to Action -->
     <section class="final-cta" aria-labelledby="final-cta-heading">
@@ -344,9 +266,6 @@
           <div class="final-cta__actions">
             <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
               📅 Book Free Counselling
-            </a>
-            <a href="../contact" class="btn btn-outline-white btn-lg" aria-label="Contact ISMS Global Edu">
-              Contact Us
             </a>
           </div>
         </div>
@@ -398,11 +317,11 @@
           <ul class="footer__links">
             <li><a href="personalized-counselling.html">Counselling</a></li>
             <li><a href="course-selection-guidance.html">Course Selection</a></li>
-            <li><a href="university-selection-guidance.html">University Shortlisting</a></li>
-            <li><a href="application-and-documentation-support.html">Applications</a></li>
-            <li><a href="scholarship-and-education-loan.html">Scholarships & Loans</a></li>
-            <li><a href="student-visa-preparation.html">Visa Preparation</a></li>
-            <li><a href="accommodation-assistance.html">Accommodation</a></li>
+            <li><a href="university-selection.html">University Shortlisting</a></li>
+            <li><a href="application-support.html">Applications</a></li>
+            <li><a href="scholarship-education-loan.html">Scholarships & Loans</a></li>
+            <li><a href="student-visa.html">Visa Preparation</a></li>
+            <li><a href="student-accommodation.html">Accommodation</a></li>
             <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
           </ul>
         </nav>
@@ -437,5 +356,6 @@
     </div>
   </footer>
 
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
