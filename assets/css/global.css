@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    ISMS Global Edu — Global CSS Design System
    Version: 1.0.0
    ============================================================ */
@@ -2176,7 +2176,20 @@ ul, ol {
 
 .about-hero {
   padding-block: var(--space-20);
-  background: linear-gradient(135deg, rgba(11,31,78,.03), rgba(196,18,48,.04));
+  background: linear-gradient(135deg, #f8f9ff 0%, #fff0f2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(196,18,48,0.07) 0%, transparent 65%);
+  pointer-events: none;
 }
 
 .about-hero__grid {
@@ -2246,6 +2259,12 @@ ul, ol {
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-neutral-200);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.about-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 .about-value-card__icon {
@@ -2291,6 +2310,12 @@ ul, ol {
   padding: var(--space-7);
   border: 1px solid var(--color-neutral-200);
   box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.about-panel:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 
 .about-growth-grid {
@@ -2366,15 +2391,24 @@ ul, ol {
   background: var(--color-white);
   border: 1px solid var(--color-neutral-200);
   border-radius: var(--radius-lg);
-  padding: var(--space-5);
+  padding: var(--space-6);
   min-height: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-weight: 700;
+  font-size: var(--text-sm);
   color: var(--color-navy);
   box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.about-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-navy-light);
 }
 
 .about-service-card--highlight {
