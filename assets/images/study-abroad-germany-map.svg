@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="deMapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F8FC"/>
+      <stop offset="100%" stop-color="#EEF0F8"/>
+    </linearGradient>
+    <filter id="deShadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0B1F4E" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="520" rx="20" fill="url(#deMapBg)"/>
+  
+  <!-- Central Map Container Card -->
+  <rect x="80" y="40" width="640" height="440" rx="16" fill="#FFFFFF" stroke="#D9DCE8" stroke-width="1.5" filter="url(#deShadow2)"/>
+  
+  <!-- Header Bar -->
+  <rect x="80" y="40" width="640" height="70" rx="16" fill="#0B1F4E"/>
+  <text x="400" y="83" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700" text-anchor="middle">Top Student Cities &amp; Tech Hubs in Germany</text>
+  
+  <!-- Illustrative Germany Map Outline -->
+  <g transform="translate(140, 130)">
+    <path d="M 50 30 L 150 20 L 220 50 L 260 120 L 240 210 L 180 250 L 80 240 L 30 150 Z" fill="#E8EDF8" stroke="#0B1F4E" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Pins & Cities -->
+    <!-- 1. Berlin (Capital) -->
+    <circle cx="210" cy="70" r="9" fill="#C41230"/>
+    <text x="225" y="75" fill="#C41230" font-family="'Inter', sans-serif" font-size="14" font-weight="900">Berlin (Capital &amp; Tech Hub)</text>
+
+    <!-- 2. Hamburg -->
+    <circle cx="130" cy="45" r="7" fill="#0B1F4E"/>
+    <text x="145" y="50" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Hamburg</text>
+
+    <!-- 3. Munich -->
+    <circle cx="180" cy="220" r="9" fill="#C41230"/>
+    <text x="195" y="225" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="900">Munich (Automotive Hub)</text>
+
+    <!-- 4. Frankfurt -->
+    <circle cx="100" cy="140" r="8" fill="#0B1F4E"/>
+    <text x="115" y="145" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Frankfurt (Finance)</text>
+
+    <!-- 5. Stuttgart & Cologne -->
+    <circle cx="110" cy="190" r="7" fill="#C41230"/>
+    <text x="20" y="195" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Stuttgart</text>
+  </g>
+
+  <!-- Right Side Summary Box -->
+  <g transform="translate(470, 140)">
+    <rect x="0" y="0" width="220" height="310" rx="12" fill="#F7F8FC" stroke="#EEF0F8"/>
+    <text x="110" y="30" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Germany Key Highlights</text>
+
+    <text x="15" y="65" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Public Unis &amp; Fachhochschulen</text>
+    <text x="15" y="95" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Low or Zero Tuition Fees</text>
+    <text x="15" y="125" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• DAAD &amp; Govt Scholarships</text>
+    <text x="15" y="155" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Automotive &amp; Tech Leader</text>
+    <text x="15" y="185" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Winter &amp; Summer Intakes</text>
+    <text x="15" y="215" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Part-Time Work Rights</text>
+
+    <rect x="15" y="245" width="190" height="44" rx="8" fill="#C41230"/>
+    <text x="110" y="272" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Book Free Counselling</text>
+  </g>
+</svg>

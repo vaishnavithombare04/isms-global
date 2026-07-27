@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nlMapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F8FC"/>
+      <stop offset="100%" stop-color="#EEF0F8"/>
+    </linearGradient>
+    <filter id="nlShadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0B1F4E" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="520" rx="20" fill="url(#nlMapBg)"/>
+  
+  <!-- Central Map Container Card -->
+  <rect x="80" y="40" width="640" height="440" rx="16" fill="#FFFFFF" stroke="#D9DCE8" stroke-width="1.5" filter="url(#nlShadow2)"/>
+  
+  <!-- Header Bar -->
+  <rect x="80" y="40" width="640" height="70" rx="16" fill="#0B1F4E"/>
+  <text x="400" y="83" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700" text-anchor="middle">Top Student Cities in the Netherlands</text>
+  
+  <!-- Illustrative Dutch Map Outline -->
+  <g transform="translate(140, 130)">
+    <path d="M 60 20 L 160 30 L 250 50 L 270 140 L 220 230 L 120 240 L 40 180 Z" fill="#E8EDF8" stroke="#0B1F4E" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Pins & Cities -->
+    <!-- 1. Amsterdam (Capital) -->
+    <circle cx="150" cy="110" r="9" fill="#C41230"/>
+    <text x="165" y="115" fill="#C41230" font-family="'Inter', sans-serif" font-size="14" font-weight="900">Amsterdam (Capital &amp; Top City)</text>
+
+    <!-- 2. Rotterdam -->
+    <circle cx="120" cy="150" r="8" fill="#0B1F4E"/>
+    <text x="135" y="155" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Rotterdam (Logistics)</text>
+
+    <!-- 3. Utrecht -->
+    <circle cx="160" cy="130" r="7" fill="#C41230"/>
+    <text x="175" y="135" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Utrecht</text>
+
+    <!-- 4. Eindhoven -->
+    <circle cx="180" cy="180" r="8" fill="#0B1F4E"/>
+    <text x="195" y="185" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Eindhoven (Tech)</text>
+
+    <!-- 5. Groningen -->
+    <circle cx="230" cy="50" r="8" fill="#C41230"/>
+    <text x="150" y="45" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Groningen</text>
+
+    <!-- 6. Leiden -->
+    <circle cx="130" cy="120" r="7" fill="#0B1F4E"/>
+    <text x="40" y="115" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="800">Leiden</text>
+  </g>
+
+  <!-- Right Side Summary Box -->
+  <g transform="translate(470, 140)">
+    <rect x="0" y="0" width="220" height="310" rx="12" fill="#F7F8FC" stroke="#EEF0F8"/>
+    <text x="110" y="30" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700" text-anchor="middle">Netherlands Highlights</text>
+
+    <text x="15" y="65" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Research &amp; Applied Sciences</text>
+    <text x="15" y="95" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• 2000+ English-Taught Programs</text>
+    <text x="15" y="125" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• 1-Year Post Study Work Visa</text>
+    <text x="15" y="155" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Economical Living &amp; Tuition</text>
+    <text x="15" y="185" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Sep &amp; Feb Main Intakes</text>
+    <text x="15" y="215" fill="#111827" font-family="'Inter', sans-serif" font-size="12" font-weight="700">• Safe European Destination</text>
+
+    <rect x="15" y="245" width="190" height="44" rx="8" fill="#C41230"/>
+    <text x="110" y="272" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Book Free Counselling</text>
+  </g>
+</svg>
