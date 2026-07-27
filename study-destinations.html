@@ -527,52 +527,93 @@
     </section>
 
     <!-- Free Counselling Form Section -->
-    <section class="section" id="counselling" aria-labelledby="counselling-heading">
+    <section class="section counselling-form-section" id="counselling" aria-labelledby="form-heading">
       <div class="container container--wide">
-        <div class="counselling-grid">
-          <div class="counselling-info">
-            <span class="section-eyebrow">Personalised Advice</span>
-            <h2 class="section-title" id="counselling-heading">Book Free 1-on-1 Study Abroad Counselling</h2>
-            <p class="counselling-desc">
+        <div class="counselling-form-layout">
+
+          <!-- Left: Info -->
+          <div class="counselling-form-info">
+            <p class="section-eyebrow" style="color:rgba(255,255,255,.9);background:rgba(255,255,255,.15);display:inline-block;padding:0.25rem 0.75rem;border-radius:99px;width:fit-content;">Free for Every Student</p>
+            <h2 id="form-heading" style="font-size:clamp(2rem, 3.4vw, 3rem);font-weight:800;color:#fff;line-height:1.2;">
+              Book Free 1-on-1 <span>Study Abroad</span> Counselling
+            </h2>
+            <p style="font-size:1.1rem;color:rgba(255,255,255,.85);line-height:1.6;">
               Connect with ISMS Global Edu experts to select your ideal destination, compare universities, and plan your application step by step.
             </p>
-            <ul class="counselling-benefits">
-              <li>✔️ Unbiased comparison across 10 top destinations</li>
-              <li>✔️ Verified intake &amp; admission timelines</li>
-              <li>✔️ Scholarship &amp; education loan support</li>
-              <li>✔️ Visa application guidance with high success rates</li>
-            </ul>
+
+            <div class="counselling-benefits">
+              <div class="counselling-benefit">Unbiased comparison across 10 top destinations</div>
+              <div class="counselling-benefit">Verified intake &amp; admission timelines</div>
+              <div class="counselling-benefit">Scholarship &amp; education loan support</div>
+              <div class="counselling-benefit">Visa preparation guidance with high success rates</div>
+              <div class="counselling-benefit">Pre-departure &amp; arrival assistance</div>
+            </div>
           </div>
 
-          <div class="counselling-form-container">
-            <form id="counselling-form" class="counselling-form" novalidate>
+          <!-- Right: Form Card -->
+          <div class="form-card">
+            <h3 class="form-card__heading">Book Your Free Session</h3>
+
+            <!-- Success State -->
+            <div id="form-success" class="form-state form-state--success" style="display:none;" role="alert" aria-live="polite">
+              <div class="form-state__icon">✅</div>
+              <h3 style="font-size:1.25rem;font-weight:800;color:#065f46;">Thank You!</h3>
+              <p style="color:#374151;font-size:.9rem;text-align:center;max-width:320px;">
+                Your enquiry has been received. Our study abroad counsellor will contact you shortly.
+              </p>
+              <button id="form-reset" class="btn btn-primary btn-sm">Submit Another Request</button>
+            </div>
+
+            <!-- Error State -->
+            <div id="form-error" class="form-state form-state--error" style="display:none;" role="alert" aria-live="polite">
+              <div class="form-state__icon">❌</div>
+              <p>Something went wrong. Please try again or contact us directly.</p>
+            </div>
+
+            <form id="counselling-form" novalidate autocomplete="on">
               <div class="form-grid">
+
                 <div class="form-field">
-                  <label for="fullName">Full Name *</label>
-                  <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-                  <span class="form-field__error" id="fullName-error"></span>
+                  <label for="fullName">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="text" id="fullName" name="fullName" required placeholder="Your full name">
+                  <span id="fullName-error" class="form-field__error" role="alert"></span>
                 </div>
 
                 <div class="form-field">
-                  <label for="mobile">Mobile Number *</label>
-                  <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" required>
-                  <span class="form-field__error" id="mobile-error"></span>
+                  <label for="mobile">Mobile Number <span class="required-mark" aria-hidden="true">*</span></label>
+                  <div class="phone-input">
+                    <select class="phone-input__code" aria-label="Country code">
+                      <option value="+91" selected>🇮🇳 +91</option>
+                      <option value="+44">🇬🇧 +44</option>
+                      <option value="+61">🇦🇺 +61</option>
+                      <option value="+1">🇺🇸 +1</option>
+                      <option value="+353">🇮🇪 +353</option>
+                      <option value="+64">🇳🇿 +64</option>
+                      <option value="+971">🇦🇪 +971</option>
+                      <option value="+33">🇫🇷 +33</option>
+                      <option value="+49">🇩🇪 +49</option>
+                      <option value="+31">🇳🇱 +31</option>
+                      <option value="+34">🇪🇸 +34</option>
+                    </select>
+                    <input type="tel" id="mobile" name="mobile" class="phone-input__number" required placeholder="e.g. 9876543210">
+                  </div>
+                  <span id="mobile-error" class="form-field__error" role="alert"></span>
                 </div>
 
                 <div class="form-field">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                  <span class="form-field__error" id="email-error"></span>
+                  <label for="email">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" required placeholder="you@example.com">
+                  <span id="email-error" class="form-field__error" role="alert"></span>
                 </div>
 
                 <div class="form-field">
-                  <label for="city">City *</label>
-                  <input type="text" id="city" name="city" placeholder="Enter your city" required>
-                  <span class="form-field__error" id="city-error"></span>
+                  <label for="city">Current City <span class="required-mark" aria-hidden="true">*</span></label>
+                  <input type="text" id="city" name="city" required placeholder="Your city">
+                  <span id="city-error" class="form-field__error" role="alert"></span>
                 </div>
 
                 <div class="form-field">
-                  <label for="destination">Preferred Destination *</label>
+                  <label for="destination">Preferred Destination <span class="required-mark" aria-hidden="true">*</span></label>
                   <select id="destination" name="destination" required>
                     <option value="">Select country</option>
                     <option value="UK">United Kingdom</option>
@@ -586,11 +627,11 @@
                     <option value="Netherlands">Netherlands</option>
                     <option value="Spain">Spain</option>
                   </select>
-                  <span class="form-field__error" id="destination-error"></span>
+                  <span id="destination-error" class="form-field__error" role="alert"></span>
                 </div>
 
                 <div class="form-field">
-                  <label for="studyLevel">Study Level *</label>
+                  <label for="studyLevel">Study Level <span class="required-mark" aria-hidden="true">*</span></label>
                   <select id="studyLevel" name="studyLevel" required>
                     <option value="">Select level</option>
                     <option value="Bachelor">Bachelor's Degree</option>
@@ -598,35 +639,31 @@
                     <option value="MBA">MBA</option>
                     <option value="PhD">PhD / Doctorate</option>
                   </select>
-                  <span class="form-field__error" id="studyLevel-error"></span>
+                  <span id="studyLevel-error" class="form-field__error" role="alert"></span>
                 </div>
+
               </div>
 
-              <div class="form-checkboxes">
-                <label class="form-checkbox">
+              <div class="form-consents" style="margin-top:1rem;">
+                <label class="form-consent">
                   <input type="checkbox" name="consentTerms" required>
-                  <span>I agree to the <a href="/terms-and-conditions">Terms &amp; Conditions</a> and <a href="/privacy-policy">Privacy Policy</a>. *</span>
+                  <span class="form-consent__text">I agree to the <a href="/terms-and-conditions">Terms &amp; Conditions</a> and <a href="/privacy-policy">Privacy Policy</a>. *</span>
                 </label>
-                <span class="form-field__error" id="consentTerms-error"></span>
+                <span id="consentTerms-error" class="form-field__error" role="alert"></span>
 
-                <label class="form-checkbox">
+                <label class="form-consent">
                   <input type="checkbox" name="consentContact" required>
-                  <span>I consent to receiving counselling calls and updates from ISMS Global Edu. *</span>
+                  <span class="form-consent__text">I consent to receiving counselling calls and updates from ISMS Global Edu. *</span>
                 </label>
-                <span class="form-field__error" id="consentContact-error"></span>
+                <span id="consentContact-error" class="form-field__error" role="alert"></span>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-lg" id="form-submit" style="width:100%;">
+              <button type="submit" class="btn btn-primary btn-lg" id="form-submit" style="width:100%;margin-top:1.5rem;justify-content:center;">
                 Book Free Counselling
               </button>
             </form>
-
-            <div id="form-success" class="form-state form-state--success" style="display:none;">
-              <h3>Thank You!</h3>
-              <p>Your request has been received. One of our study abroad advisors will contact you shortly.</p>
-              <button class="btn btn-outline" id="form-reset">Submit Another Request</button>
-            </div>
           </div>
+
         </div>
       </div>
     </section>
