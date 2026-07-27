@@ -67,22 +67,22 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
           <ul class="nav__list" role="list">
 
             <li class="nav__item">
-              <a href="/study-destinations" class="nav__link ${isDestinationPage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
+              <a href="study-destinations.html" class="nav__link ${isDestinationPage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
                 Study Destinations
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 6l3.5 3.5L11.5 6"/></svg>
               </a>
               <div class="nav__dropdown" role="region" aria-label="Study destinations">
                 <div class="nav__dropdown-grid">
-                  <a href="study-uk.html" class="nav__dropdown-item ${currentPage === 'study-uk.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇬🇧</span><div><div class="nav__dropdown-label">United Kingdom</div><div class="nav__dropdown-sub">Top-ranked universities</div></div></a>
-                  <a href="study-ireland.html" class="nav__dropdown-item ${currentPage === 'study-ireland.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇮🇪</span><div><div class="nav__dropdown-label">Ireland</div><div class="nav__dropdown-sub">EU residency gateway</div></div></a>
-                  <a href="study-australia.html" class="nav__dropdown-item ${currentPage === 'study-australia.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇦🇺</span><div><div class="nav__dropdown-label">Australia</div><div class="nav__dropdown-sub">World-class education</div></div></a>
-                  <a href="study-usa.html" class="nav__dropdown-item ${currentPage === 'study-usa.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇺🇸</span><div><div class="nav__dropdown-label">USA</div><div class="nav__dropdown-sub">Leading research institutions</div></div></a>
-                  <a href="study-new-zealand.html" class="nav__dropdown-item ${currentPage === 'study-new-zealand.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇳🇿</span><div><div class="nav__dropdown-label">New Zealand</div><div class="nav__dropdown-sub">Safe, scenic, welcoming</div></div></a>
-                  <a href="study-dubai.html" class="nav__dropdown-item ${currentPage === 'study-dubai.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇦🇪</span><div><div class="nav__dropdown-label">Dubai</div><div class="nav__dropdown-sub">Global business hub</div></div></a>
-                  <a href="study-france.html" class="nav__dropdown-item ${currentPage === 'study-france.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇫🇷</span><div><div class="nav__dropdown-label">France</div><div class="nav__dropdown-sub">Art, culture &amp; innovation</div></div></a>
-                  <a href="study-germany.html" class="nav__dropdown-item ${currentPage === 'study-germany.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇩🇪</span><div><div class="nav__dropdown-label">Germany</div><div class="nav__dropdown-sub">Engineering excellence</div></div></a>
-                  <a href="study-netherlands.html" class="nav__dropdown-item ${currentPage === 'study-netherlands.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇳🇱</span><div><div class="nav__dropdown-label">Netherlands</div><div class="nav__dropdown-sub">English-taught programmes</div></div></a>
-                  <a href="study-spain.html" class="nav__dropdown-item ${currentPage === 'study-spain.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag">🇪🇸</span><div><div class="nav__dropdown-label">Spain</div><div class="nav__dropdown-sub">Vibrant student culture</div></div></a>
+                  <a href="study-uk.html" class="nav__dropdown-item ${currentPage === 'study-uk.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/gb.svg" alt="UK Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">United Kingdom</div><div class="nav__dropdown-sub">Top-ranked universities</div></div></a>
+                  <a href="study-ireland.html" class="nav__dropdown-item ${currentPage === 'study-ireland.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/ie.svg" alt="Ireland Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Ireland</div><div class="nav__dropdown-sub">EU residency gateway</div></div></a>
+                  <a href="study-australia.html" class="nav__dropdown-item ${currentPage === 'study-australia.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/au.svg" alt="Australia Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Australia</div><div class="nav__dropdown-sub">World-class education</div></div></a>
+                  <a href="study-usa.html" class="nav__dropdown-item ${currentPage === 'study-usa.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/us.svg" alt="USA Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">USA</div><div class="nav__dropdown-sub">Leading research institutions</div></div></a>
+                  <a href="study-new-zealand.html" class="nav__dropdown-item ${currentPage === 'study-new-zealand.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/nz.svg" alt="New Zealand Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">New Zealand</div><div class="nav__dropdown-sub">Safe, scenic, welcoming</div></div></a>
+                  <a href="study-dubai.html" class="nav__dropdown-item ${currentPage === 'study-dubai.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/ae.svg" alt="Dubai UAE Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Dubai</div><div class="nav__dropdown-sub">Global business hub</div></div></a>
+                  <a href="study-france.html" class="nav__dropdown-item ${currentPage === 'study-france.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/fr.svg" alt="France Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">France</div><div class="nav__dropdown-sub">Art, culture &amp; innovation</div></div></a>
+                  <a href="study-germany.html" class="nav__dropdown-item ${currentPage === 'study-germany.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/de.svg" alt="Germany Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Germany</div><div class="nav__dropdown-sub">Engineering excellence</div></div></a>
+                  <a href="study-netherlands.html" class="nav__dropdown-item ${currentPage === 'study-netherlands.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/nl.svg" alt="Netherlands Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Netherlands</div><div class="nav__dropdown-sub">English-taught programmes</div></div></a>
+                  <a href="study-spain.html" class="nav__dropdown-item ${currentPage === 'study-spain.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/es.svg" alt="Spain Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Spain</div><div class="nav__dropdown-sub">Vibrant student culture</div></div></a>
                 </div>
               </div>
             </li>
@@ -120,7 +120,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
             <li class="nav__item"><a href="/resources" class="nav__link">Resources</a></li>
             <li class="nav__item"><a href="about.html" class="nav__link ${currentPage === 'about.html' ? 'nav__link--active' : ''}">About Us</a></li>
-            <li class="nav__item"><a href="/contact" class="nav__link">Contact Us</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link ${currentPage === 'contact.html' ? 'nav__link--active' : ''}">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -171,7 +171,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="pre-departure-support.html" class="mobile-nav__link">Pre-Departure Support</a></li>
         <li><a href="/resources" class="mobile-nav__link">Resources</a></li>
         <li><a href="about.html" class="mobile-nav__link">About Us</a></li>
-        <li><a href="/contact" class="mobile-nav__link">Contact Us</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -250,7 +250,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <div class="footer__col-title" style="margin-top:2rem;">Company</div>
         <ul class="footer__links">
           <li><a href="about.html">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="/student-success-stories">Student Success Stories</a></li>
         </ul>
       </nav>
