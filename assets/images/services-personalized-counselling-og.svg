@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F4E" />
+      <stop offset="100%" stop-color="#1A3570" />
+    </linearGradient>
+    <linearGradient id="ogRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C41230" />
+      <stop offset="100%" stop-color="#991022" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogGrad)" />
+  
+  <!-- Subtle decorative shapes -->
+  <circle cx="1100" cy="100" r="300" fill="#C41230" opacity="0.15" />
+  <circle cx="100" cy="550" r="200" fill="#FFFFFF" opacity="0.04" />
+  
+  <!-- Logo Tag -->
+  <rect x="80" y="80" width="64" height="64" rx="16" fill="url(#ogRed)"/>
+  <text x="112" y="122" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="28" font-weight="900" text-anchor="middle">IG</text>
+  <text x="165" y="112" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="24" font-weight="800">ISMS Global Edu</text>
+  <text x="165" y="134" fill="#E8EDF8" font-family="'Inter', sans-serif" font-size="14" font-weight="500">Study Abroad Experts</text>
+
+  <!-- Category Tag -->
+  <rect x="80" y="200" width="230" height="38" rx="19" fill="#C41230"/>
+  <text x="195" y="224" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="700" text-anchor="middle">STUDENT SERVICES</text>
+
+  <!-- Title & Description -->
+  <text x="80" y="300" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="44" font-weight="900">Personalized Study Abroad Counselling</text>
+  
+  <text x="80" y="360" fill="#E8EDF8" font-family="'Inter', sans-serif" font-size="20" font-weight="400">1-on-1 Profile Evaluation · Course &amp; University Shortlisting</text>
+  <text x="80" y="395" fill="#E8EDF8" font-family="'Inter', sans-serif" font-size="20" font-weight="400">Scholarships &amp; Financial Advice · Visa &amp; Application Support</text>
+
+  <!-- Highlights Box -->
+  <rect x="80" y="460" width="1040" height="90" rx="16" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15"/>
+  <text x="120" y="514" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700">✓ Free 1-on-1 Sessions</text>
+  <text x="420" y="514" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700">✓ 500+ Partner Universities</text>
+  <text x="760" y="514" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700">✓ 17+ Years of Excellence</text>
+</svg>

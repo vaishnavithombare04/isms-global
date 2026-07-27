@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pdSupportBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F8FC"/>
+      <stop offset="100%" stop-color="#EEF0F8"/>
+    </linearGradient>
+    <filter id="pdShadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0B1F4E" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="520" rx="20" fill="url(#pdSupportBg)"/>
+  
+  <!-- Central Packing & Briefing Card (X: 100 to 700, Width: 600) -->
+  <rect x="100" y="40" width="600" height="440" rx="16" fill="#FFFFFF" stroke="#D9DCE8" stroke-width="1.5" filter="url(#pdShadow2)"/>
+  
+  <!-- Header Bar -->
+  <rect x="100" y="40" width="600" height="74" rx="16" fill="#0B1F4E"/>
+  <text x="400" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700" text-anchor="middle">Student Overseas Packing &amp; Briefing Pack</text>
+  
+  <!-- Grid Items -->
+  <!-- 1. Documents -->
+  <g transform="translate(130, 140)">
+    <rect x="0" y="0" width="255" height="80" rx="10" fill="#F7F8FC" stroke="#EEF0F8"/>
+    <circle cx="35" cy="40" r="16" fill="#C41230"/>
+    <path d="M29 40 l4 4 l8 -8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="65" y="36" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Essential Documents</text>
+    <text x="65" y="54" fill="#6B7280" font-family="'Inter', sans-serif" font-size="12">Passport, Visa, Offer Letter, Marks</text>
+  </g>
+
+  <!-- 2. Clothing & Climate -->
+  <g transform="translate(415, 140)">
+    <rect x="0" y="0" width="255" height="80" rx="10" fill="#F7F8FC" stroke="#EEF0F8"/>
+    <circle cx="35" cy="40" r="16" fill="#C41230"/>
+    <path d="M29 40 l4 4 l8 -8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="65" y="36" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Weather &amp; Clothing</text>
+    <text x="65" y="54" fill="#6B7280" font-family="'Inter', sans-serif" font-size="12">Destination climate &amp; wardrobe</text>
+  </g>
+
+  <!-- 3. Electricals & Adapters -->
+  <g transform="translate(130, 235)">
+    <rect x="0" y="0" width="255" height="80" rx="10" fill="#F7F8FC" stroke="#EEF0F8"/>
+    <circle cx="35" cy="40" r="16" fill="#C41230"/>
+    <path d="M29 40 l4 4 l8 -8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="65" y="36" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Electricals &amp; Accessories</text>
+    <text x="65" y="54" fill="#6B7280" font-family="'Inter', sans-serif" font-size="12">Adapters, devices &amp; chargers</text>
+  </g>
+
+  <!-- 4. Medicines & Insurance -->
+  <g transform="translate(415, 235)">
+    <rect x="0" y="0" width="255" height="80" rx="10" fill="#F7F8FC" stroke="#EEF0F8"/>
+    <circle cx="35" cy="40" r="16" fill="#C41230"/>
+    <path d="M29 40 l4 4 l8 -8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="65" y="36" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Medicines &amp; Health</text>
+    <text x="65" y="54" fill="#6B7280" font-family="'Inter', sans-serif" font-size="12">Personal medical kit &amp; insurance</text>
+  </g>
+
+  <!-- Bottom Notice Box (Width: 540) -->
+  <rect x="130" y="340" width="540" height="110" rx="12" fill="#E8EDF8" stroke="#0B1F4E" stroke-width="1.2"/>
+  
+  <g transform="translate(150, 360)">
+    <circle cx="20" cy="20" r="16" fill="#0B1F4E"/>
+    <text x="20" y="26" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle">i</text>
+  </g>
+
+  <text x="200" y="375" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Complete Student Packing Pack</text>
+  <text x="200" y="398" fill="#374151" font-family="'Inter', sans-serif" font-size="12.5">ISMS Global Education offers complete guidance on items to carry</text>
+  <text x="200" y="418" fill="#C41230" font-family="'Inter', sans-serif" font-size="12.5" font-weight="600">✓ Also includes prohibited items list to avoid airport customs issues</text>
+</svg>

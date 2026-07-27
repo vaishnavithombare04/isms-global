@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pdHeroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F4E" />
+      <stop offset="100%" stop-color="#1A3570" />
+    </linearGradient>
+    <linearGradient id="pdCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F7F8FC" />
+    </linearGradient>
+    <linearGradient id="pdRedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C41230" />
+      <stop offset="100%" stop-color="#991022" />
+    </linearGradient>
+    <filter id="pdShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B1F4E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="600" rx="24" fill="url(#pdHeroBg)" />
+  
+  <!-- Decorative Grid & Orbit Spheres -->
+  <circle cx="700" cy="100" r="160" fill="#C41230" opacity="0.12" />
+  <circle cx="80" cy="500" r="140" fill="#FFFFFF" opacity="0.04" />
+  
+  <!-- Flight Path Line -->
+  <path d="M 80 400 Q 300 150 700 220" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3" stroke-dasharray="8,8"/>
+
+  <!-- Dashboard Container Card -->
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#pdCardGrad)" filter="url(#pdShadow)"/>
+  
+  <!-- Header Bar -->
+  <rect x="60" y="60" width="680" height="64" rx="20" fill="#0B1F4E"/>
+  <circle cx="95" cy="92" r="6" fill="#FF5F56"/>
+  <circle cx="115" cy="92" r="6" fill="#FFBD2E"/>
+  <circle cx="135" cy="92" r="6" fill="#27C93F"/>
+  <text x="400" y="97" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="600" text-anchor="middle">ISMS Global Edu · Pre-Departure Readiness Checklist</text>
+  
+  <!-- Left Side: 5 Core Preparation Modules -->
+  <g transform="translate(90, 150)">
+    <!-- 1. Accommodation -->
+    <rect x="0" y="0" width="310" height="64" rx="12" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+    <rect x="12" y="12" width="40" height="40" rx="8" fill="#E8EDF8"/>
+    <text x="32" y="37" fill="#0B1F4E" font-size="18" font-weight="700" text-anchor="middle">🏠</text>
+    <text x="64" y="32" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Accommodation Arrangements</text>
+    <text x="64" y="48" fill="#137333" font-family="'Inter', sans-serif" font-size="11" font-weight="600">✓ Housing &amp; Stay Options Ready</text>
+
+    <!-- 2. Travel Preparations -->
+    <rect x="0" y="74" width="310" height="64" rx="12" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+    <rect x="12" y="86" width="40" height="40" rx="8" fill="#F5E6EA"/>
+    <text x="32" y="111" fill="#C41230" font-size="18" font-weight="700" text-anchor="middle">✈️</text>
+    <text x="64" y="106" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Travel &amp; Flight Guidance</text>
+    <text x="64" y="122" fill="#137333" font-family="'Inter', sans-serif" font-size="11" font-weight="600">✓ Tickets &amp; Immigration Verified</text>
+
+    <!-- 3. Forex Assistance -->
+    <rect x="0" y="148" width="310" height="64" rx="12" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+    <rect x="12" y="160" width="40" height="40" rx="8" fill="#E8EDF8"/>
+    <text x="32" y="185" fill="#0B1F4E" font-size="18" font-weight="700" text-anchor="middle">💱</text>
+    <text x="64" y="180" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Forex &amp; Banking Assistance</text>
+    <text x="64" y="196" fill="#137333" font-family="'Inter', sans-serif" font-size="11" font-weight="600">✓ Currency Exchange &amp; Cards</text>
+
+    <!-- 4. Medical Insurance -->
+    <rect x="0" y="222" width="310" height="64" rx="12" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+    <rect x="12" y="234" width="40" height="40" rx="8" fill="#F5E6EA"/>
+    <text x="32" y="259" fill="#C41230" font-size="18" font-weight="700" text-anchor="middle">🛡️</text>
+    <text x="64" y="254" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Medical Insurance</text>
+    <text x="64" y="270" fill="#137333" font-family="'Inter', sans-serif" font-size="11" font-weight="600">✓ Full Health Coverage</text>
+
+    <!-- 5. Pre-Departure Orientation -->
+    <rect x="0" y="296" width="310" height="64" rx="12" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+    <rect x="12" y="308" width="40" height="40" rx="8" fill="#E8EDF8"/>
+    <text x="32" y="333" fill="#0B1F4E" font-size="18" font-weight="700" text-anchor="middle">🎓</text>
+    <text x="64" y="328" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Pre-Departure Orientation</text>
+    <text x="64" y="344" fill="#137333" font-family="'Inter', sans-serif" font-size="11" font-weight="600">✓ Culture &amp; Academic Briefing</text>
+  </g>
+
+  <!-- Right Side: Flight Departure Feature Card -->
+  <g transform="translate(420, 150)">
+    <rect x="0" y="0" width="290" height="360" rx="16" fill="#0B1F4E"/>
+    
+    <!-- Globe/Airplane Graphic -->
+    <circle cx="145" cy="110" r="55" fill="#C41230"/>
+    <path d="M145 75 L158 98 L185 105 L155 118 L150 140 L145 125 L140 140 L135 118 L105 105 L132 98 Z" fill="#FFFFFF"/>
+    
+    <text x="145" y="195" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="800" text-anchor="middle">Full Overseas Support</text>
+    <text x="145" y="220" fill="#E8EDF8" font-family="'Inter', sans-serif" font-size="13" text-anchor="middle">Post-Visa Admission Guidance</text>
+    <text x="145" y="240" fill="#E8EDF8" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">From Offer Letter to Landing</text>
+
+    <!-- Status pill -->
+    <rect x="35" y="275" width="220" height="44" rx="22" fill="url(#pdRedGrad)"/>
+    <text x="145" y="302" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">✓ Visa Approved Student</text>
+  </g>
+</svg>
