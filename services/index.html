@@ -3,30 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pre-Departure Support | ISMS Global Edu</title>
-  <meta name="description" content="Prepare students for travel, immigration, accommodation, finance, health, culture, academics, safety, packing, and emotional transition. Get trusted guidance fr" />
-  <link rel="canonical" href="https://www.ismsglobaledu.com/services/pre-departure-support.html" />
-  
-  <!-- SEO Open Graph & Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pre-Departure Support | ISMS Global Edu" />
-  <meta property="og:description" content="Prepare students for travel, immigration, accommodation, finance, health, culture, academics, safety, packing, and emotional transition. Get trusted guidance fr" />
-  <meta property="og:url" content="https://www.ismsglobaledu.com/services/pre-departure-support.html" />
-  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-services.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Robots Default (noindex for staging/dev) -->
-  <!-- <meta name="robots" content="index,follow"> -->
-  <meta name="robots" content="noindex,follow" />
+  <title>Student Services Directory | ISMS Global Edu</title>
+  <meta name="description" content="Explore the full range of overseas admissions and study guidance services provided by ISMS Global Edu. All counselling sessions are 100% free." />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   
-  <!-- Core Styles -->
+  <!-- Core CSS -->
   <link rel="stylesheet" href="../assets/css/global.css" />
   <link rel="stylesheet" href="../assets/css/main.css" />
+  
+  <style>
+    .services-directory {
+      padding: var(--space-16) 0;
+      background: var(--color-neutral-50);
+    }
+    .directory-grid {
+      max-width: var(--max-w-content);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: var(--space-6);
+    }
+    .directory-card {
+      background: var(--color-brand-white);
+      border: 1px solid var(--color-neutral-100);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .directory-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .directory-title {
+      font-size: var(--text-lg);
+      font-weight: 700;
+      color: var(--color-brand-navy);
+      margin-bottom: var(--space-2);
+    }
+    .directory-desc {
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      line-height: 1.6;
+      margin-bottom: var(--space-4);
+      flex-grow: 1;
+    }
+    .directory-link {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-brand-red);
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+  </style>
 </head>
 <body>
 
@@ -89,142 +128,120 @@
 
   <main id="main-content">
     
-    <!-- Breadcrumbs -->
-    <nav class="services-breadcrumbs" aria-label="Breadcrumb">
-      <a href="../">Home</a> &gt; <a href="./index.html">Services</a> &gt; <span>Pre-Departure Support</span>
-    </nav>
-
-    <!-- Service Hero -->
+    <!-- Hero Section -->
     <section class="service-hero">
       <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Services</span>
-        <h1 class="service-hero__title">Pre-Departure Support</h1>
+        <span class="service-hero__tag">ISMS Global Edu</span>
+        <h1 class="service-hero__title">Our Student Services</h1>
         <p class="service-hero__copy">
-          Get verified, direct assistance for all your overseas academic application needs.
+          Professional overseas admission and preparation services. Plan your global education journey today, always free.
         </p>
-        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-          <a href="../Student/index.html#counselling" class="btn btn-white btn-lg">📅 Book Free Counselling</a>
-          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-white btn-lg">Chat on WhatsApp</a>
-        </div>
       </div>
     </section>
 
-    <!-- Dynamic Body Sections -->
-    <section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Pre-Departure Support</h2>
-      <p class="section-subtitle">Source Content (client PDF)</p>
-    </div>
-    <div style="max-width: 800px; margin: 0 auto;">
-      <p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
-    </div>
-  </div>
-</section>
-
-<section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Source excerpt 1</h2>
-      <p class="section-subtitle">Pre-Departure and Post-Arrival Briefing</p>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Flight booking tips</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
+    <!-- Directory Directory Grid -->
+    <section class="services-directory">
+      <div class="directory-grid">
+        <a href="personalized-counselling.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Personalized Counselling</h3>
+            <p class="directory-desc">Free 1-on-1 profile evaluation and target matching with expert advisors.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="course-selection-guidance.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Course Selection Guidance</h3>
+            <p class="directory-desc">Analyze industry-demand fields and specializations aligned with goals.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="university-selection.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">University Selection Guidance</h3>
+            <p class="directory-desc">Find matching institutions globally based on rankings, cost, and ROI.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="application-support.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Application & Documentation Support</h3>
+            <p class="directory-desc">Form submissions, deadline tracking, and eligibility verification checks.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="offer-letter-support.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Offer Letter & Admission Support</h3>
+            <p class="directory-desc">Guidance through accepting conditional offers and securing final seats.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="scholarship-education-loan.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Scholarship & Loan Guidance</h3>
+            <p class="directory-desc">Funding planning, loan sanction support, and merit-based waivers.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="student-visa.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Student Visa Preparation</h3>
+            <p class="directory-desc">Country visa document checklists and interview preparations.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="pre-departure-support.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Pre-Departure Support</h3>
+            <p class="directory-desc">Orientations, travel checksheets, and moving guidelines.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="post-arrival-support.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Post-Arrival Support</h3>
+            <p class="directory-desc">Residency card briefings, bank accounts, and local orientation advice.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="student-accommodation.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Student Accommodation Assistance</h3>
+            <p class="directory-desc">Finding safe, comfortable, and affordable flats near campus.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="student-finance-forex.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Money Transfer, Forex & Banking</h3>
+            <p class="directory-desc">Setting up student bank accounts and currency exchange planning.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="health-insurance-wellbeing.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">Health Insurance & Wellbeing</h3>
+            <p class="directory-desc">Accessing university insurance policies and mental wellbeing networks.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="ielts-test-preparation.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">IELTS & Test Prep</h3>
+            <p class="directory-desc">Guidance on required test scores, targets, and English prep resources.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
+        <a href="sop-lor-document-support.html" class="directory-card">
+          <div>
+            <h3 class="directory-title">SOP, LOR & Documents</h3>
+            <p class="directory-desc">SOP/LOR structuring checklists and CV writing advice.</p>
+          </div>
+          <span class="directory-link">Learn More &rarr;</span>
+        </a>
       </div>
-      <div class="feature-card">
-        <h3 class="card-title">Baggage</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 3</h3>
-        <p class="card-desc">Important papers you need for travel.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Airport procedures</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Immigration Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Accommodation Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Page No: 8 Pre-Departure Support</h2>
-      <p class="section-subtitle">We're here to assist you in preparing for your study-abroad journey.</p>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Visa and Immigration guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Student visa guidelines</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Airport immigration procedures</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Travel documentation required</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Customs rules</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Entrance guidelines</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- FAQ Section -->
-    <!-- no FAQ source content -->
-
-
-    <!-- Related Services -->
-    <section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Related Services</h2>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Personalized Counselling</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="personalized-counselling.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Course Selection Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="course-selection-guidance.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">University Selection Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="university-selection.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- Final Call to Action -->
     <section class="final-cta" aria-labelledby="final-cta-heading">
@@ -329,6 +346,5 @@
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
 </body>
 </html>
