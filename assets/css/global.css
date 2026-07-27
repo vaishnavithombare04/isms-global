@@ -2889,9 +2889,11 @@ ul, ol {
 
 .outcome-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-6);
-  margin-bottom: var(--space-10);
+  margin: 0 auto var(--space-10);
+  max-width: 1150px;
+  justify-content: center;
 }
 
 .outcome-card {
@@ -3289,9 +3291,11 @@ ul, ol {
 /* Destinations Cards Grid */
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-6);
-  margin-top: var(--space-10);
+  margin: var(--space-10) auto 0;
+  max-width: 1150px;
+  justify-content: center;
 }
 
 .dest-card {
