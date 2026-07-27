@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Visa Preparation | ISMS Global Edu</title>
+  <meta name="description" content="Learn about our Student Visa Preparation services at ISMS Global Edu. Get professional assistance for course selection, visa prep, and study abroad counselling." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  
+  <style>
+    /* Premium Service Details Style overrides */
+    .service-hero {
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-red) 100%);
+      color: var(--color-white);
+      padding: var(--space-20) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-hero::after {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 50%;
+      bottom: -100px;
+      right: -50px;
+    }
+    .service-hero__inner {
+      max-width: var(--max-w-content);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+    .service-hero__tag {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-white);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .service-hero__title {
+      font-size: var(--text-4xl);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: var(--space-4);
+    }
+    .service-hero__copy {
+      font-size: var(--text-lg);
+      max-width: 700px;
+      opacity: 0.9;
+      margin-bottom: var(--space-6);
+    }
+    
+    .service-body {
+      padding: var(--space-16) 0;
+      background: var(--color-neutral-50);
+    }
+    .service-grid {
+      max-width: var(--max-w-content);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--space-12);
+    }
+    @media (max-width: 992px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+      }
+    }
+    
+    .service-main {
+      background: var(--color-white);
+      padding: var(--space-10);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-neutral-100);
+    }
+    
+    .content-heading {
+      font-size: var(--text-2xl);
+      color: var(--color-navy);
+      margin-top: var(--space-8);
+      margin-bottom: var(--space-4);
+      font-weight: 700;
+      border-bottom: 2px solid var(--color-neutral-100);
+      padding-bottom: 8px;
+    }
+    .content-heading:first-of-type {
+      margin-top: 0;
+    }
+    
+    .content-p {
+      font-size: var(--text-base);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-4);
+      line-height: 1.7;
+    }
+    
+    .content-list {
+      list-style: none;
+      margin-bottom: var(--space-6);
+    }
+    .content-list li {
+      position: relative;
+      padding-left: var(--space-6);
+      margin-bottom: var(--space-2);
+      font-size: var(--text-base);
+      color: var(--color-neutral-700);
+    }
+    .content-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-red);
+      font-weight: 700;
+    }
+    
+    /* Sidebar widget */
+    .sidebar-widget {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-neutral-100);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-md);
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+    .widget-title {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-navy);
+      margin-bottom: var(--space-4);
+    }
+    .widget-copy {
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-6);
+    }
+    .widget-features {
+      list-style: none;
+      margin-bottom: var(--space-6);
+    }
+    .widget-features li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-3);
+    }
+    .widget-features svg {
+      color: var(--color-red);
+      flex-shrink: 0;
+    }
+    
+    .btn-full {
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar" role="navigation" aria-label="Quick access links">
+    <div class="container container--wide">
+      <div class="utility-bar__inner">
+        <p class="utility-bar__tagline">17 Years of Trusted Study Abroad Guidance &nbsp;·&nbsp; Free Counselling for Students</p>
+        <nav class="utility-bar__links">
+          <a href="../courses">Courses</a>
+          <a href="../scholarships">Scholarships</a>
+          <a href="../universities">Universities</a>
+          <a href="../events">Events</a>
+          <a href="../guide-me">Guide Me</a>
+          <a href="../get-instant-offer">Get Instant Offer</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header" role="banner">
+    <div class="container container--wide">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="../" class="header__logo" aria-label="ISMS Global Edu — home">
+          <div class="header__logo-mark" aria-hidden="true">IG</div>
+          <div class="header__logo-text">
+            <span class="header__logo-name">ISMS Global Edu</span>
+            <span class="header__logo-tagline">Study Abroad Experts</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="nav__list" role="list">
+            <li class="nav__item">
+              <a href="../study-destinations" class="nav__link">Study Destinations</a>
+            </li>
+            <li class="nav__item">
+              <a href="../services" class="nav__link">Student Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="../about" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="../contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="../Student/index.html#counselling" class="btn btn-primary" aria-label="Book a free session">
+            📅 Book Free Counselling
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="service-hero">
+      <div class="service-hero__inner">
+        <span class="service-hero__tag">ISMS Student Services</span>
+        <h1 class="service-hero__title">Student Visa Preparation</h1>
+        <p class="service-hero__copy">
+          Get verified, direct assistance for all your overseas academic application needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service Body Section -->
+    <section class="service-body">
+      <div class="service-grid">
+        
+        <!-- Main Content Column -->
+        <div class="service-main">
+          <p class="content-p">Source Content (client PDF)</p>
+<p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
+<p class="content-p">Source excerpt 1</p>
+<p class="content-p">Visa Preparation</p>
+<p class="content-p">Application for a student visa is one of the most crucial parts of the entire study abroad</p>
+<p class="content-p">process. There are unique requirements when it comes to each country, and at times it</p>
+<p class="content-p">becomes quite challenging for students to cope with the visa application process. In such</p>
+<p class="content-p">situations, our company, ISMS Global Education, assists students in preparing their visa</p>
+<p class="content-p">applications for international travel.</p>
+<p class="content-p">Our team of expert visa consultants assist students in preparing the entire visa process from</p>
+<p class="content-p">the beginning to the end.</p>
+<p class="content-p">When Should I Apply for My Student Visa</p>
+<p class="content-p">If your course offers you admission, make sure you receive the relevant university</p>
+<p class="content-p">confirmation documents such as your CAS (UK), COE (Australia), I-20 (USA), or other official</p>
+<p class="content-p">letters. Then, immediately after, make sure you apply for your student visa. It is good to</p>
+<p class="content-p">remember that depending on the destination country and admission semester, your student</p>
+<p class="content-p">visa processing time may vary. Applying early is a safe way to give yourself some time to</p>
+<p class="content-p">settle accommodation, travel, or other visa and entry procedures hassle-free.</p>
+<p class="content-p">How Do I Apply for a Student Visa</p>
+<p class="content-p">The student visa process involves the following:</p>
+<ul class="content-list">
+<li>Obtain your letter of offer and acceptance!</li>
+<li>Get the necessary papers together!</li>
+<li>Prepare financial documents and proof of funds.</li>
+<li>Fill in your visa application online.</li>
+<li>Pay your visa fees.</li>
+<li>Take your biometric data or attend a visa interview at the embassy or visa application</li>
+</ul>
+<p class="content-p">center.</p>
+<ul class="content-list">
+<li>Submit your visa application form.</li>
+<li>Wait for the visa to be processed.</li>
+</ul>
+<p class="content-p">Since every country has their own student visa rules and documents, having proper support</p>
+<p class="content-p">in the process is really important.</p>
+<p class="content-p">Source excerpt 2</p>
+<p class="content-p">Apply for Student Visa</p>
+<p class="content-p">Once you have all required documents, proceed with your visa application process</p>
+<p class="content-p">Source excerpt 3</p>
+<p class="content-p">Step 15: Application for Student Visa</p>
+<p class="content-p">Once admission is confirmed, a student visa can be applied for.</p>
+<ul class="content-list">
+<li>Student Visa Documentation</li>
+<li>Passport</li>
+<li>Offer letter</li>
+<li>Visa application form</li>
+<li>Financial documents</li>
+<li>English language scores</li>
+<li>Tuberculosis test reports (for some countries)</li>
+<li>Passport-size photographs</li>
+</ul>
+<p class="content-p">Step 16: Prepare for Visa Interview</p>
+<p class="content-p">Visa interviews may be held in some countries.</p>
+<p class="content-p">Students need to:</p>
+<ul class="content-list">
+<li>Have knowledge about course structure</li>
+<li>Have career plans clear in mind</li>
+<li>Prove that they have financial capacity</li>
+<li>Prove that they have study purposes</li>
+</ul>
+<p class="content-p">Self-confidence and truthfulness are vital.</p>
+
+        </div>
+
+        <!-- Sidebar Widget -->
+        <aside class="service-sidebar">
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Book Free Session</h3>
+            <p class="widget-copy">
+              Need personalized guidance? Speak 1-on-1 with Anjali Sharma, our senior admissions counselor.
+            </p>
+            <ul class="widget-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% Free Consultation
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Profile Evaluation & Target Match
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Visa & Funding Guidance Included
+              </li>
+            </ul>
+            <a href="../Student/index.html#counselling" class="btn btn-primary btn-full">
+              📅 Book Live Counselling
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta" aria-labelledby="final-cta-heading">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 id="final-cta-heading" class="final-cta__title">
+            Start Your Global Education Journey Today
+          </h2>
+          <p class="final-cta__copy">
+            Connect with our expert counsellors and explore the right opportunities for your future.
+          </p>
+          <div class="final-cta__actions">
+            <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
+              📅 Book Free Counselling
+            </a>
+            <a href="../contact" class="btn btn-outline-white btn-lg" aria-label="Contact ISMS Global Edu">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="../" class="header__logo" aria-label="ISMS Global Edu — home" style="display:inline-flex;">
+            <div class="header__logo-mark" aria-hidden="true">IG</div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:#fff;">ISMS Global Edu</span>
+              <span class="header__logo-tagline">Study Abroad Experts</span>
+            </div>
+          </a>
+          <p class="footer__brand-desc">
+            Helping students turn international study plans into confident global careers — one counselling session at a time, always free.
+          </p>
+          <div class="footer__contact-note">
+            📍 Office address — to be confirmed by client<br />
+            📞 Phone — to be confirmed by client<br />
+            ✉️ Email — to be confirmed by client
+          </div>
+        </div>
+
+        <nav aria-label="Study destinations links">
+          <div class="footer__col-title">Study Destinations</div>
+          <ul class="footer__links">
+            <li><a href="../study-uk">United Kingdom</a></li>
+            <li><a href="../study-ireland">Ireland</a></li>
+            <li><a href="../study-australia">Australia</a></li>
+            <li><a href="../study-usa">USA</a></li>
+            <li><a href="../study-new-zealand">New Zealand</a></li>
+            <li><a href="../study-dubai">Dubai</a></li>
+            <li><a href="../study-france">France</a></li>
+            <li><a href="../study-germany">Germany</a></li>
+            <li><a href="../study-netherlands">Netherlands</a></li>
+            <li><a href="../study-spain">Spain</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Student services links">
+          <div class="footer__col-title">Student Services</div>
+          <ul class="footer__links">
+            <li><a href="personalized-counselling.html">Counselling</a></li>
+            <li><a href="course-selection-guidance.html">Course Selection</a></li>
+            <li><a href="university-selection-guidance.html">University Shortlisting</a></li>
+            <li><a href="application-and-documentation-support.html">Applications</a></li>
+            <li><a href="scholarship-and-education-loan.html">Scholarships & Loans</a></li>
+            <li><a href="student-visa-preparation.html">Visa Preparation</a></li>
+            <li><a href="accommodation-assistance.html">Accommodation</a></li>
+            <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Resources links">
+          <div class="footer__col-title">Resources</div>
+          <ul class="footer__links">
+            <li><a href="../courses">Courses</a></li>
+            <li><a href="../scholarships">Scholarships</a></li>
+            <li><a href="../universities">Universities</a></li>
+            <li><a href="../events">Events</a></li>
+            <li><a href="../guide-me">Guide Me</a></li>
+            <li><a href="../get-instant-offer">Get Instant Offer</a></li>
+          </ul>
+          <div class="footer__col-title" style="margin-top:2rem;">Company</div>
+          <ul class="footer__links">
+            <li><a href="../about">About Us</a></li>
+            <li><a href="../contact">Contact Us</a></li>
+            <li><a href="../student-success-stories">Student Success Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="footer-year">2026</span> ISMS Global Edu. All rights reserved.</p>
+        <nav class="footer__legal-links" aria-label="Legal links">
+          <a href="../privacy-policy">Privacy Policy</a>
+          <a href="../terms-and-conditions">Terms & Conditions</a>
+          <a href="../cookie-policy">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

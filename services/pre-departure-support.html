@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pre-Departure Support | ISMS Global Edu</title>
+  <meta name="description" content="Learn about our Pre-Departure Support services at ISMS Global Edu. Get professional assistance for course selection, visa prep, and study abroad counselling." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  
+  <style>
+    /* Premium Service Details Style overrides */
+    .service-hero {
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-red) 100%);
+      color: var(--color-white);
+      padding: var(--space-20) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-hero::after {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 50%;
+      bottom: -100px;
+      right: -50px;
+    }
+    .service-hero__inner {
+      max-width: var(--max-w-content);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+    .service-hero__tag {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-white);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      display: inline-block;
+      margin-bottom: var(--space-4);
+    }
+    .service-hero__title {
+      font-size: var(--text-4xl);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: var(--space-4);
+    }
+    .service-hero__copy {
+      font-size: var(--text-lg);
+      max-width: 700px;
+      opacity: 0.9;
+      margin-bottom: var(--space-6);
+    }
+    
+    .service-body {
+      padding: var(--space-16) 0;
+      background: var(--color-neutral-50);
+    }
+    .service-grid {
+      max-width: var(--max-w-content);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--space-12);
+    }
+    @media (max-width: 992px) {
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+      }
+    }
+    
+    .service-main {
+      background: var(--color-white);
+      padding: var(--space-10);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-neutral-100);
+    }
+    
+    .content-heading {
+      font-size: var(--text-2xl);
+      color: var(--color-navy);
+      margin-top: var(--space-8);
+      margin-bottom: var(--space-4);
+      font-weight: 700;
+      border-bottom: 2px solid var(--color-neutral-100);
+      padding-bottom: 8px;
+    }
+    .content-heading:first-of-type {
+      margin-top: 0;
+    }
+    
+    .content-p {
+      font-size: var(--text-base);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-4);
+      line-height: 1.7;
+    }
+    
+    .content-list {
+      list-style: none;
+      margin-bottom: var(--space-6);
+    }
+    .content-list li {
+      position: relative;
+      padding-left: var(--space-6);
+      margin-bottom: var(--space-2);
+      font-size: var(--text-base);
+      color: var(--color-neutral-700);
+    }
+    .content-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-red);
+      font-weight: 700;
+    }
+    
+    /* Sidebar widget */
+    .sidebar-widget {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-neutral-100);
+      padding: var(--space-8);
+      box-shadow: var(--shadow-md);
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+    .widget-title {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-navy);
+      margin-bottom: var(--space-4);
+    }
+    .widget-copy {
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-6);
+    }
+    .widget-features {
+      list-style: none;
+      margin-bottom: var(--space-6);
+    }
+    .widget-features li {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      color: var(--color-neutral-700);
+      margin-bottom: var(--space-3);
+    }
+    .widget-features svg {
+      color: var(--color-red);
+      flex-shrink: 0;
+    }
+    
+    .btn-full {
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar" role="navigation" aria-label="Quick access links">
+    <div class="container container--wide">
+      <div class="utility-bar__inner">
+        <p class="utility-bar__tagline">17 Years of Trusted Study Abroad Guidance &nbsp;·&nbsp; Free Counselling for Students</p>
+        <nav class="utility-bar__links">
+          <a href="../courses">Courses</a>
+          <a href="../scholarships">Scholarships</a>
+          <a href="../universities">Universities</a>
+          <a href="../events">Events</a>
+          <a href="../guide-me">Guide Me</a>
+          <a href="../get-instant-offer">Get Instant Offer</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header" role="banner">
+    <div class="container container--wide">
+      <div class="header__inner">
+        <!-- Logo -->
+        <a href="../" class="header__logo" aria-label="ISMS Global Edu — home">
+          <div class="header__logo-mark" aria-hidden="true">IG</div>
+          <div class="header__logo-text">
+            <span class="header__logo-name">ISMS Global Edu</span>
+            <span class="header__logo-tagline">Study Abroad Experts</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="nav__list" role="list">
+            <li class="nav__item">
+              <a href="../study-destinations" class="nav__link">Study Destinations</a>
+            </li>
+            <li class="nav__item">
+              <a href="../services" class="nav__link">Student Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="../about" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="../contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="../Student/index.html#counselling" class="btn btn-primary" aria-label="Book a free session">
+            📅 Book Free Counselling
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="service-hero">
+      <div class="service-hero__inner">
+        <span class="service-hero__tag">ISMS Student Services</span>
+        <h1 class="service-hero__title">Pre-Departure Support</h1>
+        <p class="service-hero__copy">
+          Get verified, direct assistance for all your overseas academic application needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service Body Section -->
+    <section class="service-body">
+      <div class="service-grid">
+        
+        <!-- Main Content Column -->
+        <div class="service-main">
+          <p class="content-p">Source Content (client PDF)</p>
+<p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
+<p class="content-p">Source excerpt 1</p>
+<p class="content-p">Pre-Departure and Post-Arrival Briefing</p>
+<p class="content-p">Our main objective is to provide you with all the necessary support at every step during your</p>
+<p class="content-p">study abroad experience. Preparing yourself well for overseas education is important to</p>
+<p class="content-p">ensure that you excel. Our counsellors will help you get ready by providing you with all the</p>
+<p class="content-p">information you require.</p>
+<p class="content-p">What Does the Pre-Departure Briefing Include</p>
+<p class="content-p">Travel and Flight Guidance</p>
+<p class="content-p">We guide students on things to do before they travel. This includes:</p>
+<ul class="content-list">
+<li>Flight booking tips</li>
+<li>Baggage</li>
+<li>Important papers you need for travel</li>
+<li>Airport procedures</li>
+<li>Immigration Guidance</li>
+<li>Accommodation Guidance</li>
+</ul>
+<p class="content-p">We also help students with:</p>
+<ul class="content-list">
+<li>Student housing options</li>
+<li>Temporary accommodation</li>
+<li>Shared apartments and private housing</li>
+<li>Safety and location considerations</li>
+<li>Financial & Forex Guidance</li>
+</ul>
+<p class="content-p">We help students understand:</p>
+<ul class="content-list">
+<li>How to exchange currency and use forex services</li>
+<li>How international banking works</li>
+<li>Using debit and credit cards, in countries</li>
+<li>Managing your expenses. Making a budget</li>
+<li>We make sure students know about currency exchange and forex services</li>
+<li>Students learn about banking and debit/credit card usage abroad</li>
+</ul>
+<p class="content-p">Health and Insurance Information</p>
+<p class="content-p">Students will be provided with advice about:</p>
+<ul class="content-list">
+<li>Requirements for health insurance</li>
+<li>Medical support services</li>
+<li>Emergency contacts</li>
+<li>Healthcare system in the host country</li>
+</ul>
+<p class="content-p">Culture and Lifestyle Preparation</p>
+<p class="content-p">Living abroad entails adaptation to a completely new cultural environment. Therefore, we</p>
+<p class="content-p">assist students with:</p>
+<ul class="content-list">
+<li>The local culture and traditions</li>
+<li>Climate and necessary clothing items</li>
+<li>The local transport system</li>
+<li>Communication and manners</li>
+<li>Student life in a foreign country</li>
+</ul>
+<p class="content-p">Academic Preparation</p>
+<p class="content-p">We provide students with information about:</p>
+<ul class="content-list">
+<li>Orientation programs at the university</li>
+<li>Classroom culture and pedagogical practices</li>
+<li>Coursework and attendance requirements</li>
+<li>Academic management and planning</li>
+</ul>
+<p class="content-p">Safety and Emergency Preparation</p>
+<p class="content-p">Students will be advised about:</p>
+<ul class="content-list">
+<li>Personal safety practices</li>
+<li>Phone numbers of emergency hotlines</li>
+<li>Laws and regulations</li>
+<li>Safety during travels and abroad</li>
+</ul>
+<p class="content-p">Things to Pack: The "Must-Have" Packing Guide</p>
+<p class="content-p">ISMS Global Education offers a complete student pack including guidance on.</p>
+<ul class="content-list">
+<li>Documents that need to be carried by the student</li>
+<li>Clothes required by the student</li>
+<li>Electricals and accessories that the student will need</li>
+<li>Medicines and personal belongings that the student might require</li>
+<li>Items that students ought not to pack</li>
+</ul>
+<p class="content-p">What is in The Post-Arrival Briefing</p>
+<ul class="content-list">
+<li>Arrival at Airport & Initial Assistance</li>
+<li>With available provisions, the student will be informed about:</li>
+<li>Airport pick-up facility</li>
+<li>Availability of transportation</li>
+<li>Accessing accommodation safely</li>
+<li>Orientation at Accommodation</li>
+</ul>
+<p class="content-p">Students will be provided with information on:</p>
+<ul class="content-list">
+<li>Activating local SIM cards</li>
+<li>Setting up of student accounts with local banks</li>
+<li>Online banking facilities and support for transfers, etc</li>
+<li>Services available for international money transfers</li>
+<li>University Enrolment</li>
+<li>The students will be informed on:</li>
+<li>University admissions and registration procedures</li>
+<li>Collecting students’ ID cards</li>
+<li>Locating their respective timetables</li>
+<li>Getting oriented at university during orientation week</li>
+</ul>
+<p class="content-p">Know your destination!</p>
+<p class="content-p">Explore Inspiring Study Destinations for Your Bright Future</p>
+<ul class="content-list">
+<li>UK</li>
+<li>Ireland</li>
+<li>Australia</li>
+<li>USA</li>
+<li>New Zealand</li>
+<li>Dubai</li>
+<li>France</li>
+<li>Germany</li>
+<li>Netherlands</li>
+<li>Spain</li>
+</ul>
+<p class="content-p">Source excerpt 2</p>
+<p class="content-p">Page No: 8 Pre-Departure Support</p>
+<p class="content-p">We're here to assist you in preparing for your study-abroad journey.</p>
+<p class="content-p">Countdown Begins! The idea of moving to a different nation to pursue education is very</p>
+<p class="content-p">fascinating to each student. Nevertheless, there are several stages that need to be</p>
+<p class="content-p">completed even when one receives admission and gets a student visa.</p>
+<p class="content-p">Pre-departure is a very important phase, as a student is required to prepare for the process</p>
+<p class="content-p">of studying abroad. All the preparations like booking accommodation, transport, adapting</p>
+<p class="content-p">to cultural changes, and money management are to be done.</p>
+<p class="content-p">Topics Covered in Pre-Departure Assistance</p>
+<ul class="content-list">
+<li>Visa and Immigration guidance</li>
+</ul>
+<p class="content-p">This is the most important part of pre-departure assistance, and it entails that the student is</p>
+<p class="content-p">fully aware of the visa and immigration regulations.</p>
+<p class="content-p">Advice includes:</p>
+<ul class="content-list">
+<li>Student visa guidelines</li>
+<li>Airport immigration procedures</li>
+<li>Travel documentation required</li>
+<li>Customs rules</li>
+<li>Entrance guidelines</li>
+<li>Accommodation Services</li>
+</ul>
+<p class="content-p">It is crucial that accommodation is found to provide safety and comfort to international</p>
+<p class="content-p">students.</p>
+<p class="content-p">Students will be assisted before departure to help understand the following types of</p>
+<p class="content-p">accommodation:</p>
+<ul class="content-list">
+<li>University accommodation</li>
+<li>Dormitory</li>
+<li>Shared flat</li>
+<li>Private accommodation</li>
+<li>Homestay</li>
+</ul>
+<p class="content-p">In addition, students will get advice on how to:</p>
+<ul class="content-list">
+<li>Make rent agreements</li>
+<li>Ensure security</li>
+<li>Find transportation</li>
+<li>Settle utility bills</li>
+<li>Access Internet</li>
+</ul>
+<p class="content-p">Early reservations make it easier for students to find better and cheaper accommodation.</p>
+<ul class="content-list">
+<li>Travel Arrangement Services</li>
+</ul>
+<p class="content-p">Making travel arrangements will also be a significant aspect of a planned education abroad.</p>
+<p class="content-p">Students will be provided with guidance in the future.</p>
+<ul class="content-list">
+<li>Flight reservation</li>
+<li>Baggage arrangements</li>
+</ul>
+<ul class="content-list">
+<li>Airports processes</li>
+<li>Transit details</li>
+<li>Travel insurance</li>
+</ul>
+<p class="content-p">All international students will be suggested to arrive a couple of days prior to orientation at</p>
+<p class="content-p">university. It will be also significant for students to hold travel insurance due to possible</p>
+<p class="content-p">unforeseen circumstances.</p>
+<ul class="content-list">
+<li>Financial Planning Assistance</li>
+</ul>
+<p class="content-p">Proper financial management is highly critical for successful international education.</p>
+<p class="content-p">Preparation services will assist students in understanding:</p>
+<ul class="content-list">
+<li>Tuition payments</li>
+<li>Expenses</li>
+<li>Currency conversion</li>
+<li>International banking</li>
+<li>Budgeting</li>
+<li>Cultural Knowledge and Lifestyle Training</li>
+</ul>
+<p class="content-p">Moving to another nation implies embracing a new culture and surroundings.</p>
+<p class="content-p">Preparation services can aid international students in comprehending:</p>
+<ul class="content-list">
+<li>Culture</li>
+<li>Etiquette</li>
+<li>Public behavior</li>
+<li>Differences between cultures</li>
+<li>Climate</li>
+</ul>
+<p class="content-p">Those preparing to study at universities in the UK for international students typically gain</p>
+<p class="content-p">insights into British culture and academics prior to their departure.</p>
+<ul class="content-list">
+<li>Packing Tips</li>
+</ul>
+<p class="content-p">Many foreign students get puzzled while deciding what they should pack prior to going to</p>
+<p class="content-p">another country.</p>
+<p class="content-p">Advice before departure will assist the students to pack important things such as:</p>
+<ul class="content-list">
+<li>Educational documents</li>
+<li>Clothing suitable for weather conditions</li>
+<li>Medical supplies and medications</li>
+<li>Electronics</li>
+</ul>
+<ul class="content-list">
+<li>Personal items</li>
+</ul>
+<p class="content-p">It is always recommended not to take extra items on board.</p>
+<ul class="content-list">
+<li>Emotional and Psychological Preparation</li>
+</ul>
+<p class="content-p">It can be emotionally difficult to leave the family behind and move abroad.</p>
+<p class="content-p">Pre-departure preparation will help the student psychologically get ready for:</p>
+<ul class="content-list">
+<li>Homesickness</li>
+<li>Being independent</li>
+<li>Managing time</li>
+<li>Socializing</li>
+<li>Self-confidence</li>
+</ul>
+<p class="content-p">Contacting existing students before leaving is one way that students can get prepared.</p>
+<p class="content-p">Final Thoughts:</p>
+<p class="content-p">International educational preparation requires pre-departure support as its most essential</p>
+<p class="content-p">component. International student experience requires proper planning because it helps</p>
+<p class="content-p">students transition into their new academic and cultural surroundings. The complete</p>
+<p class="content-p">process from travel arrangements to accommodation and financial planning and emotional</p>
+<p class="content-p">preparation enables students to have successful experience during their study abroad</p>
+<p class="content-p">program.</p>
+<p class="content-p">Students should start their study abroad preparation process by creating an organized</p>
+<p class="content-p">system which they will follow throughout their entire study abroad period while reaching out</p>
+<p class="content-p">to experts when they require assistance.</p>
+<p class="content-p">Through ISMS Global Education expert support, students can start their international</p>
+<p class="content-p">education path which will lead them to achieve success in their global professional future.</p>
+
+        </div>
+
+        <!-- Sidebar Widget -->
+        <aside class="service-sidebar">
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Book Free Session</h3>
+            <p class="widget-copy">
+              Need personalized guidance? Speak 1-on-1 with Anjali Sharma, our senior admissions counselor.
+            </p>
+            <ul class="widget-features">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% Free Consultation
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Profile Evaluation & Target Match
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="color:var(--color-red);"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Visa & Funding Guidance Included
+              </li>
+            </ul>
+            <a href="../Student/index.html#counselling" class="btn btn-primary btn-full">
+              📅 Book Live Counselling
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta" aria-labelledby="final-cta-heading">
+      <div class="container">
+        <div class="final-cta__inner">
+          <h2 id="final-cta-heading" class="final-cta__title">
+            Start Your Global Education Journey Today
+          </h2>
+          <p class="final-cta__copy">
+            Connect with our expert counsellors and explore the right opportunities for your future.
+          </p>
+          <div class="final-cta__actions">
+            <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
+              📅 Book Free Counselling
+            </a>
+            <a href="../contact" class="btn btn-outline-white btn-lg" aria-label="Contact ISMS Global Edu">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a href="../" class="header__logo" aria-label="ISMS Global Edu — home" style="display:inline-flex;">
+            <div class="header__logo-mark" aria-hidden="true">IG</div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:#fff;">ISMS Global Edu</span>
+              <span class="header__logo-tagline">Study Abroad Experts</span>
+            </div>
+          </a>
+          <p class="footer__brand-desc">
+            Helping students turn international study plans into confident global careers — one counselling session at a time, always free.
+          </p>
+          <div class="footer__contact-note">
+            📍 Office address — to be confirmed by client<br />
+            📞 Phone — to be confirmed by client<br />
+            ✉️ Email — to be confirmed by client
+          </div>
+        </div>
+
+        <nav aria-label="Study destinations links">
+          <div class="footer__col-title">Study Destinations</div>
+          <ul class="footer__links">
+            <li><a href="../study-uk">United Kingdom</a></li>
+            <li><a href="../study-ireland">Ireland</a></li>
+            <li><a href="../study-australia">Australia</a></li>
+            <li><a href="../study-usa">USA</a></li>
+            <li><a href="../study-new-zealand">New Zealand</a></li>
+            <li><a href="../study-dubai">Dubai</a></li>
+            <li><a href="../study-france">France</a></li>
+            <li><a href="../study-germany">Germany</a></li>
+            <li><a href="../study-netherlands">Netherlands</a></li>
+            <li><a href="../study-spain">Spain</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Student services links">
+          <div class="footer__col-title">Student Services</div>
+          <ul class="footer__links">
+            <li><a href="personalized-counselling.html">Counselling</a></li>
+            <li><a href="course-selection-guidance.html">Course Selection</a></li>
+            <li><a href="university-selection-guidance.html">University Shortlisting</a></li>
+            <li><a href="application-and-documentation-support.html">Applications</a></li>
+            <li><a href="scholarship-and-education-loan.html">Scholarships & Loans</a></li>
+            <li><a href="student-visa-preparation.html">Visa Preparation</a></li>
+            <li><a href="accommodation-assistance.html">Accommodation</a></li>
+            <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Resources links">
+          <div class="footer__col-title">Resources</div>
+          <ul class="footer__links">
+            <li><a href="../courses">Courses</a></li>
+            <li><a href="../scholarships">Scholarships</a></li>
+            <li><a href="../universities">Universities</a></li>
+            <li><a href="../events">Events</a></li>
+            <li><a href="../guide-me">Guide Me</a></li>
+            <li><a href="../get-instant-offer">Get Instant Offer</a></li>
+          </ul>
+          <div class="footer__col-title" style="margin-top:2rem;">Company</div>
+          <ul class="footer__links">
+            <li><a href="../about">About Us</a></li>
+            <li><a href="../contact">Contact Us</a></li>
+            <li><a href="../student-success-stories">Student Success Stories</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="footer-year">2026</span> ISMS Global Edu. All rights reserved.</p>
+        <nav class="footer__legal-links" aria-label="Legal links">
+          <a href="../privacy-policy">Privacy Policy</a>
+          <a href="../terms-and-conditions">Terms & Conditions</a>
+          <a href="../cookie-policy">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
