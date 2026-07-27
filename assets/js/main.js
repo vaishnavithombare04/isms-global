@@ -120,7 +120,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
             <li class="nav__item"><a href="/resources" class="nav__link">Resources</a></li>
             <li class="nav__item"><a href="about.html" class="nav__link ${currentPage === 'about.html' ? 'nav__link--active' : ''}">About Us</a></li>
-            <li class="nav__item"><a href="/contact" class="nav__link">Contact Us</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link ${currentPage === 'contact.html' ? 'nav__link--active' : ''}">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -171,7 +171,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="pre-departure-support.html" class="mobile-nav__link">Pre-Departure Support</a></li>
         <li><a href="/resources" class="mobile-nav__link">Resources</a></li>
         <li><a href="about.html" class="mobile-nav__link">About Us</a></li>
-        <li><a href="/contact" class="mobile-nav__link">Contact Us</a></li>
+        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -250,7 +250,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <div class="footer__col-title" style="margin-top:2rem;">Company</div>
         <ul class="footer__links">
           <li><a href="about.html">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="/student-success-stories">Student Success Stories</a></li>
         </ul>
       </nav>
