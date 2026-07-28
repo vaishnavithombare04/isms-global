@@ -3,332 +3,527 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ─── SEO ─────────────────────────────────────────────── -->
   <title>Post-Arrival Support for International Students | ISMS Global Edu</title>
-  <meta name="description" content="Explain airport arrival, transport, accommodation orientation, SIM, bank, healthcare, university registration, orientation, work-policy, and counselling support" />
+  <meta name="description" content="Arrival assistance, transport and accommodation orientation, SIM and banking setup, money transfer, enrolment, ID cards, timetables, university orientation, and settlement support — ISMS Global Edu." />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.ismsglobaledu.com/services/post-arrival-support.html" />
-  
-  <!-- SEO Open Graph & Twitter -->
+
+  <!-- ─── Open Graph / Twitter ─────────────────────────────── -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Post-Arrival Support for International Students | ISMS Global Edu" />
-  <meta property="og:description" content="Explain airport arrival, transport, accommodation orientation, SIM, bank, healthcare, university registration, orientation, work-policy, and counselling support" />
+  <meta property="og:description" content="Arrival assistance, transport, SIM, banking, money transfers, university enrolment, orientation, and settlement support for international students." />
   <meta property="og:url" content="https://www.ismsglobaledu.com/services/post-arrival-support.html" />
-  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-services.jpg" />
+  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-home.jpg" />
+  <meta property="og:site_name" content="ISMS Global Edu" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Robots Default (noindex for staging/dev) -->
-  <!-- <meta name="robots" content="index,follow"> -->
-  <meta name="robots" content="noindex,follow" />
-  
-  <!-- Fonts -->
+  <!-- ─── Favicon & Fonts ────────────────────────────────── -->
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  
-  <!-- Core Styles -->
-  <link rel="stylesheet" href="../assets/css/global.css" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ─── Global Styles ─────────────────────────────────── -->
+  <link rel="stylesheet" href="../assets/css/global.css" />
+
+  <!-- ─── Structured Data (JSON-LD) ─────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.ismsglobaledu.com/services/post-arrival-support.html#service",
+        "url": "https://www.ismsglobaledu.com/services/post-arrival-support.html",
+        "name": "Post-Arrival Support for International Students",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "ISMS Global Edu"
+        },
+        "description": "Airport arrival assistance, transport and accommodation orientation, SIM and banking setup, money transfer, university enrolment, ID cards, timetables, university orientation, and full settlement support."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.ismsglobaledu.com/services/post-arrival-support.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.ismsglobaledu.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.ismsglobaledu.com/services/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Post-Arrival Support",
+            "item": "https://www.ismsglobaledu.com/services/post-arrival-support.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Utility Bar -->
-  <div class="utility-bar" role="navigation" aria-label="Quick access links">
-    <div class="container container--wide">
-      <div class="utility-bar__inner">
-        <p class="utility-bar__tagline">17 Years of Trusted Study Abroad Guidance &nbsp;·&nbsp; Free Counselling for Students</p>
-        <nav class="utility-bar__links">
-          <a href="../courses">Courses</a>
-          <a href="../scholarships">Scholarships</a>
-          <a href="../universities">Universities</a>
-          <a href="../events">Events</a>
-          <a href="../guide-me">Guide Me</a>
-          <a href="../get-instant-offer">Get Instant Offer</a>
-        </nav>
-      </div>
+  <!-- ─── Dynamic Header Navigation ─── -->
+  <div id="site-header"></div>
+
+  <!-- ─── Breadcrumb Bar ─── -->
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb navigation">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="../index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="index.html" class="breadcrumb__link">Services</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__current" aria-current="page">Post-Arrival Support</span>
+        </li>
+      </ol>
     </div>
-  </div>
-
-  <!-- Sticky Header -->
-  <header class="site-header" role="banner">
-    <div class="container container--wide">
-      <div class="header__inner">
-        <!-- Logo -->
-        <a href="../" class="header__logo" aria-label="ISMS Global Edu — home">
-          <div class="header__logo-mark" aria-hidden="true">IG</div>
-          <div class="header__logo-text">
-            <span class="header__logo-name">ISMS Global Edu</span>
-            <span class="header__logo-tagline">Study Abroad Experts</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="header__nav" aria-label="Main navigation">
-          <ul class="nav__list" role="list">
-            <li class="nav__item">
-              <a href="../study-destinations" class="nav__link">Study Abroad</a>
-            </li>
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="../about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="../contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="header__actions">
-          <a href="../Student/index.html#counselling" class="btn btn-primary" aria-label="Book a free session">
-            <i class="fa-solid fa-calendar-days" style="margin-right:6px;" aria-hidden="true"></i>Book Free Counselling
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+  </nav>
 
   <main id="main-content">
-    
-    <!-- Breadcrumbs -->
-    <nav class="services-breadcrumbs" aria-label="Breadcrumb">
-      <a href="../">Home</a> &gt; <a href="./index.html">Services</a> &gt; <span>Post-Arrival Support for International Students</span>
-    </nav>
 
-    <!-- Service Hero -->
-    <section class="service-hero">
-      <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Services</span>
-        <h1 class="service-hero__title">Post-Arrival Support for International Students</h1>
-        <p class="service-hero__copy">
-          Get verified, direct assistance for all your overseas academic application needs.
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 01 — Post-Arrival Service Hero
+         Source: Client PDF pages 9, 10
+    ═══════════════════════════════════════════════════════ -->
+    <section class="univ-hero" id="post-arrival-hero" aria-labelledby="post-arrival-h1">
+      <div class="container text-center" style="position:relative; z-index:2;">
+        <span class="section-eyebrow" style="color: var(--color-red-light); background: rgba(196,18,48,0.15); border:1px solid rgba(196,18,48,0.3); padding:4px 14px; border-radius:20px; display:inline-block; margin-bottom:1rem;">
+          <i class="fa-solid fa-plane-arrival" aria-hidden="true"></i>&nbsp; Standing By Your Side Until the End
+        </span>
+        <h1 id="post-arrival-h1" class="section-title" style="color:var(--color-white); max-width:900px; margin:0 auto 1.25rem; font-size:clamp(2.2rem,4vw,3.2rem);">
+          Post-Arrival Support for International Students
+        </h1>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.92); max-width:860px; margin:0 auto 0.75rem; font-size:1.1rem; line-height:1.75;">
+          Welcome to the incredible journey of pursuing your studies abroad. Prepare to embark on an adventurous journey where you will make new friends, acquire new knowledge, develop new skills, and have amazing experiences.
         </p>
-        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-          <a href="../Student/index.html#counselling" class="btn btn-white btn-lg"><i class="fa-solid fa-calendar-days" style="margin-right:6px;" aria-hidden="true"></i>Book Free Counselling</a>
-          <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-white btn-lg">Chat on WhatsApp</a>
+        <p style="color:rgba(255,255,255,0.88); max-width:820px; margin:0 auto 1.5rem; font-size:1rem; line-height:1.7;">
+          Though the initial adjustment period in a new environment may require some time, once you adapt, you will find that it is a very enriching experience. Our counselling services include everything you need — from accommodation advice to financial guidance and migration assistance. Your wellness and happiness are always our main priorities.
+        </p>
+
+        <!-- Availability notice -->
+        <div style="display:inline-flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25); border-radius:10px; padding:0.6rem 1.2rem; margin-bottom:1.75rem;">
+          <i class="fa-solid fa-circle-info" style="color:#FFD166;" aria-hidden="true"></i>
+          <span style="color:rgba(255,255,255,0.95); font-size:0.9rem; font-weight:600;">Availability varies by destination — <strong>Verification Required</strong> for each country service.</span>
+        </div>
+
+        <div style="display:flex; justify-content:center; gap:1.25rem; flex-wrap:wrap;">
+          <a href="#counselling" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Book Free Counselling
+          </a>
+          <a href="../contact.html" class="btn btn-white btn-lg">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Us
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Dynamic Body Sections -->
-    <section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Post-Arrival Support for International Students</h2>
-      <p class="section-subtitle">Source Content (client PDF)</p>
-    </div>
-    <div style="max-width: 800px; margin: 0 auto;">
-      <p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
-    </div>
-  </div>
-</section>
-
-<section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Source excerpt 1</h2>
-      <p class="section-subtitle">What is in The Post-Arrival Briefing</p>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 1</h3>
-        <p class="card-desc">Arrival at Airport & Initial Assistance.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 2</h3>
-        <p class="card-desc">With available provisions, the student will be informed about.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Airport pick</h3>
-        <p class="card-desc">up facility.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Availability of transportation</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Accessing accommodation safely</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Orientation at Accommodation</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
+    <!-- What is in The Post-Arrival Briefing — intro banner -->
+    <div style="background:var(--color-navy-light); border-bottom:3px solid var(--color-red);">
+      <div class="container" style="padding-top:1.5rem; padding-bottom:1.5rem;">
+        <h2 style="color:var(--color-navy); font-size:1.3rem; font-weight:800; margin-bottom:0.5rem;">
+          <i class="fa-solid fa-clipboard-check" style="color:var(--color-red); margin-right:0.5rem;" aria-hidden="true"></i>What is in The Post-Arrival Briefing?
+        </h2>
+        <p style="color:var(--color-neutral-700); font-size:0.975rem; margin:0; line-height:1.65;">
+          Our post-arrival briefing covers airport assistance, accommodation orientation, SIM card setup, bank account opening, money transfers, university enrolment, ID collection, timetable navigation, and full university orientation week guidance. <span style="font-weight:600; color:var(--color-navy);">Client Input Required — confirm availability per destination.</span>
+        </p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Page No: 9 Arrival</h2>
-      <p class="section-subtitle">Learn how to make the most of your study abroad experience</p>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Adjusting to a new country</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 2</h3>
-        <p class="card-desc">Learn about its systems and transport.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Get to their accommodation</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Handle university processes</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Get accustomed to different cultures</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Gain confidence and security</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 
-
-    <!-- FAQ Section -->
-    <!-- no FAQ source content -->
-
-
-    <!-- Related Services -->
-    <section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Related Services</h2>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Personalized Counselling</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="personalized-counselling.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Course Selection Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="course-selection-guidance.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">University Selection Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="university-selection.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Final Call to Action -->
-    <section class="final-cta" aria-labelledby="final-cta-heading">
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 02 — Airport, Transport, and Accommodation Orientation
+         Source: Client PDF page 10
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" id="airport-orientation" aria-labelledby="airport-heading">
       <div class="container">
-        <div class="final-cta__inner">
-          <h2 id="final-cta-heading" class="final-cta__title">
-            Start Your Global Education Journey Today
-          </h2>
-          <p class="final-cta__copy">
-            Connect with our expert counsellors and explore the right opportunities for your future.
+        <div class="section-header text-center">
+          <p class="section-eyebrow">First Day Arrival Services</p>
+          <h2 id="airport-heading" class="section-title">Airport, Transport, and Accommodation Orientation</h2>
+          <p class="section-subtitle" style="max-width:800px; margin:0 auto;">
+            With available provisions, the student will be informed about initial arrival logistics and how to reach and settle into accommodation safely.
           </p>
-          <div class="final-cta__actions">
-            <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
-              <i class="fa-solid fa-calendar-days" style="margin-right:6px;" aria-hidden="true"></i>Book Free Counselling
-            </a>
+        </div>
+
+        <!-- Arrival Timeline -->
+        <div style="max-width:900px; margin:0 auto;">
+
+          <!-- Timeline Step 1 — Arrival at Airport -->
+          <div style="display:flex; gap:1.5rem; margin-bottom:2.5rem; align-items:flex-start;">
+            <div style="flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; border-radius:50%; background:var(--color-navy); color:var(--color-white); display:flex; align-items:center; justify-content:center; font-size:1.4rem; font-weight:800;">1</div>
+              <div style="width:2px; background:var(--color-neutral-200); flex:1; min-height:60px; margin-top:6px;"></div>
+            </div>
+            <div style="background:var(--color-white); border:1px solid var(--color-neutral-200); border-radius:14px; padding:1.5rem 1.75rem; box-shadow:0 4px 16px rgba(0,0,0,0.05); flex:1;">
+              <h3 style="font-size:1.2rem; font-weight:800; color:var(--color-navy); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.6rem;">
+                <i class="fa-solid fa-plane-arrival" style="color:var(--color-red);" aria-hidden="true"></i> Arrival at Airport &amp; Initial Assistance
+              </h3>
+              <p style="color:var(--color-neutral-600); font-size:0.95rem; line-height:1.65; margin-bottom:1rem;">
+                With available provisions, the student will be informed about:
+              </p>
+              <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:0.75rem;">
+                <li style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.6rem 1rem; font-size:0.9rem; color:var(--color-navy); font-weight:600;">
+                  <i class="fa-solid fa-circle-check" style="color:var(--color-red);" aria-hidden="true"></i> Airport pick-up facility
+                </li>
+                <li style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.6rem 1rem; font-size:0.9rem; color:var(--color-navy); font-weight:600;">
+                  <i class="fa-solid fa-circle-check" style="color:var(--color-red);" aria-hidden="true"></i> Availability of transportation
+                </li>
+                <li style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.6rem 1rem; font-size:0.9rem; color:var(--color-navy); font-weight:600;">
+                  <i class="fa-solid fa-circle-check" style="color:var(--color-red);" aria-hidden="true"></i> Accessing accommodation safely
+                </li>
+              </ul>
+              <div style="margin-top:0.85rem; background:rgba(196,18,48,0.07); border-left:3px solid var(--color-red); border-radius:6px; padding:0.6rem 0.9rem; font-size:0.85rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-triangle-exclamation" style="color:var(--color-red);" aria-hidden="true"></i>&nbsp; <strong>Verification Required</strong> — Airport pick-up and transport availability varies by destination country.
+              </div>
+            </div>
           </div>
+
+          <!-- Timeline Step 2 — Orientation at Accommodation -->
+          <div style="display:flex; gap:1.5rem; margin-bottom:2.5rem; align-items:flex-start;">
+            <div style="flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
+              <div style="width:52px; height:52px; border-radius:50%; background:var(--color-red); color:var(--color-white); display:flex; align-items:center; justify-content:center; font-size:1.4rem; font-weight:800;">2</div>
+              <div style="width:2px; background:var(--color-neutral-200); flex:1; min-height:60px; margin-top:6px;"></div>
+            </div>
+            <div style="background:var(--color-white); border:1px solid var(--color-neutral-200); border-radius:14px; padding:1.5rem 1.75rem; box-shadow:0 4px 16px rgba(0,0,0,0.05); flex:1;">
+              <h3 style="font-size:1.2rem; font-weight:800; color:var(--color-navy); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.6rem;">
+                <i class="fa-solid fa-house" style="color:var(--color-red);" aria-hidden="true"></i> Orientation at Accommodation
+              </h3>
+              <p style="color:var(--color-neutral-600); font-size:0.95rem; line-height:1.65; margin-bottom:1rem;">
+                Students will be provided with information on:
+              </p>
+              <div style="background:rgba(11,31,78,0.05); border-radius:10px; padding:1rem 1.25rem; font-size:0.925rem; color:var(--color-neutral-700); line-height:1.7;">
+                <p style="margin:0; font-style:italic; color:var(--color-neutral-500);">
+                  <i class="fa-solid fa-pencil" aria-hidden="true"></i>&nbsp; <strong>Client Input Required</strong> — Please supply the full list of accommodation orientation information items for each destination country.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 03 — SIM, Banking, Transfers, and University Enrolment
+         Source: Client PDF page 10
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section section--alt" id="sim-banking" aria-labelledby="sim-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Settlement &amp; Registration Services</p>
+          <h2 id="sim-heading" class="section-title">SIM, Banking, Transfers, and University Enrolment</h2>
+          <p class="section-subtitle" style="max-width:800px; margin:0 auto;">
+            A two-part settlement checklist covering essential communications, financial services, and university registration — everything you need to get started in your new country.
+          </p>
+        </div>
+
+        <div class="destinations-grid">
+
+          <!-- Communication & Financial Services -->
+          <div style="background:var(--color-white); border:1px solid var(--color-neutral-200); border-radius:16px; padding:2rem; box-shadow:0 4px 20px rgba(0,0,0,0.05);">
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <div style="width:48px; height:48px; border-radius:12px; background:var(--color-navy-light); color:var(--color-navy); display:flex; align-items:center; justify-content:center; font-size:1.35rem; flex-shrink:0;">
+                <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+              </div>
+              <h3 style="font-size:1.15rem; font-weight:800; color:var(--color-navy); margin:0;">Communications &amp; Banking Setup</h3>
+            </div>
+            <ul style="list-style:none; padding:0; margin:0;">
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; border-bottom:1px solid var(--color-neutral-100); font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-sim-card" style="color:var(--color-red); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Activating local SIM cards</span>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; border-bottom:1px solid var(--color-neutral-100); font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-building-columns" style="color:var(--color-red); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Setting up of student accounts with local banks</span>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; border-bottom:1px solid var(--color-neutral-100); font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-laptop" style="color:var(--color-red); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Online banking facilities and support for transfers, etc.</span>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-money-bill-transfer" style="color:var(--color-red); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Services available for international money transfers</span>
+              </li>
+            </ul>
+            <div style="margin-top:1rem; background:rgba(196,18,48,0.06); border-left:3px solid var(--color-red); border-radius:6px; padding:0.55rem 0.85rem; font-size:0.82rem; color:var(--color-neutral-600);">
+              <i class="fa-solid fa-triangle-exclamation" style="color:var(--color-red);" aria-hidden="true"></i>&nbsp; <strong>Verification Required</strong> — Banking and SIM availability varies per destination country.
+            </div>
+          </div>
+
+          <!-- University Enrolment -->
+          <div style="background:var(--color-white); border:1px solid var(--color-neutral-200); border-radius:16px; padding:2rem; box-shadow:0 4px 20px rgba(0,0,0,0.05);">
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.25rem;">
+              <div style="width:48px; height:48px; border-radius:12px; background:var(--color-red-light); color:var(--color-red); display:flex; align-items:center; justify-content:center; font-size:1.35rem; flex-shrink:0;">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              </div>
+              <h3 style="font-size:1.15rem; font-weight:800; color:var(--color-navy); margin:0;">University Enrolment</h3>
+            </div>
+            <p style="font-size:0.93rem; color:var(--color-neutral-700); line-height:1.65; margin-bottom:1rem;">The students will be informed on:</p>
+            <ul style="list-style:none; padding:0; margin:0;">
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; border-bottom:1px solid var(--color-neutral-100); font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-file-signature" style="color:var(--color-navy); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>University admissions and registration procedures</span>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; border-bottom:1px solid var(--color-neutral-100); font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-id-card" style="color:var(--color-navy); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Collecting students' ID cards</span>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; border-bottom:1px solid var(--color-neutral-100); font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-calendar-week" style="color:var(--color-navy); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Locating their respective timetables</span>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.6rem; padding:0.7rem 0; font-size:0.93rem; color:var(--color-neutral-700);">
+                <i class="fa-solid fa-map-location-dot" style="color:var(--color-navy); margin-top:2px; flex-shrink:0;" aria-hidden="true"></i>
+                <span>Getting oriented at university during orientation week</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 04 — Complete Arrival Assistance
+         Source: Client PDF pages 47, 48, 49, 50
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" id="complete-arrival" aria-labelledby="complete-arrival-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-eyebrow">End-to-End Arrival Journey</p>
+          <h2 id="complete-arrival-heading" class="section-title">Complete Arrival Assistance</h2>
+          <p class="section-subtitle" style="max-width:800px; margin:0 auto 0.5rem;">
+            Learn how to make the most of your study abroad experience
+          </p>
+        </div>
+
+        <!-- Why Arrival Assistance Matters -->
+        <div class="about-testimonial-card" style="background:var(--color-white); border:1px solid var(--color-neutral-200); border-radius:16px; padding:2rem 2.25rem; box-shadow:0 4px 20px rgba(0,0,0,0.05); margin-bottom:2.5rem; max-width:950px; margin-left:auto; margin-right:auto;">
+          <h3 style="font-size:1.3rem; font-weight:800; color:var(--color-navy); margin-bottom:0.75rem;">
+            <i class="fa-solid fa-circle-question" style="color:var(--color-red);" aria-hidden="true"></i>&nbsp; Need for Proper Arrival Assistance
+          </h3>
+          <p style="color:var(--color-neutral-700); line-height:1.7; margin-bottom:1rem; font-size:0.975rem;">
+            Adjusting to life in a foreign country may be challenging for international students. The unfamiliar environment, culture, transport system, and personal adjustments may cause confusion in the early stages.
+          </p>
+          <p style="font-weight:700; color:var(--color-navy); margin-bottom:0.75rem; font-size:0.95rem;">Arrival assistance can help students:</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:0.65rem; margin-bottom:1rem;">
+            <div style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-navy); font-weight:600;">
+              <i class="fa-solid fa-earth-asia" style="color:var(--color-red);" aria-hidden="true"></i> Adjusting to a new country
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-navy); font-weight:600;">
+              <i class="fa-solid fa-bus" style="color:var(--color-red);" aria-hidden="true"></i> Learn about its systems and transport
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-navy); font-weight:600;">
+              <i class="fa-solid fa-house-user" style="color:var(--color-red);" aria-hidden="true"></i> Get to their accommodation
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-navy); font-weight:600;">
+              <i class="fa-solid fa-university" style="color:var(--color-red);" aria-hidden="true"></i> Handle university processes
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-navy); font-weight:600;">
+              <i class="fa-solid fa-handshake" style="color:var(--color-red);" aria-hidden="true"></i> Get accustomed to different cultures
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:var(--color-navy-light); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-navy); font-weight:600;">
+              <i class="fa-solid fa-shield-heart" style="color:var(--color-red);" aria-hidden="true"></i> Gain confidence and security
+            </div>
+          </div>
+          <p style="color:var(--color-neutral-600); font-size:0.9rem; font-style:italic; margin:0;">
+            Proper arrival assistance is essential for those enrolled in educational programs abroad.
+          </p>
+        </div>
+
+        <!-- University Orientation Programs -->
+        <div style="background:var(--color-navy); border-radius:16px; padding:2.25rem; margin-bottom:2.5rem; max-width:950px; margin-left:auto; margin-right:auto;">
+          <h3 style="font-size:1.3rem; font-weight:800; color:var(--color-white); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.6rem;">
+            <i class="fa-solid fa-chalkboard-user" style="color:#FFD166;" aria-hidden="true"></i> University Orientation Programs
+          </h3>
+          <p style="color:rgba(255,255,255,0.88); font-size:0.975rem; line-height:1.7; margin-bottom:1.1rem;">
+            International students who arrive at study abroad university institutions receive orientation programs which most universities provide. Orientation sessions help students understand:
+          </p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:0.65rem; margin-bottom:1.1rem;">
+            <div style="display:flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-white); font-weight:600;">
+              <i class="fa-solid fa-building" style="color:#FFD166;" aria-hidden="true"></i> Campus facilities
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-white); font-weight:600;">
+              <i class="fa-solid fa-book" style="color:#FFD166;" aria-hidden="true"></i> Academic systems
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-white); font-weight:600;">
+              <i class="fa-solid fa-people-group" style="color:#FFD166;" aria-hidden="true"></i> Student support services
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-white); font-weight:600;">
+              <i class="fa-solid fa-book-open" style="color:#FFD166;" aria-hidden="true"></i> Library access
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-white); font-weight:600;">
+              <i class="fa-solid fa-heart-pulse" style="color:#FFD166;" aria-hidden="true"></i> Health and safety guidelines
+            </div>
+            <div style="display:flex; align-items:center; gap:0.6rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.55rem 0.9rem; font-size:0.88rem; color:var(--color-white); font-weight:600;">
+              <i class="fa-solid fa-chalkboard" style="color:#FFD166;" aria-hidden="true"></i> Classroom expectations &amp; many more
+            </div>
+          </div>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.9rem; line-height:1.65; margin:0;">
+            Students receive chances to connect with their peers while meeting professors and university personnel. Orientation programs provide students with two benefits because they help students develop their self-assurance and establish their university routine.
+          </p>
+        </div>
+
+        <!-- Establishing Necessary Services -->
+        <div class="section-header text-center" style="margin-bottom:1.75rem;">
+          <h3 style="font-size:1.4rem; font-weight:800; color:var(--color-navy);">Establishing Necessary Services</h3>
+          <p style="color:var(--color-neutral-600); max-width:700px; margin:0 auto;">Once students have arrived, there are a few necessary things they should set up.</p>
+        </div>
+
+        <div class="destinations-grid" style="max-width:950px; margin:0 auto 2.5rem;">
+          <article class="about-panel">
+            <div class="about-panel__icon" style="background:var(--color-navy-light); color:var(--color-navy);"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="about-panel__body">
+              <h3 class="about-panel__title">Create a Bank Account</h3>
+              <p class="about-panel__text">Foreign students are likely to require bank accounts to cover their basic costs and paychecks from any part-time jobs.</p>
+              <span style="font-size:0.8rem; background:rgba(196,18,48,0.08); color:var(--color-red); padding:3px 8px; border-radius:20px; font-weight:600;">Verification Required per destination</span>
+            </div>
+          </article>
+          <article class="about-panel">
+            <div class="about-panel__icon" style="background:var(--color-red-light); color:var(--color-red);"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="about-panel__body">
+              <h3 class="about-panel__title">Buy a Local SIM Card</h3>
+              <p class="about-panel__text">This is helpful so that students can communicate more easily with their university friends and family back home.</p>
+              <span style="font-size:0.8rem; background:rgba(196,18,48,0.08); color:var(--color-red); padding:3px 8px; border-radius:20px; font-weight:600;">Verification Required per destination</span>
+            </div>
+          </article>
+          <article class="about-panel">
+            <div class="about-panel__icon" style="background:var(--color-navy-light); color:var(--color-navy);"><i class="fa-solid fa-stethoscope"></i></div>
+            <div class="about-panel__body">
+              <h3 class="about-panel__title">Registration with Healthcare Providers</h3>
+              <p class="about-panel__text">Students should familiarise themselves with the healthcare and insurance procedures of the new country.</p>
+              <span style="font-size:0.8rem; background:rgba(196,18,48,0.08); color:var(--color-red); padding:3px 8px; border-radius:20px; font-weight:600;">Verification Required per destination</span>
+            </div>
+          </article>
+          <article class="about-panel">
+            <div class="about-panel__icon" style="background:var(--color-red-light); color:var(--color-red);"><i class="fa-solid fa-bus-simple"></i></div>
+            <div class="about-panel__body">
+              <h3 class="about-panel__title">Arrange Transportation Passes</h3>
+              <p class="about-panel__text" style="font-style:italic; color:var(--color-neutral-500);"><strong>Client Input Required</strong> — Please supply country-specific transport pass guidance for each destination.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Services Provided by ISMS Global Education -->
+        <div style="background: linear-gradient(135deg, #0B1F4E 0%, #1A3570 100%); border-radius:16px; padding:2.5rem; max-width:950px; margin:0 auto 2.5rem;">
+          <h3 style="font-size:1.3rem; font-weight:800; color:var(--color-white); margin-bottom:0.5rem; text-align:center;">
+            Role of ISMS Global Education in Student Arrival Support
+          </h3>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.95rem; text-align:center; margin-bottom:1.75rem; line-height:1.65;">
+            ISMS Global Education ensures that all student needs are addressed through their education experience while abroad, starting from their arrival. Students are made to feel comfortable and ready for their education experience upon reaching their host countries.
+          </p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <i class="fa-solid fa-plane-arrival" style="color:#FFD166; font-size:1.1rem;" aria-hidden="true"></i>
+                <strong style="color:var(--color-white); font-size:0.95rem;">Airport &amp; Arrival Services</strong>
+              </div>
+              <p style="color:rgba(255,255,255,0.78); font-size:0.85rem; margin:0; line-height:1.55;">Service on how to navigate airport processes and prepare for the trip.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <i class="fa-solid fa-house" style="color:#FFD166; font-size:1.1rem;" aria-hidden="true"></i>
+                <strong style="color:var(--color-white); font-size:0.95rem;">Accommodation Services</strong>
+              </div>
+              <p style="color:rgba(255,255,255,0.78); font-size:0.85rem; margin:0; line-height:1.55;">Service on arranging suitable accommodation for the students.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <i class="fa-solid fa-plane-departure" style="color:#FFD166; font-size:1.1rem;" aria-hidden="true"></i>
+                <strong style="color:var(--color-white); font-size:0.95rem;">Pre-departure &amp; Post-arrival Services</strong>
+              </div>
+              <p style="color:rgba(255,255,255,0.78); font-size:0.85rem; margin:0; line-height:1.55;">Service on preparing for student life while abroad.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <i class="fa-solid fa-chalkboard-user" style="color:#FFD166; font-size:1.1rem;" aria-hidden="true"></i>
+                <strong style="color:var(--color-white); font-size:0.95rem;">University Orientation Services</strong>
+              </div>
+              <p style="color:rgba(255,255,255,0.78); font-size:0.85rem; margin:0; line-height:1.55;">Service on navigating university life and facilities.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <i class="fa-solid fa-briefcase" style="color:#FFD166; font-size:1.1rem;" aria-hidden="true"></i>
+                <strong style="color:var(--color-white); font-size:0.95rem;">Work &amp; Study Abroad Services</strong>
+              </div>
+              <p style="color:rgba(255,255,255,0.78); font-size:0.85rem; margin:0; line-height:1.55;">Service on part-time job information and student policies.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:12px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.5rem;">
+                <i class="fa-solid fa-comments" style="color:#FFD166; font-size:1.1rem;" aria-hidden="true"></i>
+                <strong style="color:var(--color-white); font-size:0.95rem;">Education Abroad Counselling Services</strong>
+              </div>
+              <p style="color:rgba(255,255,255,0.78); font-size:0.85rem; margin:0; line-height:1.55;">Personal counselling on choosing abroad programs and universities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Thoughts -->
+        <div style="background:var(--color-navy-light); border:1px solid var(--color-neutral-200); border-radius:16px; padding:2rem 2.25rem; max-width:950px; margin:0 auto;">
+          <h3 style="font-size:1.2rem; font-weight:800; color:var(--color-navy); margin-bottom:0.75rem;">
+            <i class="fa-solid fa-lightbulb" style="color:var(--color-red);" aria-hidden="true"></i>&nbsp; Final Thoughts
+          </h3>
+          <p style="color:var(--color-neutral-700); font-size:0.95rem; line-height:1.7; margin-bottom:0.75rem;">
+            The arrival process serves as a crucial milestone that international students must complete during their educational journey. Students need proper planning together with guidance to adapt successfully to their new country, their university environment, and their new way of life.
+          </p>
+          <p style="color:var(--color-neutral-700); font-size:0.95rem; line-height:1.7; margin-bottom:0.75rem;">
+            The complete educational experience abroad begins with airport procedures and accommodation arrangements and continues through academic preparation and cultural adaptation. Students exploring study abroad opportunities should stay organised, remain open to new experiences, and seek support whenever needed.
+          </p>
+          <p style="color:var(--color-neutral-700); font-size:0.95rem; line-height:1.7; margin:0;">
+            International students can start their global education journey with confidence when they receive professional guidance from the ISMS Global Education department, which helps them maximise their university experience.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         FINAL SECTION — Global Counselling CTA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section section--navy text-center" aria-labelledby="cta-heading" id="counselling">
+      <div class="container container--narrow">
+        <h2 id="cta-heading" class="section-title" style="color:var(--color-white);">Start Your Global Education Journey Today</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.9); margin-bottom:2rem;">
+          Connect with our expert counsellors and explore the right opportunities for your future.
+        </p>
+        <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+          <a href="../contact.html" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Book Free Counselling
+          </a>
+          <a href="../contact.html" class="btn btn-white btn-lg">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Us
+          </a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__main">
-        <div class="footer__brand">
-          <a href="../" class="header__logo" aria-label="ISMS Global Edu — home" style="display:inline-flex;">
-            <div class="header__logo-mark" aria-hidden="true">IG</div>
-            <div class="header__logo-text">
-              <span class="header__logo-name" style="color:#fff;">ISMS Global Edu</span>
-              <span class="header__logo-tagline">Study Abroad Experts</span>
-            </div>
-          </a>
-          <p class="footer__brand-desc">
-            Helping students turn international study plans into confident global careers — one counselling session at a time, always free.
-          </p>
-          <div class="footer__contact-note">
-            <i class="fa-solid fa-location-dot" style="color:var(--color-red); margin-right:6px;" aria-hidden="true"></i>Office address — to be confirmed by client<br />
-            <i class="fa-solid fa-phone" style="color:var(--color-red); margin-right:6px;" aria-hidden="true"></i>Phone — to be confirmed by client<br />
-            <i class="fa-solid fa-envelope" style="color:var(--color-red); margin-right:6px;" aria-hidden="true"></i>Email — to be confirmed by client
-          </div>
-        </div>
+  <!-- ─── Dynamic Footer ─── -->
+  <div id="site-footer"></div>
 
-        <nav aria-label="Study destinations links">
-          <div class="footer__col-title">Study Destinations</div>
-          <ul class="footer__links">
-            <li><a href="../study-uk">United Kingdom</a></li>
-            <li><a href="../study-ireland">Ireland</a></li>
-            <li><a href="../study-australia">Australia</a></li>
-            <li><a href="../study-usa">USA</a></li>
-            <li><a href="../study-new-zealand">New Zealand</a></li>
-            <li><a href="../study-dubai">Dubai</a></li>
-            <li><a href="../study-france">France</a></li>
-            <li><a href="../study-germany">Germany</a></li>
-            <li><a href="../study-netherlands">Netherlands</a></li>
-            <li><a href="../study-spain">Spain</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-label="Student services links">
-          <div class="footer__col-title">Student Services</div>
-          <ul class="footer__links">
-            <li><a href="personalized-counselling.html">Counselling</a></li>
-            <li><a href="course-selection-guidance.html">Course Selection</a></li>
-            <li><a href="university-selection.html">University Shortlisting</a></li>
-            <li><a href="application-support.html">Applications</a></li>
-            <li><a href="scholarship-education-loan.html">Scholarships & Loans</a></li>
-            <li><a href="student-visa.html">Visa Preparation</a></li>
-            <li><a href="student-accommodation.html">Accommodation</a></li>
-            <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-label="Resources links">
-          <div class="footer__col-title">Resources</div>
-          <ul class="footer__links">
-            <li><a href="../courses">Courses</a></li>
-            <li><a href="../scholarships">Scholarships</a></li>
-            <li><a href="../universities">Universities</a></li>
-            <li><a href="../events">Events</a></li>
-            <li><a href="../guide-me">Guide Me</a></li>
-            <li><a href="../get-instant-offer">Get Instant Offer</a></li>
-          </ul>
-          <div class="footer__col-title" style="margin-top:2rem;">Company</div>
-          <ul class="footer__links">
-            <li><a href="../about">About Us</a></li>
-            <li><a href="../contact">Contact Us</a></li>
-            <li><a href="../student-success-stories">Student Success Stories</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer__bottom">
-        <p>© <span id="footer-year">2026</span> ISMS Global Edu. All rights reserved.</p>
-        <nav class="footer__legal-links" aria-label="Legal links">
-          <a href="../privacy-policy">Privacy Policy</a>
-          <a href="../terms-and-conditions">Terms & Conditions</a>
-          <a href="../cookie-policy">Cookie Policy</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
-
+  <!-- ─── Main Application JS ─── -->
   <script src="../assets/js/main.js"></script>
 </body>
+</html>

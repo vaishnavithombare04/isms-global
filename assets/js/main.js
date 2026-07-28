@@ -36,7 +36,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html';
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html';
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
