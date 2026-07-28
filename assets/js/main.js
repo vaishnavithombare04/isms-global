@@ -36,8 +36,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-  const isServicePage = currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html';
-  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html';
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html';
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -46,12 +45,12 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
       <div class="utility-bar__inner">
         <p class="utility-bar__tagline">17 Years of Trusted Study Abroad Guidance &nbsp;·&nbsp; Free Counselling for Students</p>
         <nav class="utility-bar__links">
-          <a href="/courses" aria-label="Browse available courses">Courses</a>
-          <a href="/scholarships" aria-label="Explore scholarships">Scholarships</a>
-          <a href="/universities" aria-label="Search universities">Universities</a>
-          <a href="/events" aria-label="View upcoming events">Events</a>
-          <a href="/guide-me" aria-label="Get personalised guidance">Guide Me</a>
-          <a href="/get-instant-offer" aria-label="Get an instant university offer">Get Instant Offer</a>
+          <a href="${prefix}courses.html" aria-label="Browse available courses">Courses</a>
+          <a href="${prefix}scholarships.html" aria-label="Explore scholarships">Scholarships</a>
+          <a href="${prefix}universities.html" aria-label="Search universities">Universities</a>
+          <a href="${prefix}index.html#events" aria-label="View upcoming events">Events</a>
+          <a href="${prefix}personalized-counselling.html" aria-label="Get personalised guidance">Guide Me</a>
+          <a href="${prefix}application-support.html" aria-label="Get an instant university offer">Get Instant Offer</a>
         </nav>
       </div>
     </div>
@@ -93,9 +92,9 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
               </div>
             </li>
 
-            <li class="nav__item"><a href="courses.html" class="nav__link ${currentPage === 'courses.html' ? 'nav__link--active' : ''}">Courses</a></li>
-            <li class="nav__item"><a href="universities.html" class="nav__link ${currentPage === 'universities.html' ? 'nav__link--active' : ''}">Universities</a></li>
-            <li class="nav__item"><a href="scholarships.html" class="nav__link ${currentPage === 'scholarships.html' ? 'nav__link--active' : ''}">Scholarships</a></li>
+            <li class="nav__item"><a href="${prefix}courses.html" class="nav__link ${currentPage === 'courses.html' ? 'nav__link--active' : ''}">Courses</a></li>
+            <li class="nav__item"><a href="${prefix}universities.html" class="nav__link ${currentPage === 'universities.html' ? 'nav__link--active' : ''}">Universities</a></li>
+            <li class="nav__item"><a href="${prefix}scholarships.html" class="nav__link ${currentPage === 'scholarships.html' ? 'nav__link--active' : ''}">Scholarships</a></li>
 
             <li class="nav__item">
               <a href="${prefix}services/index.html" class="nav__link ${isServicePage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
@@ -104,91 +103,73 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
               </a>
               <div class="nav__dropdown" role="region" aria-label="Our services" style="min-width: 660px;">
                 <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr); gap: var(--space-2);">
-                  <a href="personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-bullseye" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Personalised Counselling</div>
                       <div class="nav__dropdown-sub">Tailored study abroad planning</div>
                     </div>
                   </a>
-                  <a href="university-selection.html" class="nav__dropdown-item ${currentPage === 'university-selection.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}university-selection.html" class="nav__dropdown-item ${currentPage === 'university-selection.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-landmark" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">University Shortlisting</div>
                       <div class="nav__dropdown-sub">Match profile &amp; destination</div>
                     </div>
                   </a>
-                  <a href="courses.html" class="nav__dropdown-item ${currentPage === 'courses.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}courses.html" class="nav__dropdown-item ${currentPage === 'courses.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-book-open" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Course Selection Guidance</div>
                       <div class="nav__dropdown-sub">Programs matching career goals</div>
                     </div>
                   </a>
-                  <a href="application-support.html" class="nav__dropdown-item ${currentPage === 'application-support.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}application-support.html" class="nav__dropdown-item ${currentPage === 'application-support.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-clipboard-list" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Application &amp; Offer Support</div>
                       <div class="nav__dropdown-sub">SOP, LOR &amp; offer acceptance</div>
                     </div>
                   </a>
-                  <a href="scholarships.html" class="nav__dropdown-item ${currentPage === 'scholarships.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}scholarships.html" class="nav__dropdown-item ${currentPage === 'scholarships.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-award" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Scholarships &amp; Education Loans</div>
                       <div class="nav__dropdown-sub">Funding &amp; financial planning</div>
                     </div>
                   </a>
-                  <a href="visa-preparation.html" class="nav__dropdown-item ${currentPage === 'visa-preparation.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}visa-preparation.html" class="nav__dropdown-item ${currentPage === 'visa-preparation.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-passport" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Visa Preparation</div>
                       <div class="nav__dropdown-sub">Country rules &amp; interview prep</div>
                     </div>
                   </a>
-                  <a href="pre-departure-support.html" class="nav__dropdown-item ${currentPage === 'pre-departure-support.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}pre-departure-support.html" class="nav__dropdown-item ${currentPage === 'pre-departure-support.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-plane-departure" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Pre-Departure Support</div>
                       <div class="nav__dropdown-sub">Flights, forex &amp; accommodation</div>
                     </div>
                   </a>
-                  <a href="services/post-arrival-support.html" class="nav__dropdown-item ${currentPage === 'post-arrival-support.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}services/post-arrival-support.html" class="nav__dropdown-item ${currentPage === 'post-arrival-support.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-house-user" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Post-Arrival Guidance</div>
                       <div class="nav__dropdown-sub">Airport, SIM, banking &amp; orientation</div>
                     </div>
-              <div class="nav__dropdown" role="region" aria-label="Our services">
-                <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr);">
-                  <a href="${prefix}personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fi fi-rr-graduation-cap" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
-                    <div><div class="nav__dropdown-label">Personalised Counselling</div></div>
-                  </a>
-                  <a href="${prefix}services/student-visa.html" class="nav__dropdown-item">
-                    <span class="nav__dropdown-flag"><i class="fi fi-rr-document-signed" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
-                    <div><div class="nav__dropdown-label">Visa Preparation</div></div>
-                  </a>
-                  <a href="${prefix}services/application-support.html" class="nav__dropdown-item">
-                    <span class="nav__dropdown-flag"><i class="fi fi-rr-form" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
-                    <div><div class="nav__dropdown-label">Application Support</div></div>
-                  </a>
-                  <a href="${prefix}pre-departure-support.html" class="nav__dropdown-item ${currentPage === 'pre-departure-support.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fi fi-rr-plane-departure" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
-                    <div><div class="nav__dropdown-label">Pre-Departure Support</div></div>
                   </a>
                 </div>
               </div>
             </li>
 
-            <li class="nav__item"><a href="/resources" class="nav__link">Resources</a></li>
             <li class="nav__item"><a href="${prefix}about.html" class="nav__link ${currentPage === 'about.html' ? 'nav__link--active' : ''}">About Us</a></li>
             <li class="nav__item"><a href="${prefix}contact.html" class="nav__link ${currentPage === 'contact.html' ? 'nav__link--active' : ''}">Contact Us</a></li>
           </ul>
         </nav>
 
         <div class="header__actions">
-          <a href="/book-free-counselling.html" class="btn btn-primary">Book Free Counselling</a>
+          <a href="${prefix}index.html#counselling" class="btn btn-primary btn-red">Book Free Counselling</a>
           <button class="header__menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -217,26 +198,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
     <nav aria-label="Mobile navigation">
       <ul class="mobile-nav__list" role="list">
-        <li><a href="study-uk.html" class="mobile-nav__link">Study in the UK</a></li>
-        <li><a href="study-ireland.html" class="mobile-nav__link">Study in Ireland</a></li>
-        <li><a href="study-australia.html" class="mobile-nav__link">Study in Australia</a></li>
-        <li><a href="study-usa.html" class="mobile-nav__link">Study in the USA</a></li>
-        <li><a href="study-new-zealand.html" class="mobile-nav__link">Study in New Zealand</a></li>
-        <li><a href="study-dubai.html" class="mobile-nav__link">Study in Dubai</a></li>
-        <li><a href="study-france.html" class="mobile-nav__link">Study in France</a></li>
-        <li><a href="study-germany.html" class="mobile-nav__link">Study in Germany</a></li>
-        <li><a href="study-netherlands.html" class="mobile-nav__link">Study in the Netherlands</a></li>
-        <li><a href="study-spain.html" class="mobile-nav__link">Study in Spain</a></li>
-        <li><a href="personalized-counselling.html" class="mobile-nav__link">Personalised Counselling</a></li>
-        <li><a href="universities.html" class="mobile-nav__link">University Shortlisting</a></li>
-        <li><a href="courses.html" class="mobile-nav__link">Course Selection Guidance</a></li>
-        <li><a href="application-support.html" class="mobile-nav__link">Application &amp; Offer Support</a></li>
-        <li><a href="scholarships.html" class="mobile-nav__link">Scholarships &amp; Loans</a></li>
-        <li><a href="visa-preparation.html" class="mobile-nav__link">Visa Preparation</a></li>
-        <li><a href="pre-departure-support.html" class="mobile-nav__link">Pre-Departure Support</a></li>
-        <li><a href="services/post-arrival-support.html" class="mobile-nav__link">Post-Arrival Guidance</a></li>
-        <li><a href="about.html" class="mobile-nav__link">About Us</a></li>
-        <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
         <li><a href="${prefix}study-uk.html" class="mobile-nav__link">Study in the UK</a></li>
         <li><a href="${prefix}study-ireland.html" class="mobile-nav__link">Study in Ireland</a></li>
         <li><a href="${prefix}study-australia.html" class="mobile-nav__link">Study in Australia</a></li>
@@ -247,19 +208,22 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="${prefix}study-germany.html" class="mobile-nav__link">Study in Germany</a></li>
         <li><a href="${prefix}study-netherlands.html" class="mobile-nav__link">Study in the Netherlands</a></li>
         <li><a href="${prefix}study-spain.html" class="mobile-nav__link">Study in Spain</a></li>
-        <li><a href="/courses" class="mobile-nav__link">Courses</a></li>
-        <li><a href="/universities" class="mobile-nav__link">Universities</a></li>
-        <li><a href="/scholarships" class="mobile-nav__link">Scholarships</a></li>
-        <li><a href="${prefix}personalized-counselling.html" class="mobile-nav__link">Personalized Counselling</a></li>
+        <li><a href="${prefix}courses.html" class="mobile-nav__link">Courses</a></li>
+        <li><a href="${prefix}universities.html" class="mobile-nav__link">Universities</a></li>
+        <li><a href="${prefix}scholarships.html" class="mobile-nav__link">Scholarships</a></li>
+        <li><a href="${prefix}personalized-counselling.html" class="mobile-nav__link">Personalised Counselling</a></li>
+        <li><a href="${prefix}university-selection.html" class="mobile-nav__link">University Shortlisting</a></li>
+        <li><a href="${prefix}application-support.html" class="mobile-nav__link">Application &amp; Offer Support</a></li>
+        <li><a href="${prefix}visa-preparation.html" class="mobile-nav__link">Visa Preparation</a></li>
         <li><a href="${prefix}pre-departure-support.html" class="mobile-nav__link">Pre-Departure Support</a></li>
-        <li><a href="/resources" class="mobile-nav__link">Resources</a></li>
+        <li><a href="${prefix}services/post-arrival-support.html" class="mobile-nav__link">Post-Arrival Guidance</a></li>
         <li><a href="${prefix}about.html" class="mobile-nav__link">About Us</a></li>
         <li><a href="${prefix}contact.html" class="mobile-nav__link">Contact Us</a></li>
       </ul>
     </nav>
 
     <div class="mobile-nav__cta">
-      <a href="/book-free-counselling.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Free Counselling</a>
+      <a href="${prefix}index.html#counselling" class="btn btn-primary btn-red" style="width:100%;justify-content:center;">Book Free Counselling</a>
     </div>
   </div>
   `;
@@ -309,32 +273,31 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <div class="footer__col-title">Student Services</div>
         <ul class="footer__links">
           <li><a href="${prefix}personalized-counselling.html">Personalised Counselling</a></li>
-          <li><a href="${prefix}services/course-selection-guidance.html">Course Selection</a></li>
-          <li><a href="${prefix}services/university-selection.html">University Shortlisting</a></li>
-          <li><a href="${prefix}services/application-support.html">Applications</a></li>
-          <li><a href="${prefix}services/scholarship-education-loan.html">Scholarships &amp; Loans</a></li>
-          <li><a href="${prefix}services/student-visa.html">Visa Preparation</a></li>
-          <li><a href="${prefix}services/student-accommodation.html">Accommodation</a></li>
+          <li><a href="${prefix}courses.html">Course Selection</a></li>
+          <li><a href="${prefix}university-selection.html">University Shortlisting</a></li>
+          <li><a href="${prefix}application-support.html">Applications &amp; Offers</a></li>
+          <li><a href="${prefix}scholarships.html">Scholarships &amp; Loans</a></li>
+          <li><a href="${prefix}visa-preparation.html">Visa Preparation</a></li>
           <li><a href="${prefix}pre-departure-support.html">Pre-Departure Support</a></li>
+          <li><a href="${prefix}services/post-arrival-support.html">Post-Arrival Guidance</a></li>
         </ul>
       </nav>
 
       <nav aria-label="Resources links">
         <div class="footer__col-title">Resources</div>
         <ul class="footer__links">
-          <li><a href="/courses">Courses</a></li>
-          <li><a href="/scholarships">Scholarships</a></li>
-          <li><a href="/universities">Universities</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/guide-me">Guide Me</a></li>
-          <li><a href="/get-instant-offer">Get Instant Offer</a></li>
+          <li><a href="${prefix}courses.html">Courses</a></li>
+          <li><a href="${prefix}scholarships.html">Scholarships</a></li>
+          <li><a href="${prefix}universities.html">Universities</a></li>
+          <li><a href="${prefix}index.html#events">Events</a></li>
+          <li><a href="${prefix}personalized-counselling.html">Guide Me</a></li>
+          <li><a href="${prefix}application-support.html">Get Instant Offer</a></li>
         </ul>
 
         <div class="footer__col-title" style="margin-top:2rem;">Company</div>
         <ul class="footer__links">
           <li><a href="${prefix}about.html">About Us</a></li>
           <li><a href="${prefix}contact.html">Contact Us</a></li>
-          <li><a href="/student-success-stories">Student Success Stories</a></li>
         </ul>
       </nav>
 
@@ -343,9 +306,9 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     <div class="footer__bottom">
       <p>© ${new Date().getFullYear()} ISMS Global Edu. All rights reserved.</p>
       <nav class="footer__legal-links" aria-label="Legal links">
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
-        <a href="/cookie-policy">Cookie Policy</a>
+        <a href="${prefix}contact.html">Privacy Policy</a>
+        <a href="${prefix}contact.html">Terms &amp; Conditions</a>
+        <a href="${prefix}contact.html">Cookie Policy</a>
       </nav>
     </div>
 
