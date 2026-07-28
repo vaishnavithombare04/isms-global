@@ -23,6 +23,11 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
 /* ─── 0. Global Component Renderer ───────────── */
 (function renderGlobalComponents() {
+  // Determine if the current page is inside a subdirectory
+  const pathLower = window.location.pathname.toLowerCase();
+  const isUnderServices = pathLower.includes('/services/') || pathLower.split('/').includes('services');
+  const prefix = isUnderServices ? '../' : '';
+
   // Determine current page filename
   const path = window.location.pathname;
   let currentPage = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
@@ -31,7 +36,11 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
+<<<<<<< HEAD
   const isServicePage = currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html';
+=======
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html';
+>>>>>>> origin/main
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -55,7 +64,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     <div class="container container--wide">
       <div class="header__inner">
 
-        <a href="index.html" class="header__logo" aria-label="ISMS Global Edu — home">
+        <a href="${prefix}index.html" class="header__logo" aria-label="ISMS Global Edu — home">
           <div class="header__logo-mark" aria-hidden="true">IG</div>
           <div class="header__logo-text">
             <span class="header__logo-name">ISMS Global Edu</span>
@@ -67,22 +76,22 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
           <ul class="nav__list" role="list">
 
             <li class="nav__item">
-              <a href="study-destinations.html" class="nav__link ${isDestinationPage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
+              <a href="${prefix}study-destinations.html" class="nav__link ${isDestinationPage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
                 Study Destinations
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 6l3.5 3.5L11.5 6"/></svg>
               </a>
               <div class="nav__dropdown" role="region" aria-label="Study destinations">
                 <div class="nav__dropdown-grid">
-                  <a href="study-uk.html" class="nav__dropdown-item ${currentPage === 'study-uk.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/gb.svg" alt="UK Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">United Kingdom</div><div class="nav__dropdown-sub">Top-ranked universities</div></div></a>
-                  <a href="study-ireland.html" class="nav__dropdown-item ${currentPage === 'study-ireland.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/ie.svg" alt="Ireland Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Ireland</div><div class="nav__dropdown-sub">EU residency gateway</div></div></a>
-                  <a href="study-australia.html" class="nav__dropdown-item ${currentPage === 'study-australia.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/au.svg" alt="Australia Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Australia</div><div class="nav__dropdown-sub">World-class education</div></div></a>
-                  <a href="study-usa.html" class="nav__dropdown-item ${currentPage === 'study-usa.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/us.svg" alt="USA Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">USA</div><div class="nav__dropdown-sub">Leading research institutions</div></div></a>
-                  <a href="study-new-zealand.html" class="nav__dropdown-item ${currentPage === 'study-new-zealand.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/nz.svg" alt="New Zealand Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">New Zealand</div><div class="nav__dropdown-sub">Safe, scenic, welcoming</div></div></a>
-                  <a href="study-dubai.html" class="nav__dropdown-item ${currentPage === 'study-dubai.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/ae.svg" alt="Dubai UAE Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Dubai</div><div class="nav__dropdown-sub">Global business hub</div></div></a>
-                  <a href="study-france.html" class="nav__dropdown-item ${currentPage === 'study-france.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/fr.svg" alt="France Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">France</div><div class="nav__dropdown-sub">Art, culture &amp; innovation</div></div></a>
-                  <a href="study-germany.html" class="nav__dropdown-item ${currentPage === 'study-germany.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/de.svg" alt="Germany Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Germany</div><div class="nav__dropdown-sub">Engineering excellence</div></div></a>
-                  <a href="study-netherlands.html" class="nav__dropdown-item ${currentPage === 'study-netherlands.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/nl.svg" alt="Netherlands Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Netherlands</div><div class="nav__dropdown-sub">English-taught programmes</div></div></a>
-                  <a href="study-spain.html" class="nav__dropdown-item ${currentPage === 'study-spain.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="assets/images/flags/es.svg" alt="Spain Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Spain</div><div class="nav__dropdown-sub">Vibrant student culture</div></div></a>
+                  <a href="${prefix}study-uk.html" class="nav__dropdown-item ${currentPage === 'study-uk.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/gb.svg" alt="UK Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">United Kingdom</div><div class="nav__dropdown-sub">Top-ranked universities</div></div></a>
+                  <a href="${prefix}study-ireland.html" class="nav__dropdown-item ${currentPage === 'study-ireland.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/ie.svg" alt="Ireland Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Ireland</div><div class="nav__dropdown-sub">EU residency gateway</div></div></a>
+                  <a href="${prefix}study-australia.html" class="nav__dropdown-item ${currentPage === 'study-australia.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/au.svg" alt="Australia Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Australia</div><div class="nav__dropdown-sub">World-class education</div></div></a>
+                  <a href="${prefix}study-usa.html" class="nav__dropdown-item ${currentPage === 'study-usa.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/us.svg" alt="USA Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">USA</div><div class="nav__dropdown-sub">Leading research institutions</div></div></a>
+                  <a href="${prefix}study-new-zealand.html" class="nav__dropdown-item ${currentPage === 'study-new-zealand.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/nz.svg" alt="New Zealand Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">New Zealand</div><div class="nav__dropdown-sub">Safe, scenic, welcoming</div></div></a>
+                  <a href="${prefix}study-dubai.html" class="nav__dropdown-item ${currentPage === 'study-dubai.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/ae.svg" alt="Dubai UAE Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Dubai</div><div class="nav__dropdown-sub">Global business hub</div></div></a>
+                  <a href="${prefix}study-france.html" class="nav__dropdown-item ${currentPage === 'study-france.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/fr.svg" alt="France Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">France</div><div class="nav__dropdown-sub">Art, culture &amp; innovation</div></div></a>
+                  <a href="${prefix}study-germany.html" class="nav__dropdown-item ${currentPage === 'study-germany.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/de.svg" alt="Germany Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Germany</div><div class="nav__dropdown-sub">Engineering excellence</div></div></a>
+                  <a href="${prefix}study-netherlands.html" class="nav__dropdown-item ${currentPage === 'study-netherlands.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/nl.svg" alt="Netherlands Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Netherlands</div><div class="nav__dropdown-sub">English-taught programmes</div></div></a>
+                  <a href="${prefix}study-spain.html" class="nav__dropdown-item ${currentPage === 'study-spain.html' ? 'nav__dropdown-item--active' : ''}"><span class="nav__dropdown-flag"><img src="${prefix}assets/images/flags/es.svg" alt="Spain Flag" width="24" height="16" style="border-radius:2px;vertical-align:middle;"></span><div><div class="nav__dropdown-label">Spain</div><div class="nav__dropdown-sub">Vibrant student culture</div></div></a>
                 </div>
               </div>
             </li>
@@ -92,10 +101,11 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
             <li class="nav__item"><a href="scholarships.html" class="nav__link ${currentPage === 'scholarships.html' ? 'nav__link--active' : ''}">Scholarships</a></li>
 
             <li class="nav__item">
-              <a href="/services" class="nav__link ${isServicePage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
+              <a href="${prefix}services/index.html" class="nav__link ${isServicePage ? 'nav__link--active' : ''}" aria-haspopup="true" aria-expanded="false">
                 Services
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 6l3.5 3.5L11.5 6"/></svg>
               </a>
+<<<<<<< HEAD
               <div class="nav__dropdown" role="region" aria-label="Our services" style="min-width: 660px;">
                 <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr); gap: var(--space-2);">
                   <a href="personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
@@ -153,19 +163,38 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                       <div class="nav__dropdown-label">Post-Arrival Guidance</div>
                       <div class="nav__dropdown-sub">Airport, SIM, banking &amp; orientation</div>
                     </div>
+=======
+              <div class="nav__dropdown" role="region" aria-label="Our services">
+                <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr);">
+                  <a href="${prefix}personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-graduation-cap" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
+                    <div><div class="nav__dropdown-label">Personalised Counselling</div></div>
+                  </a>
+                  <a href="${prefix}services/student-visa.html" class="nav__dropdown-item">
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-document-signed" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
+                    <div><div class="nav__dropdown-label">Visa Preparation</div></div>
+                  </a>
+                  <a href="${prefix}services/application-support.html" class="nav__dropdown-item">
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-form" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
+                    <div><div class="nav__dropdown-label">Application Support</div></div>
+                  </a>
+                  <a href="${prefix}pre-departure-support.html" class="nav__dropdown-item ${currentPage === 'pre-departure-support.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-plane-departure" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
+                    <div><div class="nav__dropdown-label">Pre-Departure Support</div></div>
+>>>>>>> origin/main
                   </a>
                 </div>
               </div>
             </li>
 
             <li class="nav__item"><a href="/resources" class="nav__link">Resources</a></li>
-            <li class="nav__item"><a href="about.html" class="nav__link ${currentPage === 'about.html' ? 'nav__link--active' : ''}">About Us</a></li>
-            <li class="nav__item"><a href="contact.html" class="nav__link ${currentPage === 'contact.html' ? 'nav__link--active' : ''}">Contact Us</a></li>
+            <li class="nav__item"><a href="${prefix}about.html" class="nav__link ${currentPage === 'about.html' ? 'nav__link--active' : ''}">About Us</a></li>
+            <li class="nav__item"><a href="${prefix}contact.html" class="nav__link ${currentPage === 'contact.html' ? 'nav__link--active' : ''}">Contact Us</a></li>
           </ul>
         </nav>
 
         <div class="header__actions">
-          <a href="#counselling" class="btn btn-primary">Book Free Counselling</a>
+          <a href="/book-free-counselling.html" class="btn btn-primary">Book Free Counselling</a>
           <button class="header__menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -194,6 +223,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
     <nav aria-label="Mobile navigation">
       <ul class="mobile-nav__list" role="list">
+<<<<<<< HEAD
         <li><a href="study-uk.html" class="mobile-nav__link">Study in the UK</a></li>
         <li><a href="study-ireland.html" class="mobile-nav__link">Study in Ireland</a></li>
         <li><a href="study-australia.html" class="mobile-nav__link">Study in Australia</a></li>
@@ -214,11 +244,31 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="services/post-arrival-support.html" class="mobile-nav__link">Post-Arrival Guidance</a></li>
         <li><a href="about.html" class="mobile-nav__link">About Us</a></li>
         <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
+=======
+        <li><a href="${prefix}study-uk.html" class="mobile-nav__link">Study in the UK</a></li>
+        <li><a href="${prefix}study-ireland.html" class="mobile-nav__link">Study in Ireland</a></li>
+        <li><a href="${prefix}study-australia.html" class="mobile-nav__link">Study in Australia</a></li>
+        <li><a href="${prefix}study-usa.html" class="mobile-nav__link">Study in the USA</a></li>
+        <li><a href="${prefix}study-new-zealand.html" class="mobile-nav__link">Study in New Zealand</a></li>
+        <li><a href="${prefix}study-dubai.html" class="mobile-nav__link">Study in Dubai</a></li>
+        <li><a href="${prefix}study-france.html" class="mobile-nav__link">Study in France</a></li>
+        <li><a href="${prefix}study-germany.html" class="mobile-nav__link">Study in Germany</a></li>
+        <li><a href="${prefix}study-netherlands.html" class="mobile-nav__link">Study in the Netherlands</a></li>
+        <li><a href="${prefix}study-spain.html" class="mobile-nav__link">Study in Spain</a></li>
+        <li><a href="/courses" class="mobile-nav__link">Courses</a></li>
+        <li><a href="/universities" class="mobile-nav__link">Universities</a></li>
+        <li><a href="/scholarships" class="mobile-nav__link">Scholarships</a></li>
+        <li><a href="${prefix}personalized-counselling.html" class="mobile-nav__link">Personalized Counselling</a></li>
+        <li><a href="${prefix}pre-departure-support.html" class="mobile-nav__link">Pre-Departure Support</a></li>
+        <li><a href="/resources" class="mobile-nav__link">Resources</a></li>
+        <li><a href="${prefix}about.html" class="mobile-nav__link">About Us</a></li>
+        <li><a href="${prefix}contact.html" class="mobile-nav__link">Contact Us</a></li>
+>>>>>>> origin/main
       </ul>
     </nav>
 
     <div class="mobile-nav__cta">
-      <a href="#counselling" class="btn btn-primary" style="width:100%;justify-content:center;">Book Free Counselling</a>
+      <a href="/book-free-counselling.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Free Counselling</a>
     </div>
   </div>
   `;
@@ -230,7 +280,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     <div class="footer__main">
 
       <div class="footer__brand">
-        <a href="index.html" class="header__logo" aria-label="ISMS Global Edu — home">
+        <a href="${prefix}index.html" class="header__logo" aria-label="ISMS Global Edu — home">
           <div class="header__logo-mark" aria-hidden="true">IG</div>
           <div class="header__logo-text">
             <span class="header__logo-name">ISMS Global Edu</span>
@@ -251,30 +301,30 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
       <nav aria-label="Study destinations links">
         <div class="footer__col-title">Study Destinations</div>
         <ul class="footer__links">
-          <li><a href="study-uk.html">United Kingdom</a></li>
-          <li><a href="study-ireland.html">Ireland</a></li>
-          <li><a href="study-australia.html">Australia</a></li>
-          <li><a href="study-usa.html">USA</a></li>
-          <li><a href="study-new-zealand.html">New Zealand</a></li>
-          <li><a href="study-dubai.html">Dubai</a></li>
-          <li><a href="study-france.html">France</a></li>
-          <li><a href="study-germany.html">Germany</a></li>
-          <li><a href="study-netherlands.html">Netherlands</a></li>
-          <li><a href="study-spain.html">Spain</a></li>
+          <li><a href="${prefix}study-uk.html">United Kingdom</a></li>
+          <li><a href="${prefix}study-ireland.html">Ireland</a></li>
+          <li><a href="${prefix}study-australia.html">Australia</a></li>
+          <li><a href="${prefix}study-usa.html">USA</a></li>
+          <li><a href="${prefix}study-new-zealand.html">New Zealand</a></li>
+          <li><a href="${prefix}study-dubai.html">Dubai</a></li>
+          <li><a href="${prefix}study-france.html">France</a></li>
+          <li><a href="${prefix}study-germany.html">Germany</a></li>
+          <li><a href="${prefix}study-netherlands.html">Netherlands</a></li>
+          <li><a href="${prefix}study-spain.html">Spain</a></li>
         </ul>
       </nav>
 
       <nav aria-label="Student services links">
         <div class="footer__col-title">Student Services</div>
         <ul class="footer__links">
-          <li><a href="personalized-counselling.html">Personalised Counselling</a></li>
-          <li><a href="/services/course-selection">Course Selection</a></li>
-          <li><a href="/services/university-shortlisting">University Shortlisting</a></li>
-          <li><a href="/services/applications">Applications</a></li>
-          <li><a href="/services/scholarships">Scholarships &amp; Loans</a></li>
-          <li><a href="/services/visa">Visa Preparation</a></li>
-          <li><a href="/services/accommodation">Accommodation</a></li>
-          <li><a href="pre-departure-support.html">Pre-Departure Support</a></li>
+          <li><a href="${prefix}personalized-counselling.html">Personalised Counselling</a></li>
+          <li><a href="${prefix}services/course-selection-guidance.html">Course Selection</a></li>
+          <li><a href="${prefix}services/university-selection.html">University Shortlisting</a></li>
+          <li><a href="${prefix}services/application-support.html">Applications</a></li>
+          <li><a href="${prefix}services/scholarship-education-loan.html">Scholarships &amp; Loans</a></li>
+          <li><a href="${prefix}services/student-visa.html">Visa Preparation</a></li>
+          <li><a href="${prefix}services/student-accommodation.html">Accommodation</a></li>
+          <li><a href="${prefix}pre-departure-support.html">Pre-Departure Support</a></li>
         </ul>
       </nav>
 
@@ -291,8 +341,8 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
         <div class="footer__col-title" style="margin-top:2rem;">Company</div>
         <ul class="footer__links">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="${prefix}about.html">About Us</a></li>
+          <li><a href="${prefix}contact.html">Contact Us</a></li>
           <li><a href="/student-success-stories">Student Success Stories</a></li>
         </ul>
       </nav>
@@ -334,9 +384,16 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
   // Inject Mobile Nav
   let mobileNav = $('.mobile-nav');
-  if (mobileNav) {
-    mobileNav.innerHTML = mobileNavHtml;
+  if (!mobileNav) {
+    mobileNav = document.createElement('div');
+    mobileNav.className = 'mobile-nav';
+    mobileNav.id = 'mobile-nav';
+    mobileNav.setAttribute('role', 'dialog');
+    mobileNav.setAttribute('aria-modal', 'true');
+    mobileNav.setAttribute('aria-label', 'Navigation menu');
+    document.body.appendChild(mobileNav);
   }
+  mobileNav.innerHTML = mobileNavHtml;
 
   // Inject Footer
   let siteFooterContainer = $('#site-footer');

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -303,3 +304,587 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>About ISMS Global Edu | Study Abroad Support</title>
+  <meta name="description" content="Who ISMS Global Edu is, what the organisation does, its values, growth story, vision, strategy, founder message, services, destinations, and commitment to students." />
+  <meta name="keywords" content="overseas education consultant, abroad education consultants" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.ismsglobaledu.com/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="About ISMS Global Edu | Study Abroad Support" />
+  <meta property="og:description" content="Who ISMS Global Edu is, what the organisation does, its values, growth story, vision, strategy, founder message, services, destinations, and commitment to students." />
+  <meta property="og:url" content="https://www.ismsglobaledu.com/about.html" />
+  <meta property="og:image" content="assets/images/about-og.svg" />
+  <meta property="og:site_name" content="ISMS Global Edu" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About ISMS Global Edu | Study Abroad Support" />
+  <meta name="twitter:description" content="Who ISMS Global Edu is, what the organisation does, its values, growth story, vision, strategy, founder message, services, destinations, and commitment to students." />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <style>
+    /* Custom Team Grid Styles */
+    .about-team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+    .about-team-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-neutral-200);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .about-team-card__img {
+      width: 130px;
+      height: 130px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      margin-bottom: var(--space-4);
+      border: 4px solid var(--color-navy-light);
+    }
+    .about-team-card h3 {
+      font-size: var(--text-lg);
+      font-weight: 800;
+      color: var(--color-navy);
+      margin-bottom: var(--space-1);
+    }
+    .about-team-card__role {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-red);
+      margin-bottom: var(--space-3);
+    }
+    .about-team-card p {
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      line-height: 1.6;
+    }
+
+    /* Custom Why Consultancy Grid */
+    .why-consultancy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
+    .why-consultancy-card {
+      background: var(--color-neutral-50);
+      border-left: 4px solid var(--color-red);
+      border-radius: var(--radius);
+      padding: var(--space-4) var(--space-5);
+      font-weight: 700;
+      color: var(--color-navy);
+      display: flex;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+      font-size: var(--text-base);
+    }
+
+    /* Custom Stats Band Styling */
+    .about-stats-band {
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-mid) 100%);
+      color: var(--color-white);
+      padding: var(--space-12) 0;
+      text-align: center;
+    }
+    .about-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-8);
+    }
+    .about-stat-item h3 {
+      font-size: var(--text-5xl);
+      font-weight: 900;
+      color: var(--color-white);
+      margin-bottom: var(--space-2);
+    }
+    .about-stat-item p {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.8);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* Premium What We Do Card Design */
+    .about-panel {
+      border: 1px solid var(--color-neutral-200);
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .about-panel:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+    .about-panel__body {
+      padding: var(--space-6) !important;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .about-panel h3 {
+      font-size: var(--text-lg);
+      font-weight: 800;
+      color: var(--color-navy);
+      margin-top: var(--space-2);
+      margin-bottom: var(--space-1);
+    }
+    .about-panel p {
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      line-height: 1.6;
+    }
+
+    /* Fix Contrast inside Navy Section */
+    .section--navy {
+      background: var(--color-navy) !important;
+      color: var(--color-white) !important;
+    }
+    .section--navy .section-title,
+    .section--navy .section-eyebrow,
+    .section--navy p,
+    .section--navy .about-quote,
+    .section--navy .about-quote p {
+      color: var(--color-white) !important;
+    }
+    .section--navy p {
+      opacity: 0.9;
+    }
+    .section--navy .section-eyebrow {
+      color: var(--color-red-light) !important;
+      opacity: 1;
+    }
+    .section--navy .about-quote {
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    /* Center wrapped cards in What We Do section using Flexbox */
+    .about-panels-grid {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: var(--space-6) !important;
+    }
+    .about-panel {
+      flex: 0 1 calc(33.333% - (2 * var(--space-6)) / 3) !important;
+      min-width: 320px !important;
+      margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .about-team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .why-consultancy-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .about-panel {
+        flex: 0 1 calc(50% - var(--space-6) / 2) !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .about-team-grid,
+      .why-consultancy-grid,
+      .about-stats-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-panel {
+        flex: 0 1 100% !important;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "About ISMS Global Edu",
+    "url": "https://www.ismsglobaledu.com/about.html",
+    "description": "Who ISMS Global Edu is, what the organisation does, its values, growth story, vision, strategy, founder message, services, destinations, and commitment to students.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ismsglobaledu.com/index.html" },
+        { "@type": "ListItem", "position": 2, "name": "About ISMS Global Edu", "item": "https://www.ismsglobaledu.com/about.html" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Dynamic Global Utility Bar & Header — injected by main.js -->
+  <div class="utility-bar"></div>
+  <header class="site-header"></header>
+  <div class="mobile-nav"></div>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <section class="about-breadcrumb" aria-label="Breadcrumb">
+      <div class="container container--wide">
+        <nav class="about-breadcrumb__list" aria-label="Breadcrumb">
+          <a class="about-breadcrumb__link" href="index.html">Home</a>
+          <span class="about-breadcrumb__separator" aria-hidden="true">/</span>
+          <span aria-current="page">About Us</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- SECTION 01 — About Hero -->
+    <section class="about-hero" id="about-hero" aria-labelledby="about-hero-heading">
+      <div class="container container--wide">
+        <div class="about-hero__grid">
+
+          <div class="about-hero__content">
+            <p class="section-eyebrow" style="color: var(--color-red); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
+              17+ Glorious Years | Free Counselling | No Hidden Charges | 10+ University Partners | 100% Visa Success Rate
+            </p>
+            <h1 id="about-hero-heading" style="margin-top: 0.5rem;">About ISMS Global Edu</h1>
+            <p class="about-hero__lead">
+              ISMS Global Education is a reliable overseas education consultant that has been operating for more than 17 years and holds a British Council Certification, assisting those students who wish to study a Post Graduate Degree Abroad in achieving academic excellence on a global platform. Our expert consultants will guide you through the whole admission process, helping you take the right decisions at each step. At ISMS Global Education, we provide counseling services that are free of cost.
+            </p>
+            <p style="color: var(--color-neutral-700); line-height: 1.7;">
+              We are a direct academic partner of leading universities across the UK, Ireland, Dubai, France, Australia, Germany, Spain, the Netherlands, and New Zealand. We have successfully helped thousands of students secure admissions for post graduate degrees, with free counselling, complete transparency, and no hidden costs throughout the entire process.
+            </p>
+            <div class="about-hero__actions" style="margin-top: 2rem;">
+              <a href="book-free-counselling.html" class="btn btn-primary">Book Free Counselling</a>
+              <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="about-hero__image-card">
+            <img src="assets/images/about-hero.svg" alt="About ISMS Global Edu" width="1200" height="800" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02 — Our Story, Who We Are, & Vision/Mission -->
+    <section class="section section--alt" aria-labelledby="story-heading">
+      <div class="container container--wide">
+        <div class="about-growth-grid">
+          <div>
+            <p class="section-eyebrow">Our Journey</p>
+            <h2 id="story-heading" class="section-title" style="text-align:left; margin-bottom: 1.5rem;">Our Story</h2>
+            <p class="about-growth__intro" style="font-size: var(--text-lg); line-height: 1.7; color: var(--color-navy); font-weight: 600; margin-bottom: 1.5rem;">
+              ISMS Global Education has helped over 2,000+ students achieve their dreams since 2009 with a 100% Visa Success Rate. We make the journey simple, transparent, and successful.
+            </p>
+            <p style="margin-bottom: 2rem; color: var(--color-neutral-700); line-height: 1.7;">
+              We connect students with top universities around the world, from university selection and admissions to visa assistance and pre-departure services.
+            </p>
+
+            <h3 style="font-size: var(--text-2xl); font-weight: 800; color: var(--color-navy); margin-bottom: 1rem;">Who We Are?</h3>
+            <p style="color: var(--color-neutral-700); line-height: 1.7;">
+              ISMS Global Education is a trusted overseas education consultant that helps students fulfil their study abroad dreams. We provide expert advice on university selection, admissions, visa support, scholarships, and pre-departure support. With ties to prestigious universities in the UK, Germany, Ireland, France, Dubai, Australia, New Zealand, and other key destinations, we can help you make well-informed choices and create a bright, global future.
+            </p>
+          </div>
+          <div class="about-growth__card" style="display: flex; flex-direction: column; gap: var(--space-6);">
+            <div>
+              <h3 style="font-size: var(--text-xl); font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">Our Vision</h3>
+              <p style="color: var(--color-neutral-700); line-height: 1.7;">
+                Our vision is to be a trusted global education partner empowering students to accomplish academic excellence and build successful international careers through quality guidance and world class opportunities.
+              </p>
+            </div>
+            <div style="border-top: 1px solid var(--color-neutral-200); padding-top: var(--space-6);">
+              <h3 style="font-size: var(--text-xl); font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">Our Mission</h3>
+              <p style="color: var(--color-neutral-700); line-height: 1.7;">
+                Our aim is to provide transparent and student-oriented overseas educational services by providing counseling, admission assistance, visa support, and career counseling for enabling the students to attain their overseas education objectives with confidence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03 — What We Do -->
+    <section class="section" aria-labelledby="what-we-do-heading">
+      <div class="container container--wide">
+        <div class="section-header">
+          <p class="section-eyebrow">Our Services</p>
+          <h2 id="what-we-do-heading" class="section-title">What We Do?</h2>
+          <p class="section-subtitle" style="max-width: 800px; margin: 0 auto var(--space-10);">
+            We aim to provide students with professional guidance, individualized counseling, and comprehensive support to realize their study abroad ambitions. Whether it is determining the appropriate university or obtaining a student visa, we are here to ensure that everything in the procedure is straightforward and profitable.
+          </p>
+        </div>
+        <div class="about-panels-grid">
+
+          <article class="about-panel">
+            <div class="about-panel__body">
+              <div class="about-panel__icon" aria-hidden="true"><i class="fi fi-rr-book-open-reader" style="line-height: 1; display: flex; align-items: center; justify-content: center;"></i></div>
+              <h3>IELTS / English Language Testing</h3>
+              <p>We also provide top-rated preparation services for the IELTS exam, helping students to meet English language requirements needed for entering leading universities across the world.</p>
+            </div>
+          </article>
+
+          <article class="about-panel">
+            <div class="about-panel__body">
+              <div class="about-panel__icon" aria-hidden="true"><i class="fi fi-rr-briefcase" style="line-height: 1; display: flex; align-items: center; justify-content: center;"></i></div>
+              <h3>Student Placement Assistance</h3>
+              <p>We assist students with employment matters and offer them the necessary expertise and services to enhance their chances of getting employed.</p>
+            </div>
+          </article>
+
+          <article class="about-panel">
+            <div class="about-panel__body">
+              <div class="about-panel__icon" aria-hidden="true"><i class="fi fi-rr-home" style="line-height: 1; display: flex; align-items: center; justify-content: center;"></i></div>
+              <h3>Assistance with Finding Accommodation</h3>
+              <p>We support students in finding safe and cheap accommodation options close to their universities.</p>
+            </div>
+          </article>
+
+          <article class="about-panel">
+            <div class="about-panel__body">
+              <div class="about-panel__icon" aria-hidden="true"><i class="fi fi-rr-handshake" style="line-height: 1; display: flex; align-items: center; justify-content: center;"></i></div>
+              <h3>Internship Support</h3>
+              <p>We connect students with internship opportunities that provide practical industry exposure and valuable international work experience.</p>
+            </div>
+          </article>
+
+          <article class="about-panel">
+            <div class="about-panel__body">
+              <div class="about-panel__icon" aria-hidden="true"><i class="fi fi-rr-rocket" style="line-height: 1; display: flex; align-items: center; justify-content: center;"></i></div>
+              <h3>Post Study Career Support</h3>
+              <p>Post-graduation we continue to support students with job search advice, CV feedback, interview coaching and career development resources.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04 — Founders' Message -->
+    <section class="section section--alt" aria-labelledby="founder-heading">
+      <div class="container container--wide">
+        <div class="section-header">
+          <p class="section-eyebrow">From the Founders’ Message</p>
+          <h2 id="founder-heading" class="section-title">A Letter From Our Director</h2>
+        </div>
+        <div class="about-founder-card">
+          <div>
+            <p class="about-founder-card__lead" style="font-size: var(--text-lg); font-weight: 700; color: var(--color-red); margin-bottom: 1.5rem;">
+              Empowering students to navigate a world without borders...
+            </p>
+            <p style="margin-bottom: 1.5rem; color: var(--color-neutral-700); line-height: 1.7;">
+              In today’s world of globalization, where national and cultural boundaries are constantly blurring, it is the responsibility of higher education institutions to develop students who are capable of navigating the world beyond borders.
+            </p>
+            <p style="margin-bottom: 1.5rem; color: var(--color-neutral-700); line-height: 1.7;">
+              As the founder of ISMS Global Education, I feel that in this age of globalization, an academic journey beyond your home country is an excellent networking opportunity with people from across the world. Therefore, ISMS Global gives you an experience of lifetime by making it easier for students to get much-needed international exposure and developing a platform for them to do so.
+            </p>
+            <p style="margin-bottom: 1.5rem; color: var(--color-neutral-700); line-height: 1.7;">
+              We have direct partnerships with many prestigious universities in the United Kingdom, and their qualifications are globally recognized and accepted. This program helps young talents realize their dream of studying abroad and gaining work experience in the U.K. on successful completion of their respective courses.
+            </p>
+            <p style="color: var(--color-neutral-700); line-height: 1.7; font-weight: 500;">
+              ISMS Global Education would like to extend a hearty welcome to all of you as new members of the family. By choosing to study with us, you will be providing yourself with a strong foundation for a rewarding future career and personal growth.
+            </p>
+          </div>
+          <div class="about-founder-card__aside" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <img src="assets/images/director.png" alt="Ms. Shalini Banerjee - Director of ISMS Global Edu" style="width: 100%; max-width: 320px; height: auto; border-radius: var(--radius-xl); box-shadow: var(--shadow-md); margin-bottom: var(--space-4);" />
+            <div class="about-founder-card__note" style="text-align: center; width: 100%; max-width: 320px;">
+              <strong style="color: var(--color-navy); font-size: var(--text-base);">Ms. Shalini Banerjee</strong><br>
+              <span style="color: var(--color-neutral-500); font-size: var(--text-sm); font-weight: 600;">Founder &amp; Director</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05 — Why ISMS Global Education -->
+    <section class="section" aria-labelledby="why-consultancy-heading">
+      <div class="container container--wide">
+        <div class="section-header">
+          <p class="section-eyebrow">Top Rated Consultant</p>
+          <h2 id="why-consultancy-heading" class="section-title">Why ISMS Global Education is the Top Rated Study Abroad Consultancy?</h2>
+        </div>
+        <div class="why-consultancy-grid">
+          <div class="why-consultancy-card"><i class="fi fi-rr-users" style="margin-right: 0.75rem; color: var(--color-red);"></i> 2000+ Students Guided Worldwide</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-document-signed" style="margin-right: 0.75rem; color: var(--color-red);"></i> Post-Study Work Permit Support</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-trophy" style="margin-right: 0.75rem; color: var(--color-red);"></i> 100% Visa Success Rate</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-globe" style="margin-right: 0.75rem; color: var(--color-red);"></i> 10+ Partnerships Countries</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-edit" style="margin-right: 0.75rem; color: var(--color-red);"></i> Guidance for English Language Test</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-usd-circle" style="margin-right: 0.75rem; color: var(--color-red);"></i> Scholarship &amp; Financial Guidance</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-bank" style="margin-right: 0.75rem; color: var(--color-red);"></i> Tie-up with Multiple Universities</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-handshake" style="margin-right: 0.75rem; color: var(--color-red);"></i> Visa Support with Expert Mentorship</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-plane-departure" style="margin-right: 0.75rem; color: var(--color-red);"></i> Pre-Departure &amp; Post-Arrival Guidance</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-briefcase" style="margin-right: 0.75rem; color: var(--color-red);"></i> Part-Time Job Assistance</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-home" style="margin-right: 0.75rem; color: var(--color-red);"></i> Accommodation Assistance</div>
+          <div class="why-consultancy-card"><i class="fi fi-rr-form" style="margin-right: 0.75rem; color: var(--color-red);"></i> End-to-End Application Support</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06 — Stats Band -->
+    <section class="about-stats-band">
+      <div class="container container--wide">
+        <div class="about-stats-grid">
+          <div class="about-stat-item">
+            <h3>17+</h3>
+            <p>Years of Excellence<br><span style="font-size: var(--text-xs); opacity: 0.8; font-weight: normal;">Helping students build successful international careers.</span></p>
+          </div>
+          <div class="about-stat-item">
+            <h3>2,000+</h3>
+            <p>Students Guided<br><span style="font-size: var(--text-xs); opacity: 0.8; font-weight: normal;">Trusted for expert study abroad counselling.</span></p>
+          </div>
+          <div class="about-stat-item">
+            <h3>500+</h3>
+            <p>Global Universities<br><span style="font-size: var(--text-xs); opacity: 0.8; font-weight: normal;">Connecting students with world-class education.</span></p>
+          </div>
+          <div class="about-stat-item">
+            <h3>10+</h3>
+            <p>Study Destinations<br><span style="font-size: var(--text-xs); opacity: 0.8; font-weight: normal;">Opening doors to opportunities around the world.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07 — Our Team -->
+    <section class="section" aria-labelledby="team-heading">
+      <div class="container container--wide">
+        <div class="section-header">
+          <p class="section-eyebrow">OUR TEAM</p>
+          <h2 id="team-heading" class="section-title">Leaders Who Truly Care</h2>
+          <p class="section-subtitle" style="max-width: 800px; margin: 0 auto;">
+            Fuelled by high morals, values, and an earnestness of making a difference in the lives of others, our team of leaders focuses on providing opportunities for success and excellence via quality education.
+          </p>
+        </div>
+
+        <div class="about-team-grid">
+          <!-- Team Member 1 -->
+          <article class="about-team-card">
+            <img class="about-team-card__img" src="assets/images/director.png" alt="Ms. Shalini Banerjee" />
+            <h3>Ms. Shalini Banerjee</h3>
+            <div class="about-team-card__role">Founder &amp; Director</div>
+            <p>
+              A visionary leader in the field of education, Ms. Shalini Banerjee aims to empower students with the power of quality education and global opportunities. With a dedication to achieving academic excellence and nurturing her students, she has played a significant part in developing ISMS Global Education into a reputable organization which offers guidance for overseas education.
+            </p>
+          </article>
+
+          <!-- Team Member 2 -->
+          <article class="about-team-card">
+            <img class="about-team-card__img" src="assets/images/team-sangeeta.png" alt="Ms. Sangeeta Bhatia" />
+            <h3>Ms. Sangeeta Bhatia</h3>
+            <div class="about-team-card__role">IELTS/PTE Trainer</div>
+            <p>
+              Senior IELTS/PTE Trainer with over 20+ years of standing. She motivates, mentors, and empowers students to make well-informed study decisions that ensure their language competence and academic success.
+            </p>
+          </article>
+
+          <!-- Team Member 3 -->
+          <article class="about-team-card">
+            <img class="about-team-card__img" src="assets/images/team-ketakee.png" alt="Ms. Ketakee Pandit" />
+            <h3>Ms. Ketakee Pandit</h3>
+            <div class="about-team-card__role">Senior Counsellor</div>
+            <p>
+              Lead student counsellor with 15+ years of experience in student counselling, university mapping, and profile matchmaking. She helps students confidently decide the best routes for their international careers.
+            </p>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Book a Session With Our Counsellors</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 08 — Global Destinations -->
+    <section class="section section--alt" aria-labelledby="destinations-heading">
+      <div class="container container--wide">
+        <div class="section-header">
+          <p class="section-eyebrow">Where We Send Students</p>
+          <h2 id="destinations-heading" class="section-title">Global Destinations</h2>
+          <p class="section-subtitle">ISMS Global Education helps students explore study opportunities in some of the world's preferred destinations.</p>
+        </div>
+        <div class="about-destinations-grid">
+          <a class="about-destination-card" href="study-uk.html"><span>🇬🇧 UK</span><strong>Study in the UK</strong></a>
+          <a class="about-destination-card" href="study-ireland.html"><span>🇮🇪 IE</span><strong>Study in Ireland</strong></a>
+          <a class="about-destination-card" href="study-australia.html"><span>🇦🇺 AU</span><strong>Study in Australia</strong></a>
+          <a class="about-destination-card" href="study-usa.html"><span>🇺🇸 US</span><strong>Study in the USA</strong></a>
+          <a class="about-destination-card" href="study-new-zealand.html"><span>🇳🇿 NZ</span><strong>Study in New Zealand</strong></a>
+          <a class="about-destination-card" href="study-dubai.html"><span>🇦🇪 AE</span><strong>Study in Dubai</strong></a>
+          <a class="about-destination-card" href="study-france.html"><span>🇫🇷 FR</span><strong>Study in France</strong></a>
+          <a class="about-destination-card" href="study-germany.html"><span>🇩🇪 DE</span><strong>Study in Germany</strong></a>
+          <a class="about-destination-card" href="study-netherlands.html"><span>🇳🇱 NL</span><strong>Study in Netherlands</strong></a>
+          <a class="about-destination-card" href="study-spain.html"><span>🇪🇸 ES</span><strong>Study in Spain</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 09 — Commitment to Students -->
+    <section class="section section--navy" aria-labelledby="commitment-heading">
+      <div class="container container--wide">
+        <div class="about-commitment-grid">
+          <div>
+            <p class="section-eyebrow">Our Promise</p>
+            <h2 id="commitment-heading" class="section-title" style="text-align:left;">Commitment to Students</h2>
+            <p>At ISMS Global Education, the success of students is what matters most to us. We want to make sure students get the help they need, so we provide advice, professional support and make studying abroad as easy as possible.</p>
+            <p>We think that going to school in another country can really help students. It can give them chances to meet people, learn about different cultures, and get better jobs in the long run. Our goal at ISMS Global Education is to help students feel good about what they're doing and take the next step towards a better life.</p>
+          </div>
+          <div class="about-quote">
+            <p>"We are here to make the study-abroad journey clear, supportive, and confident for every student."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10 — Student Success -->
+    <section class="section" aria-labelledby="success-heading">
+      <div class="container container--wide">
+        <div class="section-header">
+          <p class="section-eyebrow">Student Success</p>
+          <h2 id="success-heading" class="section-title">Student Success Stories</h2>
+          <p class="section-subtitle">Thousands of students have started their international education journey with ISMS Global Education. Our students continue to make us proud — from securing admissions to getting visas and starting global careers.</p>
+        </div>
+        <div class="about-testimonial-card" role="note">
+          <div class="about-testimonial-card__badge">⚠️ Client Input Required</div>
+          <h3>Testimonial Placeholder</h3>
+          <p>Student stories and testimonials will be added once approved client content is available.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" aria-labelledby="final-cta-heading">
+      <div class="container container--wide">
+        <div class="final-cta__inner">
+          <h2 id="final-cta-heading" class="final-cta__title">Start Your Global Education Journey Today</h2>
+          <p class="final-cta__copy">Connect with our expert counsellors and explore the right opportunities for your future.</p>
+          <div class="final-cta__actions">
+            <a href="book-free-counselling.html" class="btn btn-white btn-lg">Book Free Counselling</a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Dynamic Global Footer — injected by main.js -->
+  <footer class="site-footer"></footer>
+
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
+>>>>>>> origin/main
