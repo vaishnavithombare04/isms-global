@@ -125,7 +125,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         </nav>
 
         <div class="header__actions">
-          <a href="#counselling" class="btn btn-primary">Book Free Counselling</a>
+          <a href="/book-free-counselling.html" class="btn btn-primary">Book Free Counselling</a>
           <button class="header__menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -176,7 +176,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     </nav>
 
     <div class="mobile-nav__cta">
-      <a href="#counselling" class="btn btn-primary" style="width:100%;justify-content:center;">Book Free Counselling</a>
+      <a href="/book-free-counselling.html" class="btn btn-primary" style="width:100%;justify-content:center;">Book Free Counselling</a>
     </div>
   </div>
   `;
