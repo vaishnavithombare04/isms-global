@@ -36,7 +36,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html' || currentPage === 'scholarship-education-loan.html';
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html' || currentPage === 'scholarship-education-loan.html' || currentPage === 'student-accommodation.html';
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -157,6 +157,13 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                     <div>
                       <div class="nav__dropdown-label">Post-Arrival Guidance</div>
                       <div class="nav__dropdown-sub">Airport, SIM, banking &amp; orientation</div>
+                    </div>
+                  </a>
+                  <a href="${prefix}student-accommodation.html" class="nav__dropdown-item ${currentPage === 'student-accommodation.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-house" style="color:var(--color-red);" aria-hidden="true"></i></span>
+                    <div>
+                      <div class="nav__dropdown-label">Student Accommodation Assistance</div>
+                      <div class="nav__dropdown-sub">Safe, comfortable housing &amp; stays</div>
                     </div>
                   </a>
                 </div>
