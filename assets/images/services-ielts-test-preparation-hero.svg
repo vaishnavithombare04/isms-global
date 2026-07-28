@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" aria-label="IELTS and English Test Preparation with an ISMS Global Edu counsellor">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F4E" />
+      <stop offset="100%" stop-color="#1A3570" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F7F8FC" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C41230" />
+      <stop offset="100%" stop-color="#991022" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B1F4E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="600" rx="24" fill="url(#bgGrad)" />
+  
+  <!-- Decorative Background Elements -->
+  <circle cx="120" cy="100" r="150" fill="#FFFFFF" opacity="0.03" />
+  <circle cx="700" cy="500" r="180" fill="#C41230" opacity="0.1" />
+
+  <!-- Main Window Card -->
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  
+  <!-- Title Bar -->
+  <rect x="60" y="60" width="680" height="60" rx="20" fill="#0B1F4E"/>
+  <circle cx="95" cy="90" r="6" fill="#FF5F56"/>
+  <circle cx="115" cy="90" r="6" fill="#FFBD2E"/>
+  <circle cx="135" cy="90" r="6" fill="#27C93F"/>
+  <text x="400" y="95" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="600" text-anchor="middle">ISMS Global Edu · IELTS &amp; English Proficiency Portal</text>
+  
+  <!-- Left Side: Test Preparation Matrix -->
+  <rect x="90" y="140" width="310" height="370" rx="14" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+  <text x="115" y="175" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="16" font-weight="700">Exam Preparation Framework</text>
+  
+  <!-- Test 1: IELTS -->
+  <rect x="115" y="195" width="260" height="65" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="128" y="210" width="34" height="34" rx="8" fill="#C41230"/>
+  <text x="145" y="232" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="12" font-weight="800" text-anchor="middle">IELTS</text>
+  <text x="175" y="222" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="700">IELTS Academic &amp; General</text>
+  <text x="175" y="239" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Coaching &amp; exam-focused prep</text>
+
+  <!-- Test 2: TOEFL / PTE -->
+  <rect x="115" y="275" width="260" height="65" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="128" y="290" width="34" height="34" rx="8" fill="#0B1F4E"/>
+  <text x="145" y="312" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">PTE</text>
+  <text x="175" y="302" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="700">TOEFL &amp; PTE Academic</text>
+  <text x="175" y="319" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Computer-based proficiency test</text>
+
+  <!-- Test 3: Duolingo -->
+  <rect x="115" y="355" width="260" height="65" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="128" y="370" width="34" height="34" rx="8" fill="#10B981"/>
+  <text x="145" y="392" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="11" font-weight="800" text-anchor="middle">DET</text>
+  <text x="175" y="382" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Duolingo English Test</text>
+  <text x="175" y="399" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Accepted overseas language test</text>
+
+  <!-- Status pill -->
+  <rect x="115" y="435" width="260" height="50" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="245" y="456" fill="#991B1B" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">CLIENT INPUT REQUIRED</text>
+  <text x="245" y="472" fill="#7F1D1D" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Batches, fee schedule &amp; syllabus details</text>
+
+  <!-- Right Side: Visual Hero Card -->
+  <rect x="420" y="140" width="290" height="370" rx="14" fill="#0B1F4E"/>
+  
+  <circle cx="565" cy="230" r="50" fill="url(#accentGrad)"/>
+  <!-- Speech / Book Icon -->
+  <path d="M 545 220 H 585 V 242 H 545 Z M 552 227 H 578 M 552 235 H 572" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+
+  <text x="565" y="310" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700" text-anchor="middle">English Test Preparation</text>
+  <text x="565" y="335" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">Coaching · Learning Support · Exam Focus</text>
+
+  <rect x="450" y="375" width="230" height="44" rx="22" fill="#FFFFFF"/>
+  <text x="565" y="402" fill="#C41230" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">Book Free Counselling →</text>
+  
+  <text x="565" y="465" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">ISMS Global Edu Guidance</text>
+</svg>

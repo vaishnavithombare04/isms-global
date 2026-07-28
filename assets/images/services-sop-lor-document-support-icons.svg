@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%" aria-label="Icons supporting SOP, LOR, and Application Document Support">
+  <!-- Icon 1: SOP -->
+  <g transform="translate(20, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#FEF2F2"/>
+    <path d="M 48 48 H 72 V 72 H 48 Z M 52 56 H 68 M 52 62 H 68 M 52 68 H 62" stroke="#C41230" stroke-width="2" fill="none"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">SOP Guidance</text>
+  </g>
+
+  <!-- Icon 2: LOR -->
+  <g transform="translate(170, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#EFF6FF"/>
+    <path d="M 46 50 H 74 V 70 H 46 Z M 52 58 L 60 63 L 68 58" stroke="#0B1F4E" stroke-width="2" fill="none"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">LOR Sources</text>
+  </g>
+
+  <!-- Icon 3: Transcripts -->
+  <g transform="translate(320, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#ECFDF5"/>
+    <path d="M 48 46 H 72 V 74 H 48 Z M 54 54 H 66 M 54 62 H 66 M 54 68 H 62" stroke="#059669" stroke-width="2" fill="none"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Transcripts &amp; CV</text>
+  </g>
+
+  <!-- Icon 4: Document Checklist -->
+  <g transform="translate(470, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#FFFBEB"/>
+    <path d="M 48 48 L 54 54 L 70 44 M 48 64 L 54 70 L 70 60" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Doc Checklist</text>
+  </g>
+</svg>

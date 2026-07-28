@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%" aria-label="Icons supporting Money Transfer, Forex, and Student Banking">
+  <!-- Icon 1: Money Transfer -->
+  <g transform="translate(20, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#FEF2F2"/>
+    <path d="M 45 60 H 75 M 65 50 L 75 60 L 65 70" fill="none" stroke="#C41230" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Money Transfer</text>
+  </g>
+
+  <!-- Icon 2: Foreign Exchange -->
+  <g transform="translate(170, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#EFF6FF"/>
+    <text x="60" y="67" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="20" font-weight="800" text-anchor="middle">£/$/€</text>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Foreign Exchange</text>
+  </g>
+
+  <!-- Icon 3: Student Banking -->
+  <g transform="translate(320, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#ECFDF5"/>
+    <path d="M 45 70 L 60 45 L 75 70 Z M 45 72 H 75" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Student Banking</text>
+  </g>
+
+  <!-- Icon 4: Card & Budgeting -->
+  <g transform="translate(470, 20)">
+    <rect width="120" height="120" rx="16" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="60" cy="60" r="30" fill="#FFFBEB"/>
+    <rect x="44" y="50" width="32" height="20" rx="3" fill="none" stroke="#D97706" stroke-width="2.5"/>
+    <line x1="44" y1="56" x2="76" y2="56" stroke="#D97706" stroke-width="2"/>
+    <text x="60" y="160" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Cards &amp; Budgeting</text>
+  </g>
+</svg>

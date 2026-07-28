@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" aria-label="Student Money Transfer, Forex, and Banking Guidance with an ISMS Global Edu counsellor">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F4E" />
+      <stop offset="100%" stop-color="#1A3570" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F7F8FC" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C41230" />
+      <stop offset="100%" stop-color="#991022" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0B1F4E" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="600" rx="24" fill="url(#bgGrad)" />
+  
+  <!-- Decorative Background Circles -->
+  <circle cx="120" cy="100" r="150" fill="#FFFFFF" opacity="0.03" />
+  <circle cx="700" cy="500" r="180" fill="#C41230" opacity="0.1" />
+
+  <!-- Main Portal Window -->
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  
+  <!-- Title Bar -->
+  <rect x="60" y="60" width="680" height="60" rx="20" fill="#0B1F4E"/>
+  <circle cx="95" cy="90" r="6" fill="#FF5F56"/>
+  <circle cx="115" cy="90" r="6" fill="#FFBD2E"/>
+  <circle cx="135" cy="90" r="6" fill="#27C93F"/>
+  <text x="400" y="95" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="14" font-weight="600" text-anchor="middle">ISMS Global Edu · Student Finance, Forex &amp; Banking Hub</text>
+  
+  <!-- Left Side: Cross-Border Money Transfer & Banking Dashboard -->
+  <rect x="90" y="140" width="310" height="370" rx="14" fill="#FFFFFF" stroke="#EEF0F8" stroke-width="1.5"/>
+  <text x="115" y="175" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="16" font-weight="700">Financial Planning Checklist</text>
+  
+  <!-- Item 1: Money Transfer -->
+  <rect x="115" y="195" width="260" height="65" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="145" cy="227" r="16" fill="#C41230" opacity="0.15"/>
+  <path d="M 137 227 L 153 227 M 147 221 L 153 227 L 147 233" fill="none" stroke="#C41230" stroke-width="2" stroke-linecap="round"/>
+  <text x="175" y="222" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Cross-Border Money Transfer</text>
+  <text x="175" y="239" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Hassle-free transfers abroad</text>
+
+  <!-- Item 2: Forex & Foreign Exchange -->
+  <rect x="115" y="275" width="260" height="65" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="145" cy="307" r="16" fill="#0B1F4E" opacity="0.15"/>
+  <text x="145" y="312" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">£$€</text>
+  <text x="175" y="302" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Foreign Exchange Guidance</text>
+  <text x="175" y="319" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">Competitive currency exchange</text>
+
+  <!-- Item 3: Student Banking -->
+  <rect x="115" y="355" width="260" height="65" rx="10" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="145" cy="387" r="16" fill="#10B981" opacity="0.15"/>
+  <path d="M 137 392 L 145 380 L 153 392 Z M 137 394 H 153" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+  <text x="175" y="382" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Student Account Setup</text>
+  <text x="175" y="399" fill="#64748B" font-family="'Inter', sans-serif" font-size="11">International banking accounts</text>
+
+  <!-- Compliance status pill -->
+  <rect x="115" y="435" width="260" height="50" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="245" y="456" fill="#991B1B" font-family="'Inter', sans-serif" font-size="11" font-weight="700" text-anchor="middle">CLIENT INPUT REQUIRED</text>
+  <text x="245" y="472" fill="#7F1D1D" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">Regulated partner &amp; fee disclosures</text>
+
+  <!-- Right Side: Visual Hero Card -->
+  <rect x="420" y="140" width="290" height="370" rx="14" fill="#0B1F4E"/>
+  
+  <circle cx="565" cy="230" r="50" fill="url(#accentGrad)"/>
+  <!-- Bank / Card Icon -->
+  <rect x="540" y="215" width="50" height="32" rx="4" fill="#FFFFFF"/>
+  <rect x="540" y="222" width="50" height="6" fill="#0B1F4E"/>
+  <rect x="548" y="234" width="12" height="8" rx="2" fill="#FFBD2E"/>
+
+  <text x="565" y="310" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700" text-anchor="middle">Student Finance Guidance</text>
+  <text x="565" y="335" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle">Budgeting · Cards · Banking · Forex</text>
+
+  <rect x="450" y="375" width="230" height="44" rx="22" fill="#FFFFFF"/>
+  <text x="565" y="402" fill="#C41230" font-family="'Inter', sans-serif" font-size="13" font-weight="700" text-anchor="middle">Book Free Counselling →</text>
+  
+  <text x="565" y="465" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">ISMS Global Edu Advisory</text>
+</svg>

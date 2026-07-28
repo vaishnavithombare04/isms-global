@@ -36,7 +36,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html' || currentPage === 'scholarship-education-loan.html' || currentPage === 'student-accommodation.html';
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html' || currentPage === 'scholarship-education-loan.html' || currentPage === 'student-accommodation.html' || currentPage === 'student-finance-forex.html' || currentPage === 'health-insurance-wellbeing.html' || currentPage === 'ielts-test-preparation.html' || currentPage === 'sop-lor-document-support.html';
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -61,11 +61,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
       <div class="header__inner">
 
         <a href="${prefix}index.html" class="header__logo" aria-label="ISMS Global Edu — home">
-          <div class="header__logo-mark" aria-hidden="true">IG</div>
-          <div class="header__logo-text">
-            <span class="header__logo-name">ISMS Global Edu</span>
-            <span class="header__logo-tagline">Study Abroad Experts</span>
-          </div>
+          <img src="${prefix}assets/images/logo.png" alt="ISMS Global Education" class="header__logo-img" />
         </a>
 
         <nav class="header__nav" aria-label="Main navigation">
@@ -166,6 +162,34 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                       <div class="nav__dropdown-sub">Safe, comfortable housing &amp; stays</div>
                     </div>
                   </a>
+                  <a href="${prefix}services/student-finance-forex.html" class="nav__dropdown-item ${currentPage === 'student-finance-forex.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-arrow-right-arrow-left" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <div>
+                      <div class="nav__dropdown-label">Money Transfer &amp; Student Finance</div>
+                      <div class="nav__dropdown-sub">Cross-border transfers, forex &amp; banking</div>
+                    </div>
+                  </a>
+                  <a href="${prefix}services/health-insurance-wellbeing.html" class="nav__dropdown-item ${currentPage === 'health-insurance-wellbeing.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-heart-pulse" style="color:var(--color-red);" aria-hidden="true"></i></span>
+                    <div>
+                      <div class="nav__dropdown-label">Health Insurance &amp; Wellbeing</div>
+                      <div class="nav__dropdown-sub">Policies, medical support &amp; wellness</div>
+                    </div>
+                  </a>
+                  <a href="${prefix}services/ielts-test-preparation.html" class="nav__dropdown-item ${currentPage === 'ielts-test-preparation.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-language" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <div>
+                      <div class="nav__dropdown-label">IELTS &amp; English Test Prep</div>
+                      <div class="nav__dropdown-sub">IELTS, TOEFL, PTE &amp; Duolingo prep</div>
+                    </div>
+                  </a>
+                  <a href="${prefix}services/sop-lor-document-support.html" class="nav__dropdown-item ${currentPage === 'sop-lor-document-support.html' ? 'nav__dropdown-item--active' : ''}">
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-file-signature" style="color:var(--color-red);" aria-hidden="true"></i></span>
+                    <div>
+                      <div class="nav__dropdown-label">SOP, LOR &amp; Document Support</div>
+                      <div class="nav__dropdown-sub">SOP, LOR &amp; application checklist</div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -176,7 +200,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         </nav>
 
         <div class="header__actions">
-          <a href="${prefix}index.html#counselling" class="btn btn-primary btn-red">Book Free Counselling</a>
+          <a href="${prefix}book-free-counselling.html" class="btn btn-primary btn-red">Book Free Counselling</a>
           <button class="header__menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -195,10 +219,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   <div class="mobile-nav__drawer">
     <div class="mobile-nav__header">
       <div class="header__logo" aria-hidden="true">
-        <div class="header__logo-mark">IG</div>
-        <div class="header__logo-text">
-          <span class="header__logo-name">ISMS Global Edu</span>
-        </div>
+        <img src="${prefix}assets/images/logo.png" alt="ISMS Global Education" class="header__logo-img" style="height:36px;" />
       </div>
       <button class="mobile-nav__close" aria-label="Close navigation menu"><i class="fa-solid fa-xmark"></i></button>
     </div>
@@ -224,13 +245,17 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="${prefix}visa-preparation.html" class="mobile-nav__link">Visa Preparation</a></li>
         <li><a href="${prefix}pre-departure-support.html" class="mobile-nav__link">Pre-Departure Support</a></li>
         <li><a href="${prefix}services/post-arrival-support.html" class="mobile-nav__link">Post-Arrival Guidance</a></li>
+        <li><a href="${prefix}services/student-finance-forex.html" class="mobile-nav__link">Money Transfer &amp; Student Finance</a></li>
+        <li><a href="${prefix}services/health-insurance-wellbeing.html" class="mobile-nav__link">Health Insurance &amp; Student Wellbeing</a></li>
+        <li><a href="${prefix}services/ielts-test-preparation.html" class="mobile-nav__link">IELTS &amp; English Test Prep</a></li>
+        <li><a href="${prefix}services/sop-lor-document-support.html" class="mobile-nav__link">SOP, LOR &amp; Document Support</a></li>
         <li><a href="${prefix}about.html" class="mobile-nav__link">About Us</a></li>
         <li><a href="${prefix}contact.html" class="mobile-nav__link">Contact Us</a></li>
       </ul>
     </nav>
 
     <div class="mobile-nav__cta">
-      <a href="${prefix}index.html#counselling" class="btn btn-primary btn-red" style="width:100%;justify-content:center;">Book Free Counselling</a>
+      <a href="${prefix}book-free-counselling.html" class="btn btn-primary btn-red" style="width:100%;justify-content:center;">Book Free Counselling</a>
     </div>
   </div>
   `;
@@ -243,11 +268,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
       <div class="footer__brand">
         <a href="${prefix}index.html" class="header__logo" aria-label="ISMS Global Edu — home">
-          <div class="header__logo-mark" aria-hidden="true">IG</div>
-          <div class="header__logo-text">
-            <span class="header__logo-name">ISMS Global Edu</span>
-            <span class="header__logo-tagline">Study Abroad Experts</span>
-          </div>
+          <img src="${prefix}assets/images/logo.png" alt="ISMS Global Education" class="header__logo-img" />
         </a>
         <p class="footer__desc">
           Empowering students across India with world-class study abroad guidance, transparent counselling, and end-to-end admission and visa assistance.
@@ -287,6 +308,18 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
           <li><a href="${prefix}visa-preparation.html">Visa Preparation</a></li>
           <li><a href="${prefix}pre-departure-support.html">Pre-Departure Support</a></li>
           <li><a href="${prefix}services/post-arrival-support.html">Post-Arrival Guidance</a></li>
+          <li><a href="${prefix}services/student-finance-forex.html">Money Transfer, Forex &amp; Banking</a></li>
+          <li><a href="${prefix}services/health-insurance-wellbeing.html">Health Insurance &amp; Wellbeing</a></li>
+          <li><a href="${prefix}services/ielts-test-preparation.html">IELTS &amp; English Test Prep</a></li>
+          <li><a href="${prefix}services/sop-lor-document-support.html">SOP, LOR &amp; Document Support</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Company links">
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="${prefix}about.html">About Us</a></li>
+          <li><a href="${prefix}contact.html">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -299,12 +332,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
           <li><a href="${prefix}index.html#events">Events</a></li>
           <li><a href="${prefix}personalized-counselling.html">Guide Me</a></li>
           <li><a href="${prefix}application-support.html">Get Instant Offer</a></li>
-        </ul>
-
-        <div class="footer__col-title" style="margin-top:2rem;">Company</div>
-        <ul class="footer__links">
-          <li><a href="${prefix}about.html">About Us</a></li>
-          <li><a href="${prefix}contact.html">Contact Us</a></li>
         </ul>
       </nav>
 

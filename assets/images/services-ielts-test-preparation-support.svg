@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" aria-label="Student receiving ielts and english test preparation">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F4E"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="24" fill="url(#bg)"/>
+  
+  <rect x="100" y="100" width="1000" height="600" rx="20" fill="#FFFFFF"/>
+  <rect x="100" y="100" width="1000" height="80" rx="20" fill="#0B1F4E"/>
+  <text x="600" y="150" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="22" font-weight="700" text-anchor="middle">IELTS &amp; English Test Preparation Assistance</text>
+  
+  <!-- Content Cards -->
+  <g transform="translate(150, 220)">
+    <rect width="420" height="200" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="60" cy="60" r="28" fill="#C41230"/>
+    <text x="60" y="68" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="800" text-anchor="middle">1</text>
+    <text x="110" y="55" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="18" font-weight="700">Exam-Focused Coaching</text>
+    <text x="110" y="85" fill="#475569" font-family="'Inter', sans-serif" font-size="14">Appropriate coaching &amp; learning support</text>
+    <rect x="110" y="115" width="280" height="40" rx="8" fill="#EFF6FF"/>
+    <text x="250" y="140" fill="#1D4ED8" font-family="'Inter', sans-serif" font-size="13" font-weight="600" text-anchor="middle">Confidence &amp; Performance Guidance</text>
+  </g>
+
+  <g transform="translate(630, 220)">
+    <rect width="420" height="200" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="60" cy="60" r="28" fill="#0B1F4E"/>
+    <text x="60" y="68" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="800" text-anchor="middle">2</text>
+    <text x="110" y="55" fill="#0B1F4E" font-family="'Inter', sans-serif" font-size="18" font-weight="700">English Score Requirements</text>
+    <text x="110" y="85" fill="#475569" font-family="'Inter', sans-serif" font-size="14">IELTS, TOEFL, PTE, Duolingo scores</text>
+    <rect x="110" y="115" width="280" height="40" rx="8" fill="#ECFDF5"/>
+    <text x="250" y="140" fill="#047857" font-family="'Inter', sans-serif" font-size="13" font-weight="600" text-anchor="middle">University Application Alignment</text>
+  </g>
+
+  <g transform="translate(150, 460)">
+    <rect width="900" height="180" rx="14" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+    <text x="60" y="50" fill="#991B1B" font-family="'Inter', sans-serif" font-size="16" font-weight="800">CLIENT INPUT REQUIRED — PROGRAM &amp; CURRICULUM DETAILS</text>
+    <text x="60" y="85" fill="#7F1D1D" font-family="'Inter', sans-serif" font-size="14">Batches, online/offline mode, duration, fees, trainer credentials, mock-test plan, and syllabus.</text>
+    <text x="60" y="125" fill="#B91C1C" font-family="'Inter', sans-serif" font-size="13" font-weight="600">ISMS Global Edu provides general orientation support without unverified score promises.</text>
+  </g>
+</svg>
