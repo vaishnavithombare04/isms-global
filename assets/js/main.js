@@ -104,19 +104,19 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
               <div class="nav__dropdown" role="region" aria-label="Our services">
                 <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr);">
                   <a href="${prefix}personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag">🎓</span>
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-graduation-cap" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
                     <div><div class="nav__dropdown-label">Personalised Counselling</div></div>
                   </a>
                   <a href="${prefix}services/student-visa.html" class="nav__dropdown-item">
-                    <span class="nav__dropdown-flag">🛂</span>
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-document-signed" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
                     <div><div class="nav__dropdown-label">Visa Preparation</div></div>
                   </a>
                   <a href="${prefix}services/application-support.html" class="nav__dropdown-item">
-                    <span class="nav__dropdown-flag">📋</span>
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-form" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
                     <div><div class="nav__dropdown-label">Application Support</div></div>
                   </a>
                   <a href="${prefix}pre-departure-support.html" class="nav__dropdown-item ${currentPage === 'pre-departure-support.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag">✈️</span>
+                    <span class="nav__dropdown-flag"><i class="fi fi-rr-plane-departure" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
                     <div><div class="nav__dropdown-label">Pre-Departure Support</div></div>
                   </a>
                 </div>
