@@ -36,7 +36,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html';
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html' || currentPage === 'post-arrival-support.html' || currentPage === 'scholarship-education-loan.html';
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -131,7 +131,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                       <div class="nav__dropdown-sub">SOP, LOR &amp; offer acceptance</div>
                     </div>
                   </a>
-                  <a href="${prefix}scholarships.html" class="nav__dropdown-item ${currentPage === 'scholarships.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}scholarship-education-loan.html" class="nav__dropdown-item ${currentPage === 'scholarship-education-loan.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-award" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Scholarships &amp; Education Loans</div>
