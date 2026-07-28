@@ -3,48 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ─── SEO ─────────────────────────────── -->
   <title>University Selection Guidance | ISMS Global Edu</title>
-  <meta name="description" content="Explain how ISMS evaluates course fit, ranking, location, cost, scholarships, placement, accreditation, facilities, safety, work, diversity, alumni, and admissi" />
-  <link rel="canonical" href="https://www.ismsglobaledu.com/services/university-selection.html" />
-  
-  <!-- SEO Open Graph & Twitter -->
+  <meta name="description" content="Profile-, academic-, budget-, and career-based university shortlisting guidance for studying abroad. Explore top universities matching your goals with ISMS Global Edu." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.ismsglobaledu.com/university-selection.html" />
+
+  <!-- ─── Open Graph / Twitter ─────────────── -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="University Selection Guidance | ISMS Global Edu" />
-  <meta property="og:description" content="Explain how ISMS evaluates course fit, ranking, location, cost, scholarships, placement, accreditation, facilities, safety, work, diversity, alumni, and admissi" />
-  <meta property="og:url" content="https://www.ismsglobaledu.com/services/university-selection.html" />
-  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-services.jpg" />
+  <meta property="og:description" content="Personalised university shortlisting based on profile, academic standing, financial capabilities, and career objectives." />
+  <meta property="og:url" content="https://www.ismsglobaledu.com/university-selection.html" />
+  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-home.jpg" />
+  <meta property="og:site_name" content="ISMS Global Edu" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Robots Default (noindex for staging/dev) -->
-  <!-- <meta name="robots" content="index,follow"> -->
-  <meta name="robots" content="noindex,follow" />
-  
-  <!-- Fonts -->
+  <!-- ─── Favicon & Fonts ───────────────────── -->
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  
-  <!-- Core Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ─── Global Styles ────────────────────── -->
   <link rel="stylesheet" href="../assets/css/global.css" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <!-- ─── Structured Data (JSON-LD) ──────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.ismsglobaledu.com/university-selection.html#service",
+        "url": "https://www.ismsglobaledu.com/university-selection.html",
+        "name": "University Selection Guidance",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "ISMS Global Edu"
+        },
+        "description": "Profile-, academic-, budget-, and career-based university shortlisting guidance for overseas studies."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.ismsglobaledu.com/university-selection.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.ismsglobaledu.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.ismsglobaledu.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "University Selection Guidance",
+            "item": "https://www.ismsglobaledu.com/university-selection.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Utility Bar -->
-  <div class="utility-bar" role="navigation" aria-label="Quick access links">
-    <div class="container container--wide">
-      <div class="utility-bar__inner">
-        <p class="utility-bar__tagline">17 Years of Trusted Study Abroad Guidance &nbsp;·&nbsp; Free Counselling for Students</p>
-        <nav class="utility-bar__links">
-          <a href="../courses">Courses</a>
-          <a href="../scholarships">Scholarships</a>
-          <a href="../universities">Universities</a>
-          <a href="../events">Events</a>
-          <a href="../guide-me">Guide Me</a>
-          <a href="../get-instant-offer">Get Instant Offer</a>
-        </nav>
-      </div>
+  <!-- ─── Dynamic Header Navigation ─── -->
+  <div id="site-header"></div>
+
+  <!-- ─── Breadcrumb Bar ─── -->
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb navigation">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="../index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="../personalized-counselling.html" class="breadcrumb__link">Services</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__current" aria-current="page">University Selection Guidance</span>
+        </li>
+      </ol>
     </div>
+<<<<<<< HEAD
+  </nav>
+=======
   </div>
 
   <!-- Sticky Header -->
@@ -86,149 +140,62 @@
       </div>
     </div>
   </header>
+>>>>>>> origin/main
 
   <main id="main-content">
-    
-    <!-- Breadcrumbs -->
-    <nav class="services-breadcrumbs" aria-label="Breadcrumb">
-      <a href="../">Home</a> &gt; <a href="./index.html">Services</a> &gt; <span>University Selection Guidance</span>
-    </nav>
 
-    <!-- Service Hero -->
-    <section class="service-hero">
-      <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Services</span>
-        <h1 class="service-hero__title">University Selection Guidance</h1>
-        <p class="service-hero__copy">
-          Get verified, direct assistance for all your overseas academic application needs.
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 01 — University Selection Hero
+    ═══════════════════════════════════════════════════════ -->
+    <section class="univ-hero" aria-labelledby="univ-hero-h1">
+      <div class="container text-center" style="position:relative; z-index:2;">
+        <span class="section-eyebrow" style="color: var(--color-red-light); background: rgba(196,18,48,0.15); border:1px solid rgba(196,18,48,0.3); padding:4px 14px; border-radius:20px; display:inline-block; margin-bottom:1rem;">
+          <i class="fa-solid fa-landmark" aria-hidden="true"></i> University Shortlisting Guidance
+        </span>
+        <h1 id="univ-hero-h1" class="section-title" style="color:var(--color-white); max-width: 900px; margin: 0 auto 1.25rem; font-size: clamp(2.2rem, 4vw, 3.2rem);">
+          University Selection Guidance
+        </h1>
+        <h2 style="color: rgba(255,255,255,0.95); font-size: 1.35rem; font-weight: 700; max-width: 800px; margin: 0 auto 1rem;">Selecting the Right University</h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.9); max-width: 820px; margin: 0 auto 1.75rem; font-size:1.1rem; line-height:1.7;">
+          Our consultants assist students to shortlist top-notch universities and colleges which fit their profile, academic standing, financial capabilities, and career objectives. We guide our students to pursue education at institutions offering great prospects and international recognition.
         </p>
+<<<<<<< HEAD
+        <div style="display:flex; justify-content:center; gap:1.25rem; margin-top:2rem; flex-wrap:wrap;">
+          <a href="#counselling" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Book Free Counselling</a>
+          <a href="../contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Us</a>
+=======
         <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
           <a href="../book-free-counselling.html" class="btn btn-white btn-lg">📅 Book Free Counselling</a>
           <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-white btn-lg">Chat on WhatsApp</a>
+>>>>>>> origin/main
         </div>
       </div>
     </section>
 
-    <!-- Dynamic Body Sections -->
-    <section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">University Selection Guidance</h2>
-      <p class="section-subtitle">Source Content (client PDF)</p>
-    </div>
-    <div style="max-width: 800px; margin: 0 auto;">
-      <p class="content-p">The following text is preserved as the content source. It is not automatically approved as factually current or grammatically final.</p>
-    </div>
-  </div>
-</section>
 
-<section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Source excerpt 1</h2>
-      <p class="section-subtitle">Selecting the Right University</p>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Leeds Beckett University</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Cardiff Metropolitan University</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Bristol University</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Brunel University</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">SKEMA Business School</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">NEOMA Business School</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Page No: 4 University Selection</h2>
-      <p class="section-subtitle">Factors to Consider When Choosing a university</p>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Course Relevance & Structure</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 2</h3>
-        <p class="card-desc">Is the course relevant for your career.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 3</h3>
-        <p class="card-desc">Is it updated with the changing needs of the industry.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Support Feature 4</h3>
-        <p class="card-desc">Does it provide practical knowledge through case studies/ internships.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">University Rankings & Reputations</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">University Locations and Industry Exposure</h3>
-        <p class="card-desc">Admissions matching and targets evaluation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- FAQ Section -->
-    <!-- no FAQ source content -->
-
-
-    <!-- Related Services -->
-    <section class="service-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <h2 class="section-title">Related Services</h2>
-    </div>
-    <div class="cards-grid">
-      <div class="feature-card">
-        <h3 class="card-title">Personalized Counselling</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="personalized-counselling.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Course Selection Guidance</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="course-selection-guidance.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3 class="card-title">Application & Documentation Support</h3>
-        <p class="card-desc">Admissions matching and targets evaluation guidelines.</p>
-        <a href="application-support.html" class="btn btn-outline btn-sm" style="margin-top:1rem; display:inline-block;">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Final Call to Action -->
-    <section class="final-cta" aria-labelledby="final-cta-heading">
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 02 — Client-Supplied Institution Examples
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="examples-heading">
       <div class="container">
+<<<<<<< HEAD
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Featured Representative Institutions</p>
+          <h2 id="examples-heading" class="section-title">Client-Supplied Institution Examples</h2>
+          <p class="section-subtitle">Below are global institutions referenced in our student selection framework across the UK, France, and Ireland.</p>
+        </div>
+
+        <!-- Compliance Notice -->
+        <div class="about-testimonial-card" style="margin-bottom:2rem; text-align:left; background:rgba(239,246,255,0.8); border:1px solid #BFDBFE;">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <i class="fa-solid fa-circle-info" style="color:#2563EB; font-size:1.25rem;" aria-hidden="true"></i>
+            <div>
+              <span style="font-weight:700; color:#1E3A8A; font-size:0.9rem;">Verification Required</span>
+              <p style="font-size:0.85rem; color:#1E40AF; margin:0; line-height:1.5;">
+                Institution names are displayed as client-supplied examples. Official university partnerships, rankings, course availability, and admissions claims require current written verification prior to publication.
+              </p>
+            </div>
+=======
         <div class="final-cta__inner">
           <h2 id="final-cta-heading" class="final-cta__title">
             Start Your Global Education Journey Today
@@ -240,95 +207,210 @@
             <a href="../book-free-counselling.html" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
               📅 Book Free Counselling
             </a>
+>>>>>>> origin/main
           </div>
+        </div>
+
+        <div class="destinations-grid">
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-building-columns"></i></div>
+              <h3 class="course-card__title">Leeds Beckett University</h3>
+              <p class="course-card__desc">United Kingdom &bull; High student satisfaction &amp; career-focused undergraduate and postgraduate degrees.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> UK Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-building-columns"></i></div>
+              <h3 class="course-card__title">Cardiff Metropolitan University</h3>
+              <p class="course-card__desc">United Kingdom &bull; Renowned for business, art, design, and health science programs in Wales.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> UK Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-building-columns"></i></div>
+              <h3 class="course-card__title">Bristol University</h3>
+              <p class="course-card__desc">United Kingdom &bull; Russell Group research institution with global prestige and high graduate employability.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> UK Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-building-columns"></i></div>
+              <h3 class="course-card__title">Brunel University</h3>
+              <p class="course-card__desc">London, United Kingdom &bull; Known for engineering, business, computing, and campus-based student life.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> UK Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="course-card__title">SKEMA Business School</h3>
+              <p class="course-card__desc">France &bull; Triple-accredited global business school with campuses in France, USA, China, and Brazil.</p>
+            </div>
+            <span class="univ-pill univ-pill--green"><i class="fa-solid fa-location-dot"></i> France Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="course-card__title">NEOMA Business School</h3>
+              <p class="course-card__desc">France &bull; Top European business school specializing in international management and luxury branding.</p>
+            </div>
+            <span class="univ-pill univ-pill--green"><i class="fa-solid fa-location-dot"></i> France Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="course-card__title">ESCE International Business School</h3>
+              <p class="course-card__desc">Paris, France &bull; Specializing in international trade, export management, and European business law.</p>
+            </div>
+            <span class="univ-pill univ-pill--green"><i class="fa-solid fa-location-dot"></i> France Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3 class="course-card__title">École de Management Appliqué (EMA Paris)</h3>
+              <p class="course-card__desc">Paris, France &bull; Applied management, luxury marketing, and business administration programs.</p>
+            </div>
+            <span class="univ-pill univ-pill--green"><i class="fa-solid fa-location-dot"></i> France Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-landmark"></i></div>
+              <h3 class="course-card__title">University College Dublin (UCD)</h3>
+              <p class="course-card__desc">Ireland &bull; Ireland's largest global university with top-tier research and post-study work opportunities.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> Ireland Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-landmark"></i></div>
+              <h3 class="course-card__title">Trinity College Dublin (TCD)</h3>
+              <p class="course-card__desc">Ireland &bull; Historic #1 ranked Irish university known worldwide for academic excellence and innovation.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> Ireland Destination</span>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon"><i class="fa-solid fa-landmark"></i></div>
+              <h3 class="course-card__title">University College Cork (UCC)</h3>
+              <p class="course-card__desc">Ireland &bull; Award-winning green campus with high-tech industry links in pharma, IT, and finance.</p>
+            </div>
+            <span class="univ-pill univ-pill--blue"><i class="fa-solid fa-location-dot"></i> Ireland Destination</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         SECTION 03 — How Shortlisting Works
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section section--alt" aria-labelledby="framework-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Decision Flow &amp; Evaluation Criteria</p>
+          <h2 id="framework-heading" class="section-title">How Shortlisting Works</h2>
+          <p class="section-subtitle">We translate your academic background into a tailored selection matrix matching top global institutions.</p>
+        </div>
+
+        <div class="destinations-grid" style="margin-bottom:2.5rem;">
+
+          <article class="app-step-card">
+            <div class="app-step-card__header">
+              <div class="app-step-number">1</div>
+              <h3 class="app-step-card__title">Profile Fit Evaluation</h3>
+            </div>
+            <p style="font-size:0.925rem; color:var(--color-neutral-600); line-height:1.65;">
+              Assess the student's background, core interests, individual strengths, and extracurricular achievements to define suitable target study destinations.
+            </p>
+          </article>
+
+          <article class="app-step-card">
+            <div class="app-step-card__header">
+              <div class="app-step-number">2</div>
+              <h3 class="app-step-card__title">Academic Fit Matching</h3>
+            </div>
+            <p style="font-size:0.925rem; color:var(--color-neutral-600); line-height:1.65;">
+              Match the student's GPA, academic transcripts, prerequisite subject background, and English language test scores against official university admission requirements.
+            </p>
+          </article>
+
+          <article class="app-step-card">
+            <div class="app-step-card__header">
+              <div class="app-step-number">3</div>
+              <h3 class="app-step-card__title">Financial Fit &amp; Budgeting</h3>
+            </div>
+            <p style="font-size:0.925rem; color:var(--color-neutral-600); line-height:1.65;">
+              Evaluate total cost of education including tuition fees, accommodation, living expenses, and eligibility for merit-based scholarships or education loans.
+            </p>
+          </article>
+
+          <article class="app-step-card">
+            <div class="app-step-card__header">
+              <div class="app-step-number">4</div>
+              <h3 class="app-step-card__title">Career Fit &amp; Outcome Alignment</h3>
+            </div>
+            <p style="font-size:0.925rem; color:var(--color-neutral-600); line-height:1.65;">
+              Align selected programs with industry demand, post-study work visa policies, internship opportunities, and long-term career aspirations.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- CLIENT INPUT REQUIRED Control Notice -->
+        <div class="about-testimonial-card" role="note" style="text-align:left; background:rgba(254,243,199,0.7); border:1px dashed #F59E0B;">
+          <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+            <i class="fa-solid fa-triangle-exclamation" style="color:#D97706; font-size:1.25rem; margin-top:2px;" aria-hidden="true"></i>
+            <div>
+              <span style="font-weight:800; color:#B45309; font-size:0.9rem; letter-spacing:0.5px; display:block; margin-bottom:4px;">CLIENT INPUT REQUIRED</span>
+              <p style="font-size:0.875rem; color:#92400E; margin:0; line-height:1.55;">
+                Approved university catalogue, current courses, specific admission criteria, intake dates, tuition fees, scholarship data, partnership evidence, and authorised university logos must be confirmed prior to production deployment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         FINAL SECTION — Global Counselling CTA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section section--navy text-center" aria-labelledby="cta-heading" id="counselling">
+      <div class="container container--narrow">
+        <h2 id="cta-heading" class="section-title" style="color:var(--color-white);">Start Your Global Education Journey Today</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.9); margin-bottom:2rem;">
+          Connect with our expert counsellors and explore the right opportunities for your future.
+        </p>
+        <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+          <a href="../contact.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Book Free Counselling</a>
+          <a href="../contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Us</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__main">
-        <div class="footer__brand">
-          <a href="../" class="header__logo" aria-label="ISMS Global Edu — home" style="display:inline-flex;">
-            <div class="header__logo-mark" aria-hidden="true">IG</div>
-            <div class="header__logo-text">
-              <span class="header__logo-name" style="color:#fff;">ISMS Global Edu</span>
-              <span class="header__logo-tagline">Study Abroad Experts</span>
-            </div>
-          </a>
-          <p class="footer__brand-desc">
-            Helping students turn international study plans into confident global careers — one counselling session at a time, always free.
-          </p>
-          <div class="footer__contact-note">
-            📍 Office address — to be confirmed by client<br />
-            📞 Phone — to be confirmed by client<br />
-            ✉️ Email — to be confirmed by client
-          </div>
-        </div>
+  <!-- ─── Dynamic Footer ─── -->
+  <div id="site-footer"></div>
 
-        <nav aria-label="Study destinations links">
-          <div class="footer__col-title">Study Destinations</div>
-          <ul class="footer__links">
-            <li><a href="../study-uk">United Kingdom</a></li>
-            <li><a href="../study-ireland">Ireland</a></li>
-            <li><a href="../study-australia">Australia</a></li>
-            <li><a href="../study-usa">USA</a></li>
-            <li><a href="../study-new-zealand">New Zealand</a></li>
-            <li><a href="../study-dubai">Dubai</a></li>
-            <li><a href="../study-france">France</a></li>
-            <li><a href="../study-germany">Germany</a></li>
-            <li><a href="../study-netherlands">Netherlands</a></li>
-            <li><a href="../study-spain">Spain</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-label="Student services links">
-          <div class="footer__col-title">Student Services</div>
-          <ul class="footer__links">
-            <li><a href="personalized-counselling.html">Counselling</a></li>
-            <li><a href="course-selection-guidance.html">Course Selection</a></li>
-            <li><a href="university-selection.html">University Shortlisting</a></li>
-            <li><a href="application-support.html">Applications</a></li>
-            <li><a href="scholarship-education-loan.html">Scholarships & Loans</a></li>
-            <li><a href="student-visa.html">Visa Preparation</a></li>
-            <li><a href="student-accommodation.html">Accommodation</a></li>
-            <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-label="Resources links">
-          <div class="footer__col-title">Resources</div>
-          <ul class="footer__links">
-            <li><a href="../courses">Courses</a></li>
-            <li><a href="../scholarships">Scholarships</a></li>
-            <li><a href="../universities">Universities</a></li>
-            <li><a href="../events">Events</a></li>
-            <li><a href="../guide-me">Guide Me</a></li>
-            <li><a href="../get-instant-offer">Get Instant Offer</a></li>
-          </ul>
-          <div class="footer__col-title" style="margin-top:2rem;">Company</div>
-          <ul class="footer__links">
-            <li><a href="../about">About Us</a></li>
-            <li><a href="../contact">Contact Us</a></li>
-            <li><a href="../student-success-stories">Student Success Stories</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer__bottom">
-        <p>© <span id="footer-year">2026</span> ISMS Global Edu. All rights reserved.</p>
-        <nav class="footer__legal-links" aria-label="Legal links">
-          <a href="../privacy-policy">Privacy Policy</a>
-          <a href="../terms-and-conditions">Terms & Conditions</a>
-          <a href="../cookie-policy">Cookie Policy</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
-
+  <!-- ─── Main Application JS ─── -->
   <script src="../assets/js/main.js"></script>
 </body>
 </html>

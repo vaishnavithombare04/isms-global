@@ -1,3 +1,1049 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | ISMS Global Edu</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- ─── Sidebar Navigation ─── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">IG</div>
+        <span class="logo-text">ISMS Global Edu</span>
+      </div>
+      
+      <ul class="sidebar-menu">
+        <li class="menu-item active" data-page="dashboard">
+          <a href="#dashboard">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="menu-item" data-page="journey">
+          <a href="#journey">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Study Journey
+          </a>
+        </li>
+        <li class="menu-item" data-page="documents">
+          <a href="#documents">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Document Vault
+          </a>
+        </li>
+        <li class="menu-item" data-page="applications">
+          <a href="#applications">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Applications
+          </a>
+        </li>
+        <li class="menu-item" data-page="counselling">
+          <a href="#counselling">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            Counselling
+          </a>
+        </li>
+        <li class="menu-item" data-page="finance">
+          <a href="#finance">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Finance & Loans
+          </a>
+        </li>
+        <li class="menu-item" data-page="profile">
+          <a href="#profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            My Profile
+          </a>
+        </li>
+      </ul>
+      
+      <div class="sidebar-footer">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Counselor Anjali" class="counselor-mini-avatar">
+        <div class="counselor-mini-info">
+          <span class="counselor-mini-name">Anjali Sharma</span>
+          <span class="counselor-mini-tag">Assigned Counselor</span>
+        </div>
+      </div>
+    </aside>
+    
+    <!-- ─── Main Wrapper ─── -->
+    <div class="main-wrapper">
+      
+      <!-- Header -->
+      <header class="main-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Sidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          
+          <div class="search-container">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Search application, FAQs, etc.">
+          </div>
+        </div>
+        
+        <div class="header-right">
+          <button class="header-action-btn" aria-label="Notifications" id="notif-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+            <span class="notification-badge"></span>
+          </button>
+          
+          <div class="user-profile-dropdown" id="profile-dropdown-trigger">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=100&q=80" alt="Student Profile Picture" class="user-avatar" id="header-avatar">
+            <span class="user-name" id="header-username">Varun Mehta</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            
+            <div class="dropdown-menu" id="profile-dropdown-menu">
+              <a href="#profile" class="dropdown-item" data-goto="profile">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                My Profile
+              </a>
+              <a href="#settings" class="dropdown-item" data-goto="profile">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                Settings
+              </a>
+              <hr style="border: none; border-top: 1px solid var(--border-color); margin: 4px 0;">
+              <a href="#" class="dropdown-item" style="color: var(--color-danger);" id="logout-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                Logout
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Content Body -->
+      <main class="content-body" id="main-content">
+        
+        <!-- Dynamic Breadcrumb -->
+        <nav class="breadcrumb-container" aria-label="Breadcrumb">
+          <span class="breadcrumb-item">ISMS Global</span>
+          <span>/</span>
+          <span class="breadcrumb-item active" id="breadcrumb-current">Dashboard</span>
+        </nav>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 1: STUDENT DASHBOARD (OVERVIEW)
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section active" id="page-dashboard">
+          
+          <!-- Hero Banner -->
+          <div class="hero-banner">
+            <div class="hero-content">
+              <h2>Welcome back, <span id="hero-student-name">Varun</span>!</h2>
+              <p>Your journey to study abroad is progressing beautifully. Keep completing key requirements to stay on track.</p>
+              
+              <div class="hero-metrics">
+                <div class="metric-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  Target Intake: <strong>Fall 2026</strong>
+                </div>
+                <div class="metric-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  Target Country: <strong>Ireland</strong>
+                </div>
+                <div class="metric-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  Assigned Counselor: <strong>Anjali Sharma</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 8-Stage Stepper Progress Bar -->
+          <div class="card" style="margin-top: 24px; padding: 20px 24px;">
+            <div class="widget-title">
+              <span>Application Progress Tracker</span>
+              <span class="badge badge-info">Stage 3 of 8: Shortlisting</span>
+            </div>
+            
+            <div class="stepper-container">
+              <div class="stepper-line">
+                <div class="stepper-line-progress" id="stepper-progress-line"></div>
+              </div>
+              
+              <!-- Steps -->
+              <div class="step-node completed" data-step="1">
+                <div class="step-circle">1</div>
+                <span class="step-label">Evaluation</span>
+              </div>
+              <div class="step-node completed" data-step="2">
+                <div class="step-circle">2</div>
+                <span class="step-label">Course Selection</span>
+              </div>
+              <div class="step-node active" data-step="3">
+                <div class="step-circle">3</div>
+                <span class="step-label">Shortlisting</span>
+              </div>
+              <div class="step-node" data-step="4">
+                <div class="step-circle">4</div>
+                <span class="step-label">Applications</span>
+              </div>
+              <div class="step-node" data-step="5">
+                <div class="step-circle">5</div>
+                <span class="step-label">Offers & Finances</span>
+              </div>
+              <div class="step-node" data-step="6">
+                <div class="step-circle">6</div>
+                <span class="step-label">Visa Prep</span>
+              </div>
+              <div class="step-node" data-step="7">
+                <div class="step-circle">7</div>
+                <span class="step-label">Pre-Departure</span>
+              </div>
+              <div class="step-node" data-step="8">
+                <div class="step-circle">8</div>
+                <span class="step-label">Enrolment</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Stats Grid -->
+          <div class="stats-grid" style="margin-top: 24px;">
+            <div class="stat-card">
+              <div class="stat-icon" style="background-color: var(--color-info-bg); color: var(--color-info);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num" id="stat-apps-count">4</span>
+                <span class="stat-label">Submitted Applications</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon" style="background-color: var(--color-success-bg); color: var(--color-success);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num" id="stat-offers-count">2</span>
+                <span class="stat-label">Offers Received</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon" style="background-color: var(--color-warning-bg); color: var(--color-warning);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num" id="stat-docs-count">8/12</span>
+                <span class="stat-label">Approved Documents</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon" style="background-color: var(--color-danger-bg); color: var(--color-danger);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num" id="stat-next-meeting">Tomorrow</span>
+                <span class="stat-label">Next Meeting: 4:00 PM</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dashboard Actionable Widgets -->
+          <div class="dashboard-widget-row">
+            
+            <!-- Reminders Widget -->
+            <div class="card">
+              <div class="widget-title">
+                <span>Next Steps & Critical Reminders</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </div>
+              <ul class="reminder-list">
+                <li class="reminder-item" style="border-left-color: var(--color-danger);">
+                  <div class="reminder-content">
+                    <span class="reminder-text">Pending IELTS Scorecard Upload</span>
+                    <span class="reminder-date">Required for Trinity College conditional offer</span>
+                  </div>
+                  <button class="btn btn-primary btn-sm" onclick="switchPage('documents')">Upload Now</button>
+                </li>
+                <li class="reminder-item" style="border-left-color: var(--color-warning);">
+                  <div class="reminder-content">
+                    <span class="reminder-text">Sign & Return Offer Letter</span>
+                    <span class="reminder-date">University College Dublin (UCD) - Deadline: Aug 15</span>
+                  </div>
+                  <button class="btn btn-outline btn-sm" onclick="switchPage('applications')">Review Offer</button>
+                </li>
+                <li class="reminder-item" style="border-left-color: var(--color-success);">
+                  <div class="reminder-content">
+                    <span class="reminder-text">Prepare Forex & Tuition Deposit Proof</span>
+                    <span class="reminder-date">Recommended prep stage for visa documentation</span>
+                  </div>
+                  <button class="btn btn-outline btn-sm" onclick="switchPage('finance')">Check Finances</button>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Counselor details Widget -->
+            <div class="card counselor-card">
+              <div class="widget-title" style="width: 100%; text-align: left;">
+                <span>Your Counselor</span>
+              </div>
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Counselor Anjali" class="counselor-avatar">
+              <div class="counselor-name">Anjali Sharma</div>
+              <div class="counselor-title">Lead Overseas Education Advisor</div>
+              
+              <div class="counselor-cta">
+                <a href="https://wa.me/919999999999" target="_blank" class="btn btn-whatsapp">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                  Chat on WhatsApp
+                </a>
+                <button class="btn btn-secondary" onclick="switchPage('counselling')">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  Book Live Session
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 2: MY STUDY JOURNEY (8-STAGE TRACKER)
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-journey">
+          <div class="page-header">
+            <h1 class="page-title">My Study Journey</h1>
+            <p class="page-subtitle">Interactive application roadmap detailing the 8 key steps for ISMS admissions.</p>
+          </div>
+          
+          <div class="journey-timeline">
+            
+            <!-- Stage 1 -->
+            <div class="timeline-item completed">
+              <div class="timeline-node">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 1</span>
+                  <h3 class="timeline-title">Profile & Career Evaluation</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-success">Completed</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Initial assessment meeting with Anjali</li>
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Upload basic academic credentials (10th/12th/Bachelor's)</li>
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Select study goals & career outcome paths</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      <strong>Counselor's Notes:</strong> Varun has strong graduation credentials (8.2 CGPA in CS). He is targeted towards MS in Data Analytics or CS in Ireland/UK.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 2 -->
+            <div class="timeline-item completed">
+              <div class="timeline-node">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="color: white;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 2</span>
+                  <h3 class="timeline-title">Country & Course Selection</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-success">Completed</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Finalize target destination (Ireland as Primary, UK as Backup)</li>
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Research MSc Data Analytics curricula across top universities</li>
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Align target budget and tuition ranges</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      <strong>Counselor's Notes:</strong> Target course locked: MSc Data Science/Analytics. Main focus is Ireland (TCD, UCD) due to the 2-year post-study work visa.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 3 -->
+            <div class="timeline-item in-progress active">
+              <div class="timeline-node"></div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 3</span>
+                  <h3 class="timeline-title">University Shortlisting</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-warning">In Progress</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" checked disabled> Shortlist 4 target universities</li>
+                      <li class="checklist-item"><input type="checkbox" id="chk-journey-s3-1"> Upload SOP draft for review</li>
+                      <li class="checklist-item"><input type="checkbox" id="chk-journey-s3-2"> Secure 2 Academic LORs from professors</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      <strong>Counselor's Notes:</strong> Trinity College Dublin and University College Dublin have high criteria. Please finalize your SOP draft quickly so we can optimize it for admissions.
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="switchPage('documents')">Upload SOP Draft</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 4 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 4</span>
+                  <h3 class="timeline-title">Application & Document Submission</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-info">Pending</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" disabled> Review final application forms for 4 choices</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Submit application fees where applicable</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Gather official transcript certificates</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      This stage unlocks once Stage 3 is fully finalized.
+                    </div>
+                    <button class="btn btn-outline btn-sm" disabled>Upload Stage 4 Docs</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 5 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 5</span>
+                  <h3 class="timeline-title">Offer Acceptance & Financial Planning</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-info">Pending</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" disabled> Pay confirmation deposit fee to accept offer</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Sanction education loan / set up Bank Statement proofs</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Apply for university scholarship awards</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      We will schedule a special session with the loan assistant once offers begin arriving.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 6 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 6</span>
+                  <h3 class="timeline-title">Student Visa Preparation</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-info">Pending</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" disabled> Medical insurance coverage setup</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Online visa application submission & fee payment</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Book visa appointment & bio-metrics slot</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      Visa guidance includes mock visa interviews conducted by our team.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 7 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 7</span>
+                  <h3 class="timeline-title">Pre-Departure Planning</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-info">Pending</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" disabled> Book flights and secure accommodation</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Purchase currency Forex card</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Attend ISMS Global pre-departure briefing seminar</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      We offer exclusive flight booking discounts and accommodation finder partnerships.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Stage 8 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-header" onclick="toggleTimeline(this)">
+                <div class="timeline-title-area">
+                  <span class="timeline-num">Stage 8</span>
+                  <h3 class="timeline-title">Arrival & Enrolment</h3>
+                </div>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="badge badge-info">Pending</span>
+                  <svg class="timeline-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+              </div>
+              <div class="timeline-body">
+                <div class="timeline-content">
+                  <div class="timeline-checklist">
+                    <h4>Milestones & Deliverables</h4>
+                    <ul class="checklist-items">
+                      <li class="checklist-item"><input type="checkbox" disabled> Campus registration and class enrollment</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Apply for residence permit cards (IRP/BRP)</li>
+                      <li class="checklist-item"><input type="checkbox" disabled> Open a local bank account</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-notes">
+                    <div class="counselor-note-box">
+                      Post-arrival guidance in Ireland will be handled by our local student reps.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 3: DOCUMENT VAULT & UPLOAD CENTER
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-documents">
+          <div class="page-header">
+            <h1 class="page-title">Document Vault</h1>
+            <p class="page-subtitle">Upload and track the status of all credentials required for university applications.</p>
+          </div>
+          
+          <!-- Category Tabs -->
+          <div class="category-tabs" id="doc-tabs">
+            <button class="tab-btn active" data-filter="all">All Documents</button>
+            <button class="tab-btn" data-filter="academics">Academics</button>
+            <button class="tab-btn" data-filter="scores">Test Scores</button>
+            <button class="tab-btn" data-filter="sop">SOP & LORs</button>
+            <button class="tab-btn" data-filter="id">Passport & ID</button>
+            <button class="tab-btn" data-filter="financials">Financials</button>
+          </div>
+          
+          <!-- Drag-and-drop Dropzone -->
+          <div class="upload-dropzone" id="dropzone">
+            <div class="upload-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            </div>
+            <h3 class="upload-title">Drag & Drop files here, or click to browse</h3>
+            <p class="upload-sub">Supports PDF, JPG, PNG up to 10MB per file</p>
+            <input type="file" id="file-input" style="display:none;" multiple>
+          </div>
+          
+          <!-- Document Status Table -->
+          <div class="table-responsive">
+            <table class="table" id="documents-table">
+              <thead>
+                <tr>
+                  <th>Document Name</th>
+                  <th>Category</th>
+                  <th>Upload Date</th>
+                  <th>File Size</th>
+                  <th>Status</th>
+                  <th style="text-align: right;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="documents-tbody">
+                <!-- Data will be loaded via script.js -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 4: UNIVERSITY APPLICATIONS & SHORTLIST TRACKER
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-applications">
+          <div class="page-header">
+            <h1 class="page-title">University Applications</h1>
+            <p class="page-subtitle">Track responses, deadlines, and offer letters for shortlisted academic courses.</p>
+          </div>
+          
+          <div class="application-cards-grid" id="applications-grid">
+            <!-- Loaded via script.js -->
+          </div>
+        </section>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 5: COUNSELLING & MEETING SCHEDULER
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-counselling">
+          <div class="page-header">
+            <h1 class="page-title">Counselling & Scheduler</h1>
+            <p class="page-subtitle">Schedule 1-on-1 virtual sessions with Anjali or other specialized mentors.</p>
+          </div>
+          
+          <div class="scheduler-grid">
+            
+            <!-- Book meeting form -->
+            <div class="card">
+              <h3 class="widget-title">Book a Counselling Session</h3>
+              <form id="book-meeting-form">
+                <div class="form-group">
+                  <label class="form-label" for="meeting-topic">Counselling Topic</label>
+                  <select class="form-input" id="meeting-topic" required>
+                    <option value="" disabled selected>Select a topic...</option>
+                    <option value="Course Selection">Course & Country Selection</option>
+                    <option value="Application Review">Application & SOP Review</option>
+                    <option value="Visa Guidance">Student Visa Guidance</option>
+                    <option value="Financials & Loans">Education Loans & Finances</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label" for="meeting-date">Date Selection</label>
+                  <input type="date" class="form-input" id="meeting-date" required>
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label">Available Time Slots</label>
+                  <div class="slots-container" id="time-slots-wrapper">
+                    <div class="slot-pill" data-time="10:00 AM">10:00 AM</div>
+                    <div class="slot-pill" data-time="11:30 AM">11:30 AM</div>
+                    <div class="slot-pill" data-time="02:00 PM">02:00 PM</div>
+                    <div class="slot-pill" data-time="03:30 PM">03:30 PM</div>
+                    <div class="slot-pill" data-time="05:00 PM">05:00 PM</div>
+                    <div class="slot-pill" data-time="06:30 PM">06:30 PM</div>
+                  </div>
+                  <input type="hidden" id="selected-time-slot" required>
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label" for="meeting-notes">Preparation Notes</label>
+                  <textarea class="form-input" id="meeting-notes" rows="3" placeholder="Describe questions or upload status for this meeting..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Live Session</button>
+              </form>
+            </div>
+            
+            <!-- Schedule Lists & History -->
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+              
+              <!-- Upcoming -->
+              <div class="card">
+                <h3 class="widget-title">Upcoming Meetings</h3>
+                <div class="upcoming-meetings" id="upcoming-meetings-wrapper">
+                  <!-- Loaded via JS -->
+                </div>
+              </div>
+              
+              <!-- Past History -->
+              <div class="card">
+                <h3 class="widget-title">Past Counselling Sessions</h3>
+                <div class="upcoming-meetings" style="opacity: 0.85;" id="past-meetings-wrapper">
+                  <!-- Loaded via JS -->
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 6: FINANCIALS, SCHOLARSHIPS & LOAN HUB
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-finance">
+          <div class="page-header">
+            <h1 class="page-title">Financials & Loans</h1>
+            <p class="page-subtitle">Estimate study budgets, check scholarship approvals, and apply for student loan assistance.</p>
+          </div>
+          
+          <div class="finance-overview">
+            
+            <!-- Budget Calculator -->
+            <div class="card">
+              <h3 class="widget-title">Estimated Ireland Study Budget</h3>
+              <div class="budget-calc">
+                <div class="budget-row">
+                  <span>Average Annual Tuition Fee</span>
+                  <strong>€18,500</strong>
+                </div>
+                <div class="budget-row">
+                  <span>Living Expenses (Required Deposit)</span>
+                  <strong>€12,000</strong>
+                </div>
+                <div class="budget-row">
+                  <span>Visa & Medical Insurance Fees</span>
+                  <strong>€450</strong>
+                </div>
+                <div class="budget-row">
+                  <span>Estimated Flights & Travel</span>
+                  <strong>€650</strong>
+                </div>
+                <div class="budget-row total">
+                  <span>Total Estimated Year 1 Fund</span>
+                  <span>€31,600 (~ ₹28.5 Lakhs)</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proof of Funds Checklist -->
+            <div class="card">
+              <h3 class="widget-title">Proof of Funds Status Tracker</h3>
+              <div class="funds-checklist">
+                <div class="reminder-item" style="border-left-color: var(--color-success); background-color: var(--bg-main);">
+                  <div class="reminder-content">
+                    <span class="reminder-text">Tuition Deposit Receipt</span>
+                    <span class="reminder-date">Pending college offer letter selection</span>
+                  </div>
+                  <span class="badge badge-info">Awaiting Offer</span>
+                </div>
+                <div class="reminder-item" style="border-left-color: var(--color-warning);">
+                  <div class="reminder-content">
+                    <span class="reminder-text">Education Loan Sanction Letter</span>
+                    <span class="reminder-date">Sanction in progress (HDFC Bank)</span>
+                  </div>
+                  <span class="badge badge-warning">Under Review</span>
+                </div>
+                <div class="reminder-item" style="border-left-color: var(--color-danger);">
+                  <div class="reminder-content">
+                    <span class="reminder-text">Forex Card & Student Account</span>
+                    <span class="reminder-date">Setup recommended 30 days before travel</span>
+                  </div>
+                  <span class="badge badge-danger">Not Started</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="dashboard-grid">
+            
+            <!-- Scholarships Panel -->
+            <div class="card" style="grid-column: span 7;">
+              <h3 class="widget-title">Eligible Scholarship Programs</h3>
+              <div style="display: flex; flex-direction: column; gap: 16px;" id="scholarships-wrapper">
+                <!-- Loaded via JS -->
+              </div>
+            </div>
+            
+            <!-- Loan assistance Form -->
+            <div class="card" style="grid-column: span 5;">
+              <h3 class="widget-title">Education Loan Support</h3>
+              <form id="loan-application-form">
+                <div class="form-group">
+                  <label class="form-label">Select Preferred Partner Bank</label>
+                  <div class="bank-cards" id="bank-selector">
+                    <div class="bank-card active" data-bank="HDFC Credila">
+                      <div class="bank-name">HDFC Credila</div>
+                    </div>
+                    <div class="bank-card" data-bank="ICICI Bank">
+                      <div class="bank-name">ICICI Bank</div>
+                    </div>
+                    <div class="bank-card" data-bank="SBI Education">
+                      <div class="bank-name">SBI Bank</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label" for="loan-amount">Requested Loan Amount (INR)</label>
+                  <input type="number" class="form-input" id="loan-amount" placeholder="e.g. 2500000" required>
+                </div>
+                
+                <div class="form-group">
+                  <label class="form-label" for="collateral-type">Collateral Type</label>
+                  <select class="form-input" id="collateral-type" required>
+                    <option value="" disabled selected>Select collateral option...</option>
+                    <option value="Non-Collateral">Non-Collateral Loan (Based on Profile)</option>
+                    <option value="Property">Immovable Property (House / Flat)</option>
+                    <option value="FD / Mutual Funds">Liquid Assets (FD / Mutual Funds / Insurance)</option>
+                  </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Loan Assistance Request</button>
+              </form>
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- ═══════════════════════════════════════════════════════════
+             PAGE 7: STUDENT PROFILE & SETTINGS
+        ═══════════════════════════════════════════════════════════ -->
+        <section class="page-section" id="page-profile">
+          <div class="page-header">
+            <h1 class="page-title">My Profile & Settings</h1>
+            <p class="page-subtitle">Manage personal academic details, country targets, and login account security.</p>
+          </div>
+          
+          <div class="profile-layout">
+            
+            <!-- Left Panel: Avatar Upload & Actions -->
+            <div class="card text-center" style="height: fit-content;">
+              <div class="avatar-upload-box">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&q=80" alt="Large Avatar Photo" class="profile-avatar-large" id="profile-avatar-large">
+                <div>
+                  <button class="btn btn-outline btn-sm" id="change-avatar-btn">Change Photo</button>
+                </div>
+                <input type="file" id="avatar-input" style="display: none;" accept="image/*">
+                
+                <hr style="width: 100%; border: none; border-top: 1px solid var(--border-color); margin: 8px 0;">
+                
+                <div style="text-align: left; width: 100%;">
+                  <h4 class="form-label" style="margin-bottom: 12px;">Target Countries</h4>
+                  <div class="preference-list" id="country-preferences">
+                    <span class="preference-chip active" data-val="Ireland">Ireland <i class="fa-solid fa-flag" style="color:#10B981; margin-right:4px;" aria-hidden="true"></i></span>
+                    <span class="preference-chip active" data-val="UK">United Kingdom <i class="fa-solid fa-flag" style="color:var(--color-navy); margin-right:4px;" aria-hidden="true"></i></span>
+                    <span class="preference-chip" data-val="Australia">Australia <i class="fa-solid fa-flag" style="color:#F59E0B; margin-right:4px;" aria-hidden="true"></i></span>
+                    <span class="preference-chip" data-val="USA">USA <i class="fa-solid fa-flag" style="color:#3B82F6; margin-right:4px;" aria-hidden="true"></i></span>
+                    <span class="preference-chip" data-val="Germany">Germany <i class="fa-solid fa-flag" style="color:#D97706; margin-right:4px;" aria-hidden="true"></i></span>
+                    <span class="preference-chip" data-val="Canada">Canada <i class="fa-solid fa-flag" style="color:var(--color-red); margin-right:4px;" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Panel: Info Form Tabs -->
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+              
+              <!-- Personal Details -->
+              <div class="card">
+                <h3 class="widget-title">Personal Information</h3>
+                <form id="personal-info-form">
+                  <div class="form-grid-2">
+                    <div class="form-group">
+                      <label class="form-label" for="prof-fullname">Full Name</label>
+                      <input type="text" class="form-input" id="prof-fullname" value="Varun Mehta" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="prof-dob">Date of Birth</label>
+                      <input type="date" class="form-input" id="prof-dob" value="2003-05-14" required>
+                    </div>
+                  </div>
+                  <div class="form-grid-2">
+                    <div class="form-group">
+                      <label class="form-label" for="prof-phone">Phone Number</label>
+                      <input type="tel" class="form-input" id="prof-phone" value="+91 98765 43210" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="prof-email">Email Address</label>
+                      <input type="email" class="form-input" id="prof-email" value="varun.mehta@gmail.com" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="prof-address">Permanent Address</label>
+                    <input type="text" class="form-input" id="prof-address" value="45, Park Street, New Delhi, India" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save Personal Info</button>
+                </form>
+              </div>
+              
+              <!-- Academic History -->
+              <div class="card">
+                <h3 class="widget-title">Academic & Test Score History</h3>
+                <form id="academic-history-form">
+                  <div class="form-grid-2">
+                    <div class="form-group">
+                      <label class="form-label" for="acad-degree">Highest Degree Qualification</label>
+                      <input type="text" class="form-input" id="acad-degree" value="B.Tech Computer Science" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="acad-institution">Institution Name</label>
+                      <input type="text" class="form-input" id="acad-institution" value="Delhi Technological University" required>
+                    </div>
+                  </div>
+                  <div class="form-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                    <div class="form-group">
+                      <label class="form-label" for="acad-year">Graduation Year</label>
+                      <input type="number" class="form-input" id="acad-year" value="2025" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="acad-cgpa">CGPA / Percentage</label>
+                      <input type="text" class="form-input" id="acad-cgpa" value="8.2 CGPA" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="acad-test">English Score (IELTS/PTE)</label>
+                      <input type="text" class="form-input" id="acad-test" value="Pending Score" placeholder="e.g. IELTS 7.5">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save Academics</button>
+                </form>
+              </div>
+              
+              <!-- Account Security -->
+              <div class="card">
+                <h3 class="widget-title">Account Security</h3>
+                <form id="security-password-form">
+                  <div class="form-grid-2">
+                    <div class="form-group">
+                      <label class="form-label" for="sec-old-pass">Current Password</label>
+                      <input type="password" class="form-input" id="sec-old-pass" placeholder="••••••••">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="sec-new-pass">New Password</label>
+                      <input type="password" class="form-input" id="sec-new-pass" placeholder="Enter new password">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group" style="margin-top: 8px;">
+                    <label style="display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--text-secondary);">
+                      <input type="checkbox" checked> Enable WhatsApp SMS alerts for counseling invites
+                    </label>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Update Security Settings</button>
+                </form>
+              </div>
+              
+            </div>
+            
+          </div>
+        </section>
+        
+      </main>
+    </div>
+    
+  </div>
+
+  <!-- ─── Modals Overlay ─── -->
+  
+  <!-- Upload File Modal -->
+  <div class="modal-overlay" id="upload-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="upload-modal-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-header">
+        <h3>Uploading Document...</h3>
+        <p class="upload-sub" id="upload-file-status">Selected: <span id="upload-filename">SOP_Draft_V1.pdf</span></p>
+      </div>
+      <div class="modal-body">
+        <div style="background-color: var(--bg-main); height: 8px; border-radius: 4px; overflow: hidden; margin: 16px 0;">
+          <div style="background-color: var(--primary); height: 100%; width: 0%; transition: width 0.5s ease;" id="upload-progress-bar"></div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;" id="upload-percentage">0% Complete</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accept Offer Modal -->
+  <div class="modal-overlay" id="offer-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="offer-modal-close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-header">
+        <h3>Accept Offer Confirmation</h3>
+        <p class="upload-sub">Accept admission offer from <strong id="offer-uni-name">Trinity College Dublin</strong></p>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">
+          By accepting this offer, you agree to submit the required tuition fee deposit of €1,000 to reserve your seat in the class.
+        </p>
+        
+        <div class="form-group">
+          <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+            <input type="checkbox" id="chk-offer-confirm" style="margin-top: 3px;"> I confirm that I want to accept this offer and authorize ISMS Global Edu to coordinate with the university on my behalf.
+          </label>
+        </div>
+        
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+          <button class="btn btn-outline" id="offer-modal-cancel">Cancel</button>
+          <button class="btn btn-success" id="offer-modal-submit" disabled>Accept Offer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
+=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1041,3 +2087,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+>>>>>>> origin/main
