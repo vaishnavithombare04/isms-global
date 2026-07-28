@@ -36,7 +36,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html';
+  const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html' || currentPage === 'course-selection-guidance.html';
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -117,7 +117,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                       <div class="nav__dropdown-sub">Match profile &amp; destination</div>
                     </div>
                   </a>
-                  <a href="${prefix}courses.html" class="nav__dropdown-item ${currentPage === 'courses.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}course-selection-guidance.html" class="nav__dropdown-item ${currentPage === 'course-selection-guidance.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-book-open" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Course Selection Guidance</div>
