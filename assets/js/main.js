@@ -36,11 +36,8 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   }
 
   const isDestinationPage = currentPage.startsWith('study-');
-<<<<<<< HEAD
   const isServicePage = currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html' || currentPage === 'application-support.html' || currentPage === 'visa-preparation.html' || currentPage === 'university-selection.html';
-=======
   const isServicePage = isUnderServices || currentPage === 'personalized-counselling.html' || currentPage === 'pre-departure-support.html';
->>>>>>> origin/main
 
   // 1. Render Utility Bar & Header
   const headerWrapperHtml = `
@@ -105,7 +102,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                 Services
                 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4.5 6l3.5 3.5L11.5 6"/></svg>
               </a>
-<<<<<<< HEAD
               <div class="nav__dropdown" role="region" aria-label="Our services" style="min-width: 660px;">
                 <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr); gap: var(--space-2);">
                   <a href="personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
@@ -163,7 +159,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                       <div class="nav__dropdown-label">Post-Arrival Guidance</div>
                       <div class="nav__dropdown-sub">Airport, SIM, banking &amp; orientation</div>
                     </div>
-=======
               <div class="nav__dropdown" role="region" aria-label="Our services">
                 <div class="nav__dropdown-grid" style="grid-template-columns: repeat(2,1fr);">
                   <a href="${prefix}personalized-counselling.html" class="nav__dropdown-item ${currentPage === 'personalized-counselling.html' ? 'nav__dropdown-item--active' : ''}">
@@ -181,7 +176,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                   <a href="${prefix}pre-departure-support.html" class="nav__dropdown-item ${currentPage === 'pre-departure-support.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fi fi-rr-plane-departure" style="font-size:1.15rem;vertical-align:middle;color:var(--color-red);"></i></span>
                     <div><div class="nav__dropdown-label">Pre-Departure Support</div></div>
->>>>>>> origin/main
                   </a>
                 </div>
               </div>
@@ -223,7 +217,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
     <nav aria-label="Mobile navigation">
       <ul class="mobile-nav__list" role="list">
-<<<<<<< HEAD
         <li><a href="study-uk.html" class="mobile-nav__link">Study in the UK</a></li>
         <li><a href="study-ireland.html" class="mobile-nav__link">Study in Ireland</a></li>
         <li><a href="study-australia.html" class="mobile-nav__link">Study in Australia</a></li>
@@ -244,7 +237,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="services/post-arrival-support.html" class="mobile-nav__link">Post-Arrival Guidance</a></li>
         <li><a href="about.html" class="mobile-nav__link">About Us</a></li>
         <li><a href="contact.html" class="mobile-nav__link">Contact Us</a></li>
-=======
         <li><a href="${prefix}study-uk.html" class="mobile-nav__link">Study in the UK</a></li>
         <li><a href="${prefix}study-ireland.html" class="mobile-nav__link">Study in Ireland</a></li>
         <li><a href="${prefix}study-australia.html" class="mobile-nav__link">Study in Australia</a></li>
@@ -263,7 +255,6 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         <li><a href="/resources" class="mobile-nav__link">Resources</a></li>
         <li><a href="${prefix}about.html" class="mobile-nav__link">About Us</a></li>
         <li><a href="${prefix}contact.html" class="mobile-nav__link">Contact Us</a></li>
->>>>>>> origin/main
       </ul>
     </nav>
 
