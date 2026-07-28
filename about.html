@@ -173,6 +173,19 @@
       border: 1px solid rgba(255, 255, 255, 0.15) !important;
     }
 
+    /* Center wrapped cards in What We Do section using Flexbox */
+    .about-panels-grid {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: var(--space-6) !important;
+    }
+    .about-panel {
+      flex: 0 1 calc(33.333% - (2 * var(--space-6)) / 3) !important;
+      min-width: 320px !important;
+      margin: 0;
+    }
+
     @media (max-width: 1024px) {
       .about-team-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -180,12 +193,18 @@
       .why-consultancy-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      .about-panel {
+        flex: 0 1 calc(50% - var(--space-6) / 2) !important;
+      }
     }
     @media (max-width: 768px) {
       .about-team-grid,
       .why-consultancy-grid,
       .about-stats-grid {
         grid-template-columns: 1fr;
+      }
+      .about-panel {
+        flex: 0 1 100% !important;
       }
     }
   </style>
@@ -303,7 +322,7 @@
             We aim to provide students with professional guidance, individualized counseling, and comprehensive support to realize their study abroad ambitions. Whether it is determining the appropriate university or obtaining a student visa, we are here to ensure that everything in the procedure is straightforward and profitable.
           </p>
         </div>
-        <div class="about-panels-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <div class="about-panels-grid">
 
           <article class="about-panel">
             <div class="about-panel__body">
