@@ -107,14 +107,14 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                     </div>
                   </a>
                   <a href="${prefix}university-selection.html" class="nav__dropdown-item ${currentPage === 'university-selection.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fa-solid fa-landmark" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-landmark" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">University Shortlisting</div>
                       <div class="nav__dropdown-sub">Match profile &amp; destination</div>
                     </div>
                   </a>
                   <a href="${prefix}course-selection-guidance.html" class="nav__dropdown-item ${currentPage === 'course-selection-guidance.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fa-solid fa-book-open" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-book-open" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Course Selection Guidance</div>
                       <div class="nav__dropdown-sub">Programs matching career goals</div>
@@ -128,7 +128,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                     </div>
                   </a>
                   <a href="${prefix}scholarship-education-loan.html" class="nav__dropdown-item ${currentPage === 'scholarship-education-loan.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fa-solid fa-award" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-award" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Scholarships &amp; Education Loans</div>
                       <div class="nav__dropdown-sub">Funding &amp; financial planning</div>
@@ -149,7 +149,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                     </div>
                   </a>
                   <a href="${prefix}post-arrival-support.html" class="nav__dropdown-item ${currentPage === 'post-arrival-support.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fa-solid fa-house-user" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-house-user" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Post-Arrival Guidance</div>
                       <div class="nav__dropdown-sub">Airport, SIM, banking &amp; orientation</div>
@@ -163,7 +163,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                     </div>
                   </a>
                   <a href="${prefix}services/student-finance-forex.html" class="nav__dropdown-item ${currentPage === 'student-finance-forex.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fa-solid fa-arrow-right-arrow-left" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-arrow-right-arrow-left" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Money Transfer &amp; Student Finance</div>
                       <div class="nav__dropdown-sub">Cross-border transfers, forex &amp; banking</div>
@@ -177,7 +177,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                     </div>
                   </a>
                   <a href="${prefix}services/ielts-test-preparation.html" class="nav__dropdown-item ${currentPage === 'ielts-test-preparation.html' ? 'nav__dropdown-item--active' : ''}">
-                    <span class="nav__dropdown-flag"><i class="fa-solid fa-language" style="color:var(--color-navy);" aria-hidden="true"></i></span>
+                    <span class="nav__dropdown-flag"><i class="fa-solid fa-language" style="color:var(--color-red);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">IELTS &amp; English Test Prep</div>
                       <div class="nav__dropdown-sub">IELTS, TOEFL, PTE &amp; Duolingo prep</div>

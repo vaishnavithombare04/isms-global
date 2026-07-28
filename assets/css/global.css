@@ -4576,3 +4576,8 @@ section[class*="cta"] {
   margin-right: auto !important;
   text-align: center !important;
 }
+
+/* Uniform Icon Color for Services Dropdown Options */
+.nav__dropdown-item .nav__dropdown-flag i {
+  color: var(--color-red) !important;
+}
