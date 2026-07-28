@@ -32,7 +32,7 @@ const state = {
       logo: "TC",
       course: "MSc in Data Science",
       country: "Ireland",
-      flag: "🇮🇪",
+      flag: '<i class="fa-solid fa-flag" style="color:#10B981;"></i>',
       intake: "Fall 2026",
       deadline: "2026-11-30",
       fee: "€22,800",
@@ -47,7 +47,7 @@ const state = {
       logo: "UC",
       course: "MSc in Business Analytics",
       country: "Ireland",
-      flag: "🇮🇪",
+      flag: '<i class="fa-solid fa-flag" style="color:#10B981;"></i>',
       intake: "Fall 2026",
       deadline: "2026-12-15",
       fee: "€20,500",
@@ -62,7 +62,7 @@ const state = {
       logo: "LB",
       course: "MSc in Data Science",
       country: "UK",
-      flag: "🇬🇧",
+      flag: '<i class="fa-solid fa-flag" style="color:var(--color-navy);"></i>',
       intake: "Fall 2026",
       deadline: "2026-10-31",
       fee: "£16,000",
@@ -77,7 +77,7 @@ const state = {
       logo: "BU",
       course: "MSc in Computer Science",
       country: "UK",
-      flag: "🇬🇧",
+      flag: '<i class="fa-solid fa-flag" style="color:var(--color-navy);"></i>',
       intake: "Fall 2026",
       deadline: "2026-09-30",
       fee: "£27,500",
@@ -575,7 +575,7 @@ function renderApplications() {
     if (app.offerLetter && !app.accepted) {
       offerBoxHTML = `
         <div class="offer-box">
-          <div class="offer-title">🔥 Official Offer Received!</div>
+          <div class="offer-title"><i class="fa-solid fa-fire" style="color: #EF4444;" aria-hidden="true"></i> Official Offer Received!</div>
           <div style="display: flex; gap: 8px;">
             <button class="btn btn-primary btn-sm" onclick="downloadOffer('${app.uni}')" style="padding: 6px 12px; font-size: 0.8rem;">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
@@ -590,7 +590,7 @@ function renderApplications() {
     } else if (app.accepted) {
       offerBoxHTML = `
         <div class="offer-box" style="background-color: var(--color-success-bg); border-color: var(--color-success);">
-          <div class="offer-title" style="color: var(--color-success);">✓ You accepted this offer</div>
+          <div class="offer-title" style="color: var(--color-success);"><i class="fa-solid fa-circle-check" style="color: var(--color-success);" aria-hidden="true"></i> You accepted this offer</div>
           <p style="font-size: 0.75rem; color: var(--text-secondary);">Your seat reservation process is underway. Anjali will coordinate next steps.</p>
         </div>
       `;
@@ -720,7 +720,7 @@ function renderScholarships() {
       </div>
       <div>
         <button class="btn btn-outline btn-sm" onclick="applyScholarship(${sc.id})" id="sc-btn-${sc.id}">
-          ${sc.applied ? "Applied ✓" : "Apply via Counselor"}
+          ${sc.applied ? 'Applied <i class="fa-solid fa-check"></i>' : "Apply via Counselor"}
         </button>
       </div>
     `;
