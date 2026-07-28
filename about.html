@@ -118,6 +118,61 @@
       line-height: 1.4;
     }
 
+    /* Premium What We Do Card Design */
+    .about-panel {
+      border: 1px solid var(--color-neutral-200);
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .about-panel:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+    .about-panel__body {
+      padding: var(--space-6) !important;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .about-panel h3 {
+      font-size: var(--text-lg);
+      font-weight: 800;
+      color: var(--color-navy);
+      margin-top: var(--space-2);
+      margin-bottom: var(--space-1);
+    }
+    .about-panel p {
+      font-size: var(--text-sm);
+      color: var(--color-neutral-700);
+      line-height: 1.6;
+    }
+
+    /* Fix Contrast inside Navy Section */
+    .section--navy {
+      background: var(--color-navy) !important;
+      color: var(--color-white) !important;
+    }
+    .section--navy .section-title,
+    .section--navy .section-eyebrow,
+    .section--navy p,
+    .section--navy .about-quote,
+    .section--navy .about-quote p {
+      color: var(--color-white) !important;
+    }
+    .section--navy p {
+      opacity: 0.9;
+    }
+    .section--navy .section-eyebrow {
+      color: var(--color-red-light) !important;
+      opacity: 1;
+    }
+    .section--navy .about-quote {
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
     @media (max-width: 1024px) {
       .about-team-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
