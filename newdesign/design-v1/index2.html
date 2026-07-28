@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>ISMS Global Edu | Study Abroad Premium Consultants</title>
+  <meta name="description"
+    content="Discover institutional study-abroad consultancy services. Elite advisory for global programs, scholarships, visas, and pre-departure accommodation." />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FontAwesome for Premium Interface Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 1 — STICKY HEADER
+  ═══════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#home" class="logo" aria-label="ISMS Global Edu home">
+          <div class="logo-mark" aria-hidden="true">IG</div>
+          <div class="logo-text">
+            ISMS Global Edu
+            <span class="logo-tagline">Study Abroad Experts</span>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary site navigation">
+          <ul role="list">
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#process" class="nav-link">How It Works</a></li>
+            <li><a href="#estimator" class="nav-link">Scholarships</a></li>
+            <li><a href="#faq" class="nav-link">FAQs</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a href="#consultation" class="btn btn-primary" aria-label="Book a free consultation session">Book Free
+            Consultation</a>
+          <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 2 — HERO & TRUST COUNTERS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="hero-map-overlay" id="hero-map" aria-hidden="true"></div>
+    <div class="hero-mesh" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <i class="fa-solid fa-award" aria-hidden="true"></i> 17+ Years of Institutional Excellence
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Your Gateway to <span>Global</span> Academic Success.
+          </h1>
+          <p class="hero-lead">
+            Certified study-abroad consultants providing transparent, merit-based university admission
+            and visa guidance at zero cost.
+          </p>
+
+          <!-- Integrated Search Box -->
+          <div class="search-box" role="search" aria-label="University and course finder">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input type="search" class="search-input" placeholder="Search courses, universities, or countries..."
+                aria-label="Search query" />
+            </div>
+            <button class="btn btn-primary" aria-label="Perform search">Find My Path</button>
+          </div>
+
+          <!-- Animated Stat Counters -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="200000" data-suffix="+">0</span>
+              <span class="stat-label">Students Guided</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="500" data-suffix="+">0</span>
+              <span class="stat-label">University Partners</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="10" data-suffix="+">0</span>
+              <span class="stat-label">Destinations</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="17" data-suffix="+">0</span>
+              <span class="stat-label">Glorious Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 3 — QUICK ACCESS CARDS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section" id="quick-access" aria-labelledby="quick-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Quick Access</span>
+        <h2 id="quick-heading" class="section-title">Start with What You <span>Need</span></h2>
+      </div>
+
+      <div class="quick-access-grid">
+        <article class="quick-card reveal stagger-1">
+          <div class="quick-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h3 class="quick-card__title">Explore Courses</h3>
+          <p class="quick-card__desc">Browse specialized undergraduate and postgraduate courses matching your career
+            roadmap.</p>
+          <a href="#courses" class="quick-card__link">Browse Programs <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="quick-card reveal stagger-2">
+          <div class="quick-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h3 class="quick-card__title">Scholarships</h3>
+          <p class="quick-card__desc">Access merit-based and destination-specific scholarships to fund your education.
+          </p>
+          <a href="#scholarships" class="quick-card__link">Find Grants <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="quick-card reveal stagger-3">
+          <div class="quick-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3 class="quick-card__title">Universities</h3>
+          <p class="quick-card__desc">Connect with over 500+ world-class universities across 10 top study destinations.
+          </p>
+          <a href="#universities" class="quick-card__link">Explore Campus <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="quick-card reveal stagger-4">
+          <div class="quick-card__icon" aria-hidden="true">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3 class="quick-card__title">Upcoming Events</h3>
+          <p class="quick-card__desc">Join masterclasses, university fairs, and direct application webinars.</p>
+          <a href="#events" class="quick-card__link">View Schedule <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 4 — SERVICES (BENTO GRID)
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section section--alt" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Comprehensive Support</span>
+        <h2 id="services-heading" class="section-title">Our Consultancy <span>Portfolio</span></h2>
+      </div>
+
+      <!-- Bento-style asymmetric grid -->
+      <div class="services-bento">
+
+        <article class="bento-card bento-col-8 reveal stagger-1">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-user-tie"></i></div>
+            <h3 class="bento-card__title">1-on-1 Profile Counselling</h3>
+            <p class="bento-card__desc">Our British Council certified advisors evaluate your academic background,
+              scorecards, financial profile, and future plans to craft a bespoke study strategy. Get dedicated 1-on-1
+              support completely free of cost.</p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-4 bento-card--accent reveal stagger-2">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+            <h3 class="bento-card__title">University Shortlisting</h3>
+            <p class="bento-card__desc">Select universities matching your profile, intake timeline, and funding targets.
+            </p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-4 reveal stagger-3">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-compass"></i></div>
+            <h3 class="bento-card__title">Course Selection</h3>
+            <p class="bento-card__desc">Decide on the ideal global program aligning your dreams with current industry
+              trends.</p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-8 reveal stagger-4">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-file-signature"></i></div>
+            <h3 class="bento-card__title">Application &amp; SOP Support</h3>
+            <p class="bento-card__desc">Elite editors check and format your Statement of Purpose (SOP), Letters of
+              Recommendation (LOR), and university applications. We walk with you through every submission deadline to
+              maximize your offer conversion rate.</p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-6 bento-card--accent reveal stagger-1">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-piggy-bank"></i></div>
+            <h3 class="bento-card__title">Scholarships &amp; Loan Assistance</h3>
+            <p class="bento-card__desc">Find merit-based scholarships and secure quick, low-interest student loans
+              through our partnered Indian bank advisors.</p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-6 reveal stagger-2">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-passport"></i></div>
+            <h3 class="bento-card__title">Visa Interview Preparation</h3>
+            <p class="bento-card__desc">Achieve a 100% visa approval rate with mock interview drills, financial file
+              checking, and biometrics filing assistance.</p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-4 reveal stagger-3">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-plane-departure"></i></div>
+            <h3 class="bento-card__title">Pre-Departure Support</h3>
+            <p class="bento-card__desc">Receive checklist kits on baggage rules, flights, insurance, and cultural
+              preparation.</p>
+          </div>
+        </article>
+
+        <article class="bento-card bento-col-8 bento-card--accent reveal stagger-4">
+          <div>
+            <div class="bento-card__icon" aria-hidden="true"><i class="fa-solid fa-house-chimney-user"></i></div>
+            <h3 class="bento-card__title">Post-Arrival Guidance</h3>
+            <p class="bento-card__desc">Settle in smoothly. We assist with airport pickups, SIM card activation, student
+              banking registrations, and finding secure housing close to your campus.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NEW SECTION — STUDY DESTINATIONS SHOWCASE
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section" id="destinations" aria-labelledby="destinations-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Global Gateways</span>
+        <h2 id="destinations-heading" class="section-title">Popular Study <span>Destinations</span></h2>
+        <p class="section-subtitle">Unlock educational opportunities in countries recognized worldwide for academic
+          rigor and career outcomes.</p>
+      </div>
+
+      <div class="destinations-grid">
+
+        <article class="destination-card reveal stagger-1">
+          <div class="destination-badge">UK</div>
+          <div class="destination-body">
+            <h3 class="destination-name">United Kingdom</h3>
+            <p class="destination-desc">Home to legendary universities and a 2-year post-study work visa (Graduate
+              Route).</p>
+            <ul class="destination-stats-list">
+              <li><strong>Intakes:</strong> Sept, Jan, May</li>
+              <li><strong>Average Tuition:</strong> £12,000 - £25,000/yr</li>
+              <li><strong>Work Permit:</strong> Up to 2 Years</li>
+            </ul>
+            <a href="#study-uk" class="btn btn-outline" style="width:100%;margin-top:1.5rem;">Explore UK</a>
+          </div>
+        </article>
+
+        <article class="destination-card reveal stagger-2">
+          <div class="destination-badge">USA</div>
+          <div class="destination-body">
+            <h3 class="destination-name">United States</h3>
+            <p class="destination-desc">Global epicenter for tech, scientific research, and 3-year STEM OPT extensions.
+            </p>
+            <ul class="destination-stats-list">
+              <li><strong>Intakes:</strong> August, January</li>
+              <li><strong>Average Tuition:</strong> $20,000 - $45,000/yr</li>
+              <li><strong>Work Permit:</strong> 1 to 3 Years (OPT)</li>
+            </ul>
+            <a href="#study-usa" class="btn btn-outline" style="width:100%;margin-top:1.5rem;">Explore USA</a>
+          </div>
+        </article>
+
+        <article class="destination-card reveal stagger-3">
+          <div class="destination-badge">IE</div>
+          <div class="destination-body">
+            <h3 class="destination-name">Ireland</h3>
+            <p class="destination-desc">Europe's silicon hub with immense opportunities in IT, Pharma, and Finance.</p>
+            <ul class="destination-stats-list">
+              <li><strong>Intakes:</strong> September, January</li>
+              <li><strong>Average Tuition:</strong> €10,000 - €22,000/yr</li>
+              <li><strong>Work Permit:</strong> 2 Years (Stay Back)</li>
+            </ul>
+            <a href="#study-ireland" class="btn btn-outline" style="width:100%;margin-top:1.5rem;">Explore Ireland</a>
+          </div>
+        </article>
+
+        <article class="destination-card reveal stagger-4">
+          <div class="destination-badge">AU</div>
+          <div class="destination-body">
+            <h3 class="destination-name">Australia</h3>
+            <p class="destination-desc">High standard of living, pristine environment, and generous post-study stay-back
+              pathways.</p>
+            <ul class="destination-stats-list">
+              <li><strong>Intakes:</strong> Feb, July, November</li>
+              <li><strong>Average Tuition:</strong> A$22,000 - A$40,000/yr</li>
+              <li><strong>Work Permit:</strong> 2 to 4 Years</li>
+            </ul>
+            <a href="#study-australia" class="btn btn-outline" style="width:100%;margin-top:1.5rem;">Explore
+              Australia</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 5 — PROCESS TIMELINE
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section section--alt" id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Your Roadmap</span>
+        <h2 id="process-heading" class="section-title">The Study-Abroad <span>Journey</span></h2>
+      </div>
+
+      <div class="timeline-section" id="timeline-section">
+        <!-- SVG Tracing Line -->
+        <div class="timeline-svg-container" aria-hidden="true">
+          <svg class="timeline-svg" viewBox="0 0 4 1000" preserveAspectRatio="none">
+            <line x1="2" y1="0" x2="2" y2="1000" class="timeline-line-bg" />
+            <line x1="2" y1="0" x2="2" y2="1000" class="timeline-line-active" id="timeline-active-line" />
+          </svg>
+        </div>
+
+        <div class="timeline-wrapper">
+
+          <div class="timeline-item reveal stagger-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-number">01</div>
+              <h3 class="timeline-title">Profile Evaluation</h3>
+              <p class="timeline-desc">Discuss your career plans and evaluate academic records with a dedicated advisor
+                to frame options.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal stagger-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-number">02</div>
+              <h3 class="timeline-title">University Selection</h3>
+              <p class="timeline-desc">Compare admissions criteria, program costs, and career parameters to select your
+                target universities.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal stagger-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-number">03</div>
+              <h3 class="timeline-title">Application Processing</h3>
+              <p class="timeline-desc">Submit high-quality profiles backed by formatted Statements of Purpose and
+                recommended portfolio files.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal stagger-4">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-number">04</div>
+              <h3 class="timeline-title">Visa &amp; Flight Booking</h3>
+              <p class="timeline-desc">Receive visa check certificates, clear mock interviews, verify financial plans,
+                and coordinate pre-arrival tickets.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NEW SECTION — TUITION & SCHOLARSHIP ESTIMATOR
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section" id="estimator" aria-labelledby="estimator-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Financial Planner</span>
+        <h2 id="estimator-heading" class="section-title">Tuition &amp; Scholarship <span>Estimator</span></h2>
+        <p class="section-subtitle">Get a quick estimate of your average annual budget and potential scholarship
+          brackets.</p>
+      </div>
+
+      <div class="estimator-container reveal">
+        <div class="estimator-form">
+          <div class="form-group">
+            <label for="est-country">Select Target Country</label>
+            <select id="est-country" class="form-select">
+              <option value="uk" data-cost="18000" data-curr="£">United Kingdom</option>
+              <option value="usa" data-cost="32000" data-curr="$">United States</option>
+              <option value="ireland" data-cost="16000" data-curr="€">Ireland</option>
+              <option value="australia" data-cost="30000" data-curr="A$">Australia</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="est-score">Academic GPA / Score (%)</label>
+            <div class="range-slider-wrapper">
+              <input type="range" id="est-score" class="form-range" min="60" max="100" value="85" />
+              <span id="score-val" class="slider-indicator">85%</span>
+            </div>
+          </div>
+
+          <button type="button" id="calc-btn" class="btn btn-primary" style="width:100%;margin-top:1.5rem;">Calculate
+            Estimates</button>
+        </div>
+
+        <div class="estimator-result">
+          <div class="result-block">
+            <div class="result-label">Estimated Annual Tuition</div>
+            <div class="result-value" id="res-tuition">£18,000</div>
+          </div>
+          <div class="result-block">
+            <div class="result-label">Potential Scholarship Tier</div>
+            <div class="result-value" id="res-scholarship" style="color:var(--color-gold);">Up to 25% Waiver</div>
+          </div>
+          <div class="result-block">
+            <div class="result-label">Estimated Post-Scholarship Cost</div>
+            <div class="result-value" id="res-net">£13,500/year</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 6 — POST-ADMISSION ESSENTIALS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section section--alt" id="essentials" aria-labelledby="essentials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Practical Assistance</span>
+        <h2 id="essentials-heading" class="section-title">Post-Admission <span>Essentials</span></h2>
+      </div>
+
+      <div class="essentials-grid">
+        <div class="essential-item reveal stagger-1">
+          <div class="essential-icon" aria-hidden="true"><i class="fa-solid fa-wallet"></i></div>
+          <h3 class="essential-title">Education Loans</h3>
+          <p class="essential-desc">Compare competitive interest rates and secure fast financial clearances.</p>
+        </div>
+
+        <div class="essential-item reveal stagger-2">
+          <div class="essential-icon" aria-hidden="true"><i class="fa-solid fa-money-bill-transfer"></i></div>
+          <h3 class="essential-title">Money Transfer</h3>
+          <p class="essential-desc">Send tuition deposits and living expenses with low-cost forex fees.</p>
+        </div>
+
+        <div class="essential-item reveal stagger-3">
+          <div class="essential-icon" aria-hidden="true"><i class="fa-solid fa-notes-medical"></i></div>
+          <h3 class="essential-title">Health Insurance</h3>
+          <p class="essential-desc">Select mandatory student healthcare policies before applying for your visa.</p>
+        </div>
+
+        <div class="essential-item reveal stagger-4">
+          <div class="essential-icon" aria-hidden="true"><i class="fa-solid fa-house-laptop"></i></div>
+          <h3 class="essential-title">Housing Booking</h3>
+          <p class="essential-desc">Find reliable, licensed, and affordable student accommodation near campus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 7 — TESTIMONIALS (AUTO-SCROLLING MARQUEE)
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section section--navy" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Alumni Success</span>
+        <h2 id="testimonials-heading" class="section-title" style="color:white;">Trusted by <span>Thousands</span> of
+          Students</h2>
+      </div>
+    </div>
+
+    <!-- Infinite Scrolling Marquee Track -->
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="testimonials-track" role="list">
+
+        <article class="testi-card" role="listitem">
+          <div class="testi-header">
+            <div class="testi-user">
+              <div class="testi-avatar" aria-hidden="true">AS</div>
+              <div>
+                <div class="testi-name">Aditya Sharma</div>
+                <div class="testi-meta">Leeds Beckett University</div>
+              </div>
+            </div>
+            <span class="testi-flag" aria-hidden="true">🇬🇧</span>
+          </div>
+          <p class="testi-quote">"ISMS Global Education made my transition to Leeds Beckett University completely
+            seamless. From shortlisting the right MBA program to receiving my CAS and visa, their step-by-step guidance
+            was fully transparent and free."</p>
+          <div class="testi-footer-details">
+            <div><span class="testi-field-label">Course:</span> <span class="testi-field-val">MBA</span></div>
+            <div><span class="testi-field-label">Status:</span> <span class="testi-field-val"
+                style="color:#22c55e;">Visa Approved</span></div>
+          </div>
+        </article>
+
+        <article class="testi-card" role="listitem">
+          <div class="testi-header">
+            <div class="testi-user">
+              <div class="testi-avatar" aria-hidden="true">PP</div>
+              <div>
+                <div class="testi-name">Priya Patel</div>
+                <div class="testi-meta">Trinity College Dublin</div>
+              </div>
+            </div>
+            <span class="testi-flag" aria-hidden="true">🇮🇪</span>
+          </div>
+          <p class="testi-quote">"Navigating the visa documentation process for Ireland was overwhelming until I
+            connected with ISMS Global. Their senior counsellors reviewed my profile, helped with financial planning,
+            and guided me."</p>
+          <div class="testi-footer-details">
+            <div><span class="testi-field-label">Course:</span> <span class="testi-field-val">M.Sc. Data Science</span>
+            </div>
+            <div><span class="testi-field-label">Status:</span> <span class="testi-field-val"
+                style="color:#22c55e;">Visa Approved</span></div>
+          </div>
+        </article>
+
+        <article class="testi-card" role="listitem">
+          <div class="testi-header">
+            <div class="testi-user">
+              <div class="testi-avatar" aria-hidden="true">RV</div>
+              <div>
+                <div class="testi-name">Rohan Verma</div>
+                <div class="testi-meta">SKEMA Business School</div>
+              </div>
+            </div>
+            <span class="testi-flag" aria-hidden="true">🇫🇷</span>
+          </div>
+          <p class="testi-quote">"Studying at a top business school in France was my dream, and ISMS Global helped me
+            make it reality. They supported me with mock visa interviews, helped me structure my SOP, and gave tips for
+            accommodation."</p>
+          <div class="testi-footer-details">
+            <div><span class="testi-field-label">Course:</span> <span class="testi-field-val">M.Sc. Management</span>
+            </div>
+            <div><span class="testi-field-label">Status:</span> <span class="testi-field-val"
+                style="color:#22c55e;">Visa Issued</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NEW SECTION — FAQ ACCORDION
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Support Hub</span>
+        <h2 id="faq-heading" class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-subtitle">Got questions? We have answers. If you don't find what you need, feel free to book a
+          call.</p>
+      </div>
+
+      <div class="faq-accordion-wrapper reveal">
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Are your counseling services completely free of cost?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>Yes, our complete overseas educational counseling, university shortlisting, application reviews, and visa
+              mock sessions are 100% free of charge. We are funded directly by our global university partners.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>How do you help with SOP and LOR writing?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>We do not write your SOP or LOR for you, but our senior editors provide comprehensive structural reviews,
+              flow suggestions, grammar audits, and feedback to ensure your profile stands out to admissions committees.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>What is the visa success rate of ISMS Global Edu?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>Over the past 17 years, we have maintained a near-100% visa approval rate across all major study
+              destinations including the UK, Ireland, France, Germany, and the USA. This is achieved through detailed
+              file audits and mock visa drills.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Can you assist with education loans and funding?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-panel">
+            <p>Yes! We have partnered networks with leading public and private banks in India. We help you compare rate
+              options, prepare loan application files, and expedite approvals to ensure your study funds are in place.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 8 — TRUST / CREDENTIALS STRIP
+  ═══════════════════════════════════════════════════════ -->
+  <section class="credentials-strip" aria-label="Accreditations and trust metrics">
+    <div class="container">
+      <div class="credentials-flex">
+
+        <!-- Placeholder logos for credentials -->
+        <div class="credential-logo-box">
+          <div class="credential-logo-placeholder">British Council Advisor</div>
+          <div class="credential-logo-placeholder">Direct Partner</div>
+          <div class="credential-logo-placeholder">ISO Certified</div>
+        </div>
+
+        <div class="credential-trust-stat">
+          <div class="cred-stat-item">
+            <div class="cred-stat-num">100%</div>
+            <div class="cred-stat-lbl">Visa Success</div>
+          </div>
+          <div class="cred-stat-item">
+            <div class="cred-stat-num">10+</div>
+            <div class="cred-stat-lbl">Host Countries</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SECTION 9 — FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand-logo logo">
+            <div class="logo-mark" aria-hidden="true">IG</div>
+            <div class="logo-text">ISMS Global Edu</div>
+          </div>
+          <p class="footer-desc">Providing certified, transparent overseas education counseling and application
+            processing across India.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Destinations</h3>
+          <ul class="footer-links">
+            <li><a href="#uk">United Kingdom</a></li>
+            <li><a href="#ireland">Ireland</a></li>
+            <li><a href="#australia">Australia</a></li>
+            <li><a href="#usa">USA</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="#services">Profile Counselling</a></li>
+            <li><a href="#services">University Selection</a></li>
+            <li><a href="#services">SOP Writing Support</a></li>
+            <li><a href="#services">Student Loans</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#process">Journey Path</a></li>
+            <li><a href="#essentials">Essentials</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ISMS Global Edu. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
