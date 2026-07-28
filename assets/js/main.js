@@ -152,7 +152,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
                       <div class="nav__dropdown-sub">Flights, forex &amp; accommodation</div>
                     </div>
                   </a>
-                  <a href="${prefix}services/post-arrival-support.html" class="nav__dropdown-item ${currentPage === 'post-arrival-support.html' ? 'nav__dropdown-item--active' : ''}">
+                  <a href="${prefix}post-arrival-support.html" class="nav__dropdown-item ${currentPage === 'post-arrival-support.html' ? 'nav__dropdown-item--active' : ''}">
                     <span class="nav__dropdown-flag"><i class="fa-solid fa-house-user" style="color:var(--color-navy);" aria-hidden="true"></i></span>
                     <div>
                       <div class="nav__dropdown-label">Post-Arrival Guidance</div>
