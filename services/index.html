@@ -3,349 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ─── SEO ─────────────────────────────── -->
   <title>Student Services Directory | ISMS Global Edu</title>
   <meta name="description" content="Explore the full range of overseas admissions and study guidance services provided by ISMS Global Edu. All counselling sessions are 100% free." />
-  
-  <!-- Fonts -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.ismsglobaledu.com/services/index.html" />
+
+  <!-- ─── Open Graph / Twitter ─────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Student Services Directory | ISMS Global Edu" />
+  <meta property="og:description" content="Explore the full range of overseas admissions and study guidance services provided by ISMS Global Edu." />
+  <meta property="og:url" content="https://www.ismsglobaledu.com/services/index.html" />
+  <meta property="og:image" content="https://www.ismsglobaledu.com/assets/images/og-home.jpg" />
+  <meta property="og:site_name" content="ISMS Global Edu" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ─── Favicon & Fonts ───────────────────── -->
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  
-  <!-- Core CSS -->
-  <link rel="stylesheet" href="../assets/css/global.css" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  
-  <style>
-    .services-directory {
-      padding: var(--space-16) 0;
-      background: var(--color-neutral-50);
-    }
-    .directory-grid {
-      max-width: var(--max-w-content);
-      margin: 0 auto;
-      padding: 0 var(--gutter);
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: var(--space-6);
-    }
-    .directory-card {
-      background: var(--color-brand-white);
-      border: 1px solid var(--color-neutral-100);
-      border-radius: var(--radius-lg);
-      padding: var(--space-6);
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition);
-      text-decoration: none;
-    }
-    .directory-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
-    .directory-title {
-      font-size: var(--text-lg);
-      font-weight: 700;
-      color: var(--color-brand-navy);
-      margin-bottom: var(--space-2);
-    }
-    .directory-desc {
-      font-size: var(--text-sm);
-      color: var(--color-neutral-700);
-      line-height: 1.6;
-      margin-bottom: var(--space-4);
-      flex-grow: 1;
-    }
-    .directory-link {
-      font-size: var(--text-sm);
-      font-weight: 700;
-      color: var(--color-brand-red);
-      display: flex;
-      align-items: center;
-      gap: var(--space-1);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ─── Global Styles ────────────────────── -->
+  <link rel="stylesheet" href="../assets/css/global.css" />
+
+  <!-- ─── Structured Data (JSON-LD) ──────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.ismsglobaledu.com/services/#service",
+        "url": "https://www.ismsglobaledu.com/services/",
+        "name": "ISMS Global Edu Student Services Directory",
+        "provider": {
+          "@type": "EducationalOrganization",
+          "name": "ISMS Global Edu"
+        },
+        "description": "Professional overseas admission and preparation services."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.ismsglobaledu.com/services/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.ismsglobaledu.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.ismsglobaledu.com/services/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Utility Bar -->
-  <div class="utility-bar" role="navigation" aria-label="Quick access links">
-    <div class="container container--wide">
-      <div class="utility-bar__inner">
-        <p class="utility-bar__tagline">17 Years of Trusted Study Abroad Guidance &nbsp;·&nbsp; Free Counselling for Students</p>
-        <nav class="utility-bar__links">
-          <a href="../courses">Courses</a>
-          <a href="../scholarships">Scholarships</a>
-          <a href="../universities">Universities</a>
-          <a href="../events">Events</a>
-          <a href="../guide-me">Guide Me</a>
-          <a href="../get-instant-offer">Get Instant Offer</a>
-        </nav>
-      </div>
+  <!-- ─── Dynamic Header Navigation ─── -->
+  <div id="site-header"></div>
+
+  <!-- ─── Breadcrumb Bar ─── -->
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb navigation">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="../index.html" class="breadcrumb__link">Home</a>
+          <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__current" aria-current="page">Services Directory</span>
+        </li>
+      </ol>
     </div>
-  </div>
-
-  <!-- Sticky Header -->
-  <header class="site-header" role="banner">
-    <div class="container container--wide">
-      <div class="header__inner">
-        <!-- Logo -->
-        <a href="../" class="header__logo" aria-label="ISMS Global Edu — home">
-          <div class="header__logo-mark" aria-hidden="true">IG</div>
-          <div class="header__logo-text">
-            <span class="header__logo-name">ISMS Global Edu</span>
-            <span class="header__logo-tagline">Study Abroad Experts</span>
-          </div>
-        </a>
-
-        <!-- Desktop Navigation -->
-        <nav class="header__nav" aria-label="Main navigation">
-          <ul class="nav__list" role="list">
-            <li class="nav__item">
-              <a href="../study-destinations" class="nav__link">Study Abroad</a>
-            </li>
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="../about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="../contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="header__actions">
-          <a href="../Student/index.html#counselling" class="btn btn-primary" aria-label="Book a free session">
-            <i class="fa-solid fa-calendar-days" style="margin-right:6px;" aria-hidden="true"></i>Book Free Counselling
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+  </nav>
 
   <main id="main-content">
-    
-    <!-- Hero Section -->
-    <section class="service-hero">
-      <div class="service-hero__inner">
-        <span class="service-hero__tag">ISMS Global Edu</span>
-        <h1 class="service-hero__title">Our Student Services</h1>
-        <p class="service-hero__copy">
-          Professional overseas admission and preparation services. Plan your global education journey today, always free.
+
+    <!-- ═══════════════════════════════════════════════════════
+         Hero Section — Matching Global Theme
+    ═══════════════════════════════════════════════════════ -->
+    <section class="univ-hero" aria-labelledby="services-hero-h1">
+      <div class="container text-center" style="position:relative; z-index:2;">
+        <span class="section-eyebrow" style="color: var(--color-red-light); background: rgba(196,18,48,0.15); border:1px solid rgba(196,18,48,0.3); padding:4px 14px; border-radius:20px; display:inline-block; margin-bottom:1rem;">
+          <i class="fa-solid fa-list-check" aria-hidden="true"></i> ISMS Global Edu Services
+        </span>
+        <h1 id="services-hero-h1" class="section-title" style="color:var(--color-white); max-width: 900px; margin: 0 auto 1.25rem; font-size: clamp(2.2rem, 4vw, 3.2rem);">
+          Our Student Services
+        </h1>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.9); max-width: 820px; margin: 0 auto 1.75rem; font-size:1.1rem; line-height:1.7;">
+          Professional overseas admission and preparation services. Plan your global education journey today — expert guidance is always 100% free.
         </p>
+        <div style="display:flex; justify-content:center; gap:1.25rem; margin-top:2rem; flex-wrap:wrap;">
+          <a href="#counselling" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Book Free Counselling</a>
+          <a href="../contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Us</a>
+        </div>
       </div>
     </section>
 
-    <!-- Directory Directory Grid -->
-    <section class="services-directory">
-      <div class="directory-grid">
-        <a href="personalized-counselling.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Personalized Counselling</h3>
-            <p class="directory-desc">Free 1-on-1 profile evaluation and target matching with expert advisors.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="course-selection-guidance.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Course Selection Guidance</h3>
-            <p class="directory-desc">Analyze industry-demand fields and specializations aligned with goals.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="university-selection.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">University Selection Guidance</h3>
-            <p class="directory-desc">Find matching institutions globally based on rankings, cost, and ROI.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="application-support.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Application & Documentation Support</h3>
-            <p class="directory-desc">Form submissions, deadline tracking, and eligibility verification checks.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="offer-letter-support.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Offer Letter & Admission Support</h3>
-            <p class="directory-desc">Guidance through accepting conditional offers and securing final seats.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="scholarship-education-loan.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Scholarship & Loan Guidance</h3>
-            <p class="directory-desc">Funding planning, loan sanction support, and merit-based waivers.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="student-visa.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Student Visa Preparation</h3>
-            <p class="directory-desc">Country visa document checklists and interview preparations.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="pre-departure-support.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Pre-Departure Support</h3>
-            <p class="directory-desc">Orientations, travel checksheets, and moving guidelines.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="post-arrival-support.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Post-Arrival Support</h3>
-            <p class="directory-desc">Residency card briefings, bank accounts, and local orientation advice.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="student-accommodation.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Student Accommodation Assistance</h3>
-            <p class="directory-desc">Finding safe, comfortable, and affordable flats near campus.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="student-finance-forex.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Money Transfer, Forex & Banking</h3>
-            <p class="directory-desc">Setting up student bank accounts and currency exchange planning.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="health-insurance-wellbeing.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">Health Insurance & Wellbeing</h3>
-            <p class="directory-desc">Accessing university insurance policies and mental wellbeing networks.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="ielts-test-preparation.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">IELTS & Test Prep</h3>
-            <p class="directory-desc">Guidance on required test scores, targets, and English prep resources.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-        <a href="sop-lor-document-support.html" class="directory-card">
-          <div>
-            <h3 class="directory-title">SOP, LOR & Documents</h3>
-            <p class="directory-desc">SOP/LOR structuring checklists and CV writing advice.</p>
-          </div>
-          <span class="directory-link">Learn More &rarr;</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Final Call to Action -->
-    <section class="final-cta" aria-labelledby="final-cta-heading">
+    <!-- ═══════════════════════════════════════════════════════
+         Services Directory Grid
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="directory-heading">
       <div class="container">
-        <div class="final-cta__inner">
-          <h2 id="final-cta-heading" class="final-cta__title">
-            Start Your Global Education Journey Today
-          </h2>
-          <p class="final-cta__copy">
-            Connect with our expert counsellors and explore the right opportunities for your future.
-          </p>
-          <div class="final-cta__actions">
-            <a href="../Student/index.html#counselling" class="btn btn-white btn-lg" aria-label="Book a free counselling session">
-              <i class="fa-solid fa-calendar-days" style="margin-right:6px;" aria-hidden="true"></i>Book Free Counselling
-            </a>
-          </div>
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Comprehensive Overseas Support</p>
+          <h2 id="directory-heading" class="section-title">Explore All Services</h2>
+          <p class="section-subtitle">Click on any service to view full requirements, step-by-step processes, and expert guidance.</p>
+        </div>
+
+        <div class="destinations-grid">
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-red);"><i class="fa-solid fa-bullseye"></i></div>
+              <h3 class="course-card__title">Personalised Counselling</h3>
+              <p class="course-card__desc">Free 1-on-1 profile evaluation and target matching with expert advisors.</p>
+            </div>
+            <a href="../personalized-counselling.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-navy);"><i class="fa-solid fa-landmark"></i></div>
+              <h3 class="course-card__title">University Shortlisting</h3>
+              <p class="course-card__desc">Find matching institutions globally based on academic fit, cost, and rankings.</p>
+            </div>
+            <a href="../university-selection.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-navy);"><i class="fa-solid fa-book-open"></i></div>
+              <h3 class="course-card__title">Course Selection Guidance</h3>
+              <p class="course-card__desc">Analyze industry-demand fields and specializations aligned with your career goals.</p>
+            </div>
+            <a href="../course-selection-guidance.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-red);"><i class="fa-solid fa-clipboard-list"></i></div>
+              <h3 class="course-card__title">Application &amp; Offer Support</h3>
+              <p class="course-card__desc">Form submissions, deadline tracking, SOP/LOR guidance, and eligibility checks.</p>
+            </div>
+            <a href="../application-support.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-navy);"><i class="fa-solid fa-award"></i></div>
+              <h3 class="course-card__title">Scholarships &amp; Education Loans</h3>
+              <p class="course-card__desc">Funding planning, loan sanction support, and merit-based tuition fee waivers.</p>
+            </div>
+            <a href="../scholarships.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-red);"><i class="fa-solid fa-passport"></i></div>
+              <h3 class="course-card__title">Visa Preparation</h3>
+              <p class="course-card__desc">Country visa document checklists, CAS/COE/I-20 checks, and mock interview prep.</p>
+            </div>
+            <a href="../visa-preparation.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-red);"><i class="fa-solid fa-plane-departure"></i></div>
+              <h3 class="course-card__title">Pre-Departure Support</h3>
+              <p class="course-card__desc">Orientations, flight bookings, accommodation, forex, and travel packing lists.</p>
+            </div>
+            <a href="../pre-departure-support.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+          <article class="course-card">
+            <div>
+              <div class="course-card__icon" style="color:var(--color-navy);"><i class="fa-solid fa-house-user"></i></div>
+              <h3 class="course-card__title">Post-Arrival Guidance</h3>
+              <p class="course-card__desc">Airport pickup, SIM card setup, bank account opening, and campus orientation advice.</p>
+            </div>
+            <a href="post-arrival-support.html" class="btn btn-outline" style="margin-top:1.5rem; text-align:center;">Learn More &rarr;</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FINAL SECTION — Global Counselling CTA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section section--navy text-center" aria-labelledby="cta-heading" id="counselling">
+      <div class="container container--narrow">
+        <h2 id="cta-heading" class="section-title" style="color:var(--color-white);">Start Your Global Education Journey Today</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.9); margin-bottom:2rem;">
+          Connect with our expert counsellors and explore the right opportunities for your future.
+        </p>
+        <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+          <a href="../contact.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Book Free Counselling</a>
+          <a href="../contact.html" class="btn btn-white btn-lg"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact Us</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__main">
-        <div class="footer__brand">
-          <a href="../" class="header__logo" aria-label="ISMS Global Edu — home" style="display:inline-flex;">
-            <div class="header__logo-mark" aria-hidden="true">IG</div>
-            <div class="header__logo-text">
-              <span class="header__logo-name" style="color:#fff;">ISMS Global Edu</span>
-              <span class="header__logo-tagline">Study Abroad Experts</span>
-            </div>
-          </a>
-          <p class="footer__brand-desc">
-            Helping students turn international study plans into confident global careers — one counselling session at a time, always free.
-          </p>
-          <div class="footer__contact-note">
-            <i class="fa-solid fa-location-dot" style="color:var(--color-red); margin-right:6px;" aria-hidden="true"></i>Office address — to be confirmed by client<br />
-            <i class="fa-solid fa-phone" style="color:var(--color-red); margin-right:6px;" aria-hidden="true"></i>Phone — to be confirmed by client<br />
-            <i class="fa-solid fa-envelope" style="color:var(--color-red); margin-right:6px;" aria-hidden="true"></i>Email — to be confirmed by client
-          </div>
-        </div>
+  <!-- ─── Dynamic Footer ─── -->
+  <div id="site-footer"></div>
 
-        <nav aria-label="Study destinations links">
-          <div class="footer__col-title">Study Destinations</div>
-          <ul class="footer__links">
-            <li><a href="../study-uk">United Kingdom</a></li>
-            <li><a href="../study-ireland">Ireland</a></li>
-            <li><a href="../study-australia">Australia</a></li>
-            <li><a href="../study-usa">USA</a></li>
-            <li><a href="../study-new-zealand">New Zealand</a></li>
-            <li><a href="../study-dubai">Dubai</a></li>
-            <li><a href="../study-france">France</a></li>
-            <li><a href="../study-germany">Germany</a></li>
-            <li><a href="../study-netherlands">Netherlands</a></li>
-            <li><a href="../study-spain">Spain</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-label="Student services links">
-          <div class="footer__col-title">Student Services</div>
-          <ul class="footer__links">
-            <li><a href="personalized-counselling.html">Counselling</a></li>
-            <li><a href="course-selection-guidance.html">Course Selection</a></li>
-            <li><a href="university-selection.html">University Shortlisting</a></li>
-            <li><a href="application-support.html">Applications</a></li>
-            <li><a href="scholarship-education-loan.html">Scholarships & Loans</a></li>
-            <li><a href="student-visa.html">Visa Preparation</a></li>
-            <li><a href="student-accommodation.html">Accommodation</a></li>
-            <li><a href="pre-departure-support.html">Pre-Departure & Post-Arrival</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-label="Resources links">
-          <div class="footer__col-title">Resources</div>
-          <ul class="footer__links">
-            <li><a href="../courses">Courses</a></li>
-            <li><a href="../scholarships">Scholarships</a></li>
-            <li><a href="../universities">Universities</a></li>
-            <li><a href="../events">Events</a></li>
-            <li><a href="../guide-me">Guide Me</a></li>
-            <li><a href="../get-instant-offer">Get Instant Offer</a></li>
-          </ul>
-          <div class="footer__col-title" style="margin-top:2rem;">Company</div>
-          <ul class="footer__links">
-            <li><a href="../about">About Us</a></li>
-            <li><a href="../contact">Contact Us</a></li>
-            <li><a href="../student-success-stories">Student Success Stories</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer__bottom">
-        <p>© <span id="footer-year">2026</span> ISMS Global Edu. All rights reserved.</p>
-        <nav class="footer__legal-links" aria-label="Legal links">
-          <a href="../privacy-policy">Privacy Policy</a>
-          <a href="../terms-and-conditions">Terms & Conditions</a>
-          <a href="../cookie-policy">Cookie Policy</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
-
+  <!-- ─── Main Application JS ─── -->
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
